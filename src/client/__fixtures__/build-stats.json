@@ -76,219 +76,6 @@
       ]
     },
     {
-      "label": "static/chunks/881.0dbe066811ed9dd3c3e0.js",
-      "isAsset": true,
-      "statSize": 165758,
-      "parsedSize": 159232,
-      "gzipSize": 20703,
-      "groups": [
-        {
-          "label": "apps/Stats",
-          "path": "./apps/Stats",
-          "statSize": 165758,
-          "groups": [
-            {
-              "label": "Stats.module.scss",
-              "path": "./apps/Stats/Stats.module.scss",
-              "statSize": 123,
-              "parsedSize": 84,
-              "gzipSize": 88
-            },
-            {
-              "label": "Stats.tsx + 5 modules (concatenated)",
-              "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)",
-              "statSize": 165540,
-              "parsedSize": 158953,
-              "gzipSize": 20541,
-              "concatenated": true,
-              "groups": [
-                {
-                  "label": "apps/Stats",
-                  "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats",
-                  "statSize": 165540,
-                  "groups": [
-                    {
-                      "label": "Stats.tsx",
-                      "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats/Stats.tsx",
-                      "statSize": 2964,
-                      "parsedSize": 2846,
-                      "gzipSize": 367,
-                      "inaccurateSizes": true
-                    },
-                    {
-                      "label": "build-stats.json",
-                      "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats/build-stats.json",
-                      "statSize": 153560,
-                      "parsedSize": 147449,
-                      "gzipSize": 19054,
-                      "inaccurateSizes": true
-                    },
-                    {
-                      "label": "components",
-                      "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats/components",
-                      "statSize": 6577,
-                      "groups": [
-                        {
-                          "label": "Treemap",
-                          "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats/components/Treemap",
-                          "statSize": 4905,
-                          "groups": [
-                            {
-                              "label": "Treemap.tsx",
-                              "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats/components/Treemap/Treemap.tsx",
-                              "statSize": 3005,
-                              "parsedSize": 2885,
-                              "gzipSize": 372,
-                              "inaccurateSizes": true
-                            },
-                            {
-                              "label": "utils",
-                              "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats/components/Treemap/utils",
-                              "statSize": 1900,
-                              "groups": [
-                                {
-                                  "label": "createTreemap.ts",
-                                  "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats/components/Treemap/utils/createTreemap.ts",
-                                  "statSize": 1900,
-                                  "parsedSize": 1824,
-                                  "gzipSize": 235,
-                                  "inaccurateSizes": true
-                                }
-                              ],
-                              "parsedSize": 1824,
-                              "gzipSize": 235,
-                              "inaccurateSizes": true
-                            }
-                          ],
-                          "parsedSize": 4709,
-                          "gzipSize": 608,
-                          "inaccurateSizes": true
-                        },
-                        {
-                          "label": "BackButton",
-                          "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats/components/BackButton",
-                          "statSize": 1672,
-                          "groups": [
-                            {
-                              "label": "BackButton.tsx",
-                              "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats/components/BackButton/BackButton.tsx",
-                              "statSize": 1672,
-                              "parsedSize": 1605,
-                              "gzipSize": 207,
-                              "inaccurateSizes": true
-                            }
-                          ],
-                          "parsedSize": 1605,
-                          "gzipSize": 207,
-                          "inaccurateSizes": true
-                        }
-                      ],
-                      "parsedSize": 6315,
-                      "gzipSize": 816,
-                      "inaccurateSizes": true
-                    },
-                    {
-                      "label": "utils",
-                      "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats/utils",
-                      "statSize": 2439,
-                      "groups": [
-                        {
-                          "label": "computeTreeData.ts",
-                          "path": "./apps/Stats/Stats.tsx + 5 modules (concatenated)/apps/Stats/utils/computeTreeData.ts",
-                          "statSize": 2439,
-                          "parsedSize": 2341,
-                          "gzipSize": 302,
-                          "inaccurateSizes": true
-                        }
-                      ],
-                      "parsedSize": 2341,
-                      "gzipSize": 302,
-                      "inaccurateSizes": true
-                    }
-                  ],
-                  "parsedSize": 158953,
-                  "gzipSize": 20541,
-                  "inaccurateSizes": true
-                }
-              ]
-            },
-            {
-              "label": "components/BackButton",
-              "path": "./apps/Stats/components/BackButton",
-              "statSize": 95,
-              "groups": [
-                {
-                  "label": "BackButton.module.scss",
-                  "path": "./apps/Stats/components/BackButton/BackButton.module.scss",
-                  "statSize": 95,
-                  "parsedSize": 58,
-                  "gzipSize": 70
-                }
-              ],
-              "parsedSize": 58,
-              "gzipSize": 70
-            }
-          ],
-          "parsedSize": 159095,
-          "gzipSize": 20633
-        }
-      ]
-    },
-    {
-      "label": "static/chunks/793.ac287ba08ad4fefda47c.js",
-      "isAsset": true,
-      "statSize": 140571,
-      "parsedSize": 139036,
-      "gzipSize": 47845,
-      "groups": [
-        {
-          "label": "node_modules/@carrotsearch/foamtree",
-          "path": "./node_modules/@carrotsearch/foamtree",
-          "statSize": 140571,
-          "groups": [
-            {
-              "label": "index.js + 1 modules (concatenated)",
-              "path": "./node_modules/@carrotsearch/foamtree/index.js + 1 modules (concatenated)",
-              "statSize": 140571,
-              "parsedSize": 138898,
-              "gzipSize": 47745,
-              "concatenated": true,
-              "groups": [
-                {
-                  "label": "node_modules/@carrotsearch/foamtree",
-                  "path": "./node_modules/@carrotsearch/foamtree/index.js + 1 modules (concatenated)/node_modules/@carrotsearch/foamtree",
-                  "statSize": 140571,
-                  "groups": [
-                    {
-                      "label": "index.js",
-                      "path": "./node_modules/@carrotsearch/foamtree/index.js + 1 modules (concatenated)/node_modules/@carrotsearch/foamtree/index.js",
-                      "statSize": 62,
-                      "parsedSize": 61,
-                      "gzipSize": 21,
-                      "inaccurateSizes": true
-                    },
-                    {
-                      "label": "foamtree.js",
-                      "path": "./node_modules/@carrotsearch/foamtree/index.js + 1 modules (concatenated)/node_modules/@carrotsearch/foamtree/foamtree.js",
-                      "statSize": 140509,
-                      "parsedSize": 138836,
-                      "gzipSize": 47723,
-                      "inaccurateSizes": true
-                    }
-                  ],
-                  "parsedSize": 138898,
-                  "gzipSize": 47745,
-                  "inaccurateSizes": true
-                }
-              ]
-            }
-          ],
-          "parsedSize": 138898,
-          "gzipSize": 47745
-        }
-      ]
-    },
-    {
       "label": "static/chunks/framework-09a88f8e6a8ced89af74.js",
       "isAsset": true,
       "statSize": 137540,
@@ -4317,11 +4104,11 @@
       ]
     },
     {
-      "label": "static/chunks/88-a16797d52f979f53d0d7.js",
+      "label": "static/chunks/88-b20176f58ba1d847cc2c.js",
       "isAsset": true,
-      "statSize": 60971,
-      "parsedSize": 25375,
-      "gzipSize": 7177,
+      "statSize": 60615,
+      "parsedSize": 25194,
+      "gzipSize": 7120,
       "groups": [
         {
           "label": "apps/Terminal",
@@ -4342,186 +4129,168 @@
         {
           "label": "platform",
           "path": "./platform",
-          "statSize": 60645,
+          "statSize": 60289,
           "groups": [
             {
-              "label": "appDescriptors.ts + 8 modules (concatenated)",
-              "path": "./platform/appDescriptors.ts + 8 modules (concatenated)",
-              "statSize": 3011,
-              "parsedSize": 1440,
-              "gzipSize": 557,
+              "label": "appDescriptors.ts + 7 modules (concatenated)",
+              "path": "./platform/appDescriptors.ts + 7 modules (concatenated)",
+              "statSize": 2655,
+              "parsedSize": 1259,
+              "gzipSize": 506,
               "concatenated": true,
               "groups": [
                 {
                   "label": "platform",
-                  "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/platform",
-                  "statSize": 839,
+                  "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/platform",
+                  "statSize": 758,
                   "groups": [
                     {
                       "label": "appDescriptors.ts",
-                      "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/platform/appDescriptors.ts",
-                      "statSize": 839,
-                      "parsedSize": 401,
-                      "gzipSize": 155,
+                      "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/platform/appDescriptors.ts",
+                      "statSize": 758,
+                      "parsedSize": 359,
+                      "gzipSize": 144,
                       "inaccurateSizes": true
                     }
                   ],
-                  "parsedSize": 401,
-                  "gzipSize": 155,
+                  "parsedSize": 359,
+                  "gzipSize": 144,
                   "inaccurateSizes": true
                 },
                 {
                   "label": "apps",
-                  "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps",
-                  "statSize": 2172,
+                  "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps",
+                  "statSize": 1897,
                   "groups": [
                     {
                       "label": "Blog",
-                      "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/Blog",
+                      "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/Blog",
                       "statSize": 237,
                       "groups": [
                         {
                           "label": "BlogDescriptor.ts",
-                          "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/Blog/BlogDescriptor.ts",
+                          "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/Blog/BlogDescriptor.ts",
                           "statSize": 237,
-                          "parsedSize": 113,
-                          "gzipSize": 43,
+                          "parsedSize": 112,
+                          "gzipSize": 45,
                           "inaccurateSizes": true
                         }
                       ],
-                      "parsedSize": 113,
-                      "gzipSize": 43,
+                      "parsedSize": 112,
+                      "gzipSize": 45,
                       "inaccurateSizes": true
                     },
                     {
                       "label": "CodeEditor",
-                      "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/CodeEditor",
+                      "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/CodeEditor",
                       "statSize": 278,
                       "groups": [
                         {
                           "label": "CodeEditorDescriptor.ts",
-                          "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/CodeEditor/CodeEditorDescriptor.ts",
+                          "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/CodeEditor/CodeEditorDescriptor.ts",
                           "statSize": 278,
-                          "parsedSize": 132,
-                          "gzipSize": 51,
-                          "inaccurateSizes": true
-                        }
-                      ],
-                      "parsedSize": 132,
-                      "gzipSize": 51,
-                      "inaccurateSizes": true
-                    },
-                    {
-                      "label": "DICOMViewer",
-                      "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/DICOMViewer",
-                      "statSize": 272,
-                      "groups": [
-                        {
-                          "label": "DICOMViewerDescriptor.ts",
-                          "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/DICOMViewer/DICOMViewerDescriptor.ts",
-                          "statSize": 272,
-                          "parsedSize": 130,
-                          "gzipSize": 50,
-                          "inaccurateSizes": true
-                        }
-                      ],
-                      "parsedSize": 130,
-                      "gzipSize": 50,
-                      "inaccurateSizes": true
-                    },
-                    {
-                      "label": "MP3Player",
-                      "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/MP3Player",
-                      "statSize": 274,
-                      "groups": [
-                        {
-                          "label": "MP3PlayerDescriptor.ts",
-                          "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/MP3Player/MP3PlayerDescriptor.ts",
-                          "statSize": 274,
                           "parsedSize": 131,
-                          "gzipSize": 50,
-                          "inaccurateSizes": true
-                        }
-                      ],
-                      "parsedSize": 131,
-                      "gzipSize": 50,
-                      "inaccurateSizes": true
-                    },
-                    {
-                      "label": "Notes",
-                      "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/Notes",
-                      "statSize": 276,
-                      "groups": [
-                        {
-                          "label": "NotesDescriptor.ts",
-                          "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/Notes/NotesDescriptor.ts",
-                          "statSize": 276,
-                          "parsedSize": 131,
-                          "gzipSize": 51,
-                          "inaccurateSizes": true
-                        }
-                      ],
-                      "parsedSize": 131,
-                      "gzipSize": 51,
-                      "inaccurateSizes": true
-                    },
-                    {
-                      "label": "Reddit",
-                      "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/Reddit",
-                      "statSize": 283,
-                      "groups": [
-                        {
-                          "label": "RedditDescriptor.ts",
-                          "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/Reddit/RedditDescriptor.ts",
-                          "statSize": 283,
-                          "parsedSize": 135,
                           "gzipSize": 52,
                           "inaccurateSizes": true
                         }
                       ],
-                      "parsedSize": 135,
+                      "parsedSize": 131,
                       "gzipSize": 52,
                       "inaccurateSizes": true
                     },
                     {
-                      "label": "Stats",
-                      "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/Stats",
-                      "statSize": 275,
+                      "label": "DICOMViewer",
+                      "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/DICOMViewer",
+                      "statSize": 272,
                       "groups": [
                         {
-                          "label": "StatsDescriptor.ts",
-                          "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/Stats/StatsDescriptor.ts",
-                          "statSize": 275,
-                          "parsedSize": 131,
-                          "gzipSize": 50,
-                          "inaccurateSizes": true
-                        }
-                      ],
-                      "parsedSize": 131,
-                      "gzipSize": 50,
-                      "inaccurateSizes": true
-                    },
-                    {
-                      "label": "Teravia",
-                      "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/Teravia",
-                      "statSize": 277,
-                      "groups": [
-                        {
-                          "label": "TeraviaDescriptor.ts",
-                          "path": "./platform/appDescriptors.ts + 8 modules (concatenated)/apps/Teravia/TeraviaDescriptor.ts",
-                          "statSize": 277,
-                          "parsedSize": 132,
+                          "label": "DICOMViewerDescriptor.ts",
+                          "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/DICOMViewer/DICOMViewerDescriptor.ts",
+                          "statSize": 272,
+                          "parsedSize": 128,
                           "gzipSize": 51,
                           "inaccurateSizes": true
                         }
                       ],
-                      "parsedSize": 132,
+                      "parsedSize": 128,
                       "gzipSize": 51,
+                      "inaccurateSizes": true
+                    },
+                    {
+                      "label": "MP3Player",
+                      "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/MP3Player",
+                      "statSize": 274,
+                      "groups": [
+                        {
+                          "label": "MP3PlayerDescriptor.ts",
+                          "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/MP3Player/MP3PlayerDescriptor.ts",
+                          "statSize": 274,
+                          "parsedSize": 129,
+                          "gzipSize": 52,
+                          "inaccurateSizes": true
+                        }
+                      ],
+                      "parsedSize": 129,
+                      "gzipSize": 52,
+                      "inaccurateSizes": true
+                    },
+                    {
+                      "label": "Notes",
+                      "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/Notes",
+                      "statSize": 276,
+                      "groups": [
+                        {
+                          "label": "NotesDescriptor.ts",
+                          "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/Notes/NotesDescriptor.ts",
+                          "statSize": 276,
+                          "parsedSize": 130,
+                          "gzipSize": 52,
+                          "inaccurateSizes": true
+                        }
+                      ],
+                      "parsedSize": 130,
+                      "gzipSize": 52,
+                      "inaccurateSizes": true
+                    },
+                    {
+                      "label": "Reddit",
+                      "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/Reddit",
+                      "statSize": 283,
+                      "groups": [
+                        {
+                          "label": "RedditDescriptor.ts",
+                          "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/Reddit/RedditDescriptor.ts",
+                          "statSize": 283,
+                          "parsedSize": 134,
+                          "gzipSize": 53,
+                          "inaccurateSizes": true
+                        }
+                      ],
+                      "parsedSize": 134,
+                      "gzipSize": 53,
+                      "inaccurateSizes": true
+                    },
+                    {
+                      "label": "Teravia",
+                      "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/Teravia",
+                      "statSize": 277,
+                      "groups": [
+                        {
+                          "label": "TeraviaDescriptor.ts",
+                          "path": "./platform/appDescriptors.ts + 7 modules (concatenated)/apps/Teravia/TeraviaDescriptor.ts",
+                          "statSize": 277,
+                          "parsedSize": 131,
+                          "gzipSize": 52,
+                          "inaccurateSizes": true
+                        }
+                      ],
+                      "parsedSize": 131,
+                      "gzipSize": 52,
                       "inaccurateSizes": true
                     }
                   ],
-                  "parsedSize": 1038,
-                  "gzipSize": 401,
+                  "parsedSize": 899,
+                  "gzipSize": 361,
                   "inaccurateSizes": true
                 }
               ]
@@ -4607,7 +4376,7 @@
                   "path": "./platform/components/Home.tsx + 16 modules (concatenated)",
                   "statSize": 37068,
                   "parsedSize": 14119,
-                  "gzipSize": 4114,
+                  "gzipSize": 4111,
                   "concatenated": true,
                   "groups": [
                     {
@@ -4721,7 +4490,7 @@
                                         }
                                       ],
                                       "parsedSize": 5528,
-                                      "gzipSize": 1610,
+                                      "gzipSize": 1609,
                                       "inaccurateSizes": true
                                     },
                                     {
@@ -4760,12 +4529,12 @@
                                     }
                                   ],
                                   "parsedSize": 7777,
-                                  "gzipSize": 2266,
+                                  "gzipSize": 2264,
                                   "inaccurateSizes": true
                                 }
                               ],
                               "parsedSize": 7956,
-                              "gzipSize": 2318,
+                              "gzipSize": 2316,
                               "inaccurateSizes": true
                             },
                             {
@@ -4788,7 +4557,7 @@
                             }
                           ],
                           "parsedSize": 9405,
-                          "gzipSize": 2740,
+                          "gzipSize": 2738,
                           "inaccurateSizes": true
                         },
                         {
@@ -4837,7 +4606,7 @@
                                 }
                               ],
                               "parsedSize": 3268,
-                              "gzipSize": 952,
+                              "gzipSize": 951,
                               "inaccurateSizes": true
                             },
                             {
@@ -4860,7 +4629,7 @@
                             }
                           ],
                           "parsedSize": 4571,
-                          "gzipSize": 1332,
+                          "gzipSize": 1331,
                           "inaccurateSizes": true
                         },
                         {
@@ -4883,7 +4652,7 @@
                         }
                       ],
                       "parsedSize": 14119,
-                      "gzipSize": 4114,
+                      "gzipSize": 4111,
                       "inaccurateSizes": true
                     }
                   ]
@@ -4906,7 +4675,7 @@
                 }
               ],
               "parsedSize": 14712,
-              "gzipSize": 4306
+              "gzipSize": 4305
             },
             {
               "label": "constants.ts + 1 modules (concatenated)",
@@ -5119,11 +4888,11 @@
                 }
               ],
               "parsedSize": 534,
-              "gzipSize": 280
+              "gzipSize": 281
             }
           ],
-          "parsedSize": 24861,
-          "gzipSize": 6939
+          "parsedSize": 24680,
+          "gzipSize": 6880
         }
       ]
     },
@@ -5933,21 +5702,21 @@
       ]
     },
     {
-      "label": "static/chunks/226-2e004a7d2eb53c55b823.js",
+      "label": "static/chunks/701-a582e73532044942a6bf.js",
       "isAsset": true,
-      "statSize": 34469,
-      "parsedSize": 16909,
-      "gzipSize": 6178,
+      "statSize": 33200,
+      "parsedSize": 16115,
+      "gzipSize": 5988,
       "groups": [
         {
           "label": "node_modules",
           "path": "./node_modules",
-          "statSize": 34469,
+          "statSize": 33200,
           "groups": [
             {
               "label": "@fortawesome",
               "path": "./node_modules/@fortawesome",
-              "statSize": 22313,
+              "statSize": 21044,
               "groups": [
                 {
                   "label": "free-brands-svg-icons",
@@ -5968,7 +5737,7 @@
                 {
                   "label": "free-solid-svg-icons",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons",
-                  "statSize": 9488,
+                  "statSize": 8219,
                   "groups": [
                     {
                       "label": "faBlog.js",
@@ -5976,13 +5745,6 @@
                       "statSize": 1217,
                       "parsedSize": 740,
                       "gzipSize": 455
-                    },
-                    {
-                      "label": "faChartBar.js",
-                      "path": "./node_modules/@fortawesome/free-solid-svg-icons/faChartBar.js",
-                      "statSize": 1269,
-                      "parsedSize": 788,
-                      "gzipSize": 310
                     },
                     {
                       "label": "faCode.js",
@@ -6034,8 +5796,8 @@
                       "gzipSize": 271
                     }
                   ],
-                  "parsedSize": 5166,
-                  "gzipSize": 1949
+                  "parsedSize": 4378,
+                  "gzipSize": 1764
                 },
                 {
                   "label": "react-fontawesome",
@@ -6047,15 +5809,15 @@
                       "path": "./node_modules/@fortawesome/react-fontawesome/index.es.js",
                       "statSize": 11366,
                       "parsedSize": 5270,
-                      "gzipSize": 2139
+                      "gzipSize": 2140
                     }
                   ],
                   "parsedSize": 5270,
-                  "gzipSize": 2139
+                  "gzipSize": 2140
                 }
               ],
-              "parsedSize": 11411,
-              "gzipSize": 4494
+              "parsedSize": 10623,
+              "gzipSize": 4306
             },
             {
               "label": "@josselinbuils",
@@ -6313,17 +6075,17 @@
               "gzipSize": 1078
             }
           ],
-          "parsedSize": 16651,
-          "gzipSize": 5991
+          "parsedSize": 15863,
+          "gzipSize": 5809
         }
       ]
     },
     {
-      "label": "static/chunks/103.58726e8cfb63eee6fe9f.js",
+      "label": "static/chunks/103.e30201a8152f0492adde.js",
       "isAsset": true,
-      "statSize": 34637,
-      "parsedSize": 15290,
-      "gzipSize": 5376,
+      "statSize": 35906,
+      "parsedSize": 16084,
+      "gzipSize": 5576,
       "groups": [
         {
           "label": "apps/Reddit",
@@ -6342,7 +6104,7 @@
               "path": "./apps/Reddit/Reddit.tsx + 18 modules (concatenated)",
               "statSize": 24267,
               "parsedSize": 8910,
-              "gzipSize": 2910,
+              "gzipSize": 2911,
               "concatenated": true,
               "groups": [
                 {
@@ -6524,7 +6286,7 @@
                             }
                           ],
                           "parsedSize": 3954,
-                          "gzipSize": 1291,
+                          "gzipSize": 1292,
                           "inaccurateSizes": true
                         },
                         {
@@ -6565,7 +6327,7 @@
                         }
                       ],
                       "parsedSize": 7123,
-                      "gzipSize": 2326,
+                      "gzipSize": 2327,
                       "inaccurateSizes": true
                     },
                     {
@@ -6604,7 +6366,7 @@
                     }
                   ],
                   "parsedSize": 8910,
-                  "gzipSize": 2910,
+                  "gzipSize": 2911,
                   "inaccurateSizes": true
                 }
               ]
@@ -6721,12 +6483,12 @@
             }
           ],
           "parsedSize": 9921,
-          "gzipSize": 3308
+          "gzipSize": 3309
         },
         {
           "label": "node_modules/@fortawesome",
           "path": "./node_modules/@fortawesome",
-          "statSize": 5010,
+          "statSize": 6279,
           "groups": [
             {
               "label": "free-brands-svg-icons",
@@ -6763,7 +6525,7 @@
             {
               "label": "free-solid-svg-icons",
               "path": "./node_modules/@fortawesome/free-solid-svg-icons",
-              "statSize": 2458,
+              "statSize": 3727,
               "groups": [
                 {
                   "label": "faAnchor.js",
@@ -6773,6 +6535,13 @@
                   "gzipSize": 525
                 },
                 {
+                  "label": "faChartBar.js",
+                  "path": "./node_modules/@fortawesome/free-solid-svg-icons/faChartBar.js",
+                  "statSize": 1269,
+                  "parsedSize": 788,
+                  "gzipSize": 309
+                },
+                {
                   "label": "faFireAlt.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faFireAlt.js",
                   "statSize": 1031,
@@ -6780,12 +6549,12 @@
                   "gzipSize": 380
                 }
               ],
-              "parsedSize": 1499,
-              "gzipSize": 781
+              "parsedSize": 2287,
+              "gzipSize": 972
             }
           ],
-          "parsedSize": 3092,
-          "gzipSize": 1412
+          "parsedSize": 3880,
+          "gzipSize": 1600
         },
         {
           "label": "platform",
@@ -7066,11 +6835,11 @@
       ]
     },
     {
-      "label": "static/chunks/webpack-be40517596521616bd93.js",
+      "label": "static/chunks/webpack-9b3b3a44b497e79454b1.js",
       "isAsset": true,
-      "statSize": 5850,
-      "parsedSize": 5850,
-      "gzipSize": 2787,
+      "statSize": 5763,
+      "parsedSize": 5763,
+      "gzipSize": 2734,
       "groups": []
     },
     {
@@ -7170,11 +6939,11 @@
       ]
     },
     {
-      "label": "static/chunks/pages/index-0a6f3dd373c9c28481eb.js",
+      "label": "static/chunks/pages/index-77e01b43ca15ee7d3f89.js",
       "isAsset": true,
       "statSize": 643,
       "parsedSize": 577,
-      "gzipSize": 384,
+      "gzipSize": 383,
       "groups": [
         {
           "label": "pages",
@@ -7195,11 +6964,11 @@
       ]
     },
     {
-      "label": "static/chunks/pages/app/[app]-db2d99ef4608fdc87e16.js",
+      "label": "static/chunks/pages/app/[app]-af9115e3ddd797cd3d66.js",
       "isAsset": true,
       "statSize": 505,
       "parsedSize": 569,
-      "gzipSize": 375,
+      "gzipSize": 374,
       "groups": [
         {
           "label": "node_modules/next",
@@ -7246,41 +7015,46 @@
   ],
   "commonChunks": {
     "chunks": [
-      "static/chunks/webpack-be40517596521616bd93.js",
+      "static/chunks/webpack-9b3b3a44b497e79454b1.js",
       "static/chunks/framework-09a88f8e6a8ced89af74.js",
       "static/chunks/main-0aacef26032501bbb2cf.js",
       "static/chunks/pages/_app-a8e423c6927b8ee16c02.js"
     ],
-    "gzipSize": 78275,
-    "parsedSize": 242801,
-    "statSize": 438080
+    "gzipSize": 78222,
+    "parsedSize": 242714,
+    "statSize": 437993
+  },
+  "metadata": {
+    "date": "2021-09-06T13:59:31.717Z",
+    "gitCommitId": "9cedb1b365e9bd1fd8738757bcd426bb5b94c69c",
+    "project": "portfolio"
   },
   "pages": [
     {
       "label": "/",
       "chunks": [
-        "static/chunks/webpack-be40517596521616bd93.js",
+        "static/chunks/webpack-9b3b3a44b497e79454b1.js",
         "static/chunks/framework-09a88f8e6a8ced89af74.js",
         "static/chunks/main-0aacef26032501bbb2cf.js",
         "static/chunks/commons-d017868ac120d060cc23.js",
-        "static/chunks/226-2e004a7d2eb53c55b823.js",
+        "static/chunks/701-a582e73532044942a6bf.js",
         "static/chunks/784-e98383a8485b70671c86.js",
-        "static/chunks/88-a16797d52f979f53d0d7.js",
+        "static/chunks/88-b20176f58ba1d847cc2c.js",
         "static/chunks/82-b27154be6e6e25b95370.js",
         "static/css/db9675ef1422f799d815.css",
-        "static/chunks/pages/index-0a6f3dd373c9c28481eb.js"
+        "static/chunks/pages/index-77e01b43ca15ee7d3f89.js"
       ],
-      "gzipSize": 29602,
-      "parsedSize": 94011,
-      "statSize": 204181,
-      "totalGzipSize": 107877,
-      "totalParsedSize": 336812,
-      "totalStatSize": 642261
+      "gzipSize": 29354,
+      "parsedSize": 93036,
+      "statSize": 202556,
+      "totalGzipSize": 107576,
+      "totalParsedSize": 335750,
+      "totalStatSize": 640549
     },
     {
       "label": "/_error",
       "chunks": [
-        "static/chunks/webpack-be40517596521616bd93.js",
+        "static/chunks/webpack-9b3b3a44b497e79454b1.js",
         "static/chunks/framework-09a88f8e6a8ced89af74.js",
         "static/chunks/main-0aacef26032501bbb2cf.js",
         "static/chunks/pages/_error-309d9e2b31c03cb6149b.js"
@@ -7288,27 +7062,27 @@
       "gzipSize": 243,
       "parsedSize": 323,
       "statSize": 323,
-      "totalGzipSize": 78518,
-      "totalParsedSize": 243124,
-      "totalStatSize": 438403
+      "totalGzipSize": 78465,
+      "totalParsedSize": 243037,
+      "totalStatSize": 438316
     },
     {
       "label": "/app/[app]",
       "chunks": [
-        "static/chunks/webpack-be40517596521616bd93.js",
+        "static/chunks/webpack-9b3b3a44b497e79454b1.js",
         "static/chunks/framework-09a88f8e6a8ced89af74.js",
         "static/chunks/main-0aacef26032501bbb2cf.js",
-        "static/chunks/226-2e004a7d2eb53c55b823.js",
-        "static/chunks/88-a16797d52f979f53d0d7.js",
+        "static/chunks/701-a582e73532044942a6bf.js",
+        "static/chunks/88-b20176f58ba1d847cc2c.js",
         "static/css/7b6a4e27246d47f3ecce.css",
-        "static/chunks/pages/app/[app]-db2d99ef4608fdc87e16.js"
+        "static/chunks/pages/app/[app]-af9115e3ddd797cd3d66.js"
       ],
-      "gzipSize": 13730,
-      "parsedSize": 42853,
-      "statSize": 95945,
-      "totalGzipSize": 92005,
-      "totalParsedSize": 285654,
-      "totalStatSize": 534025
+      "gzipSize": 13482,
+      "parsedSize": 41878,
+      "statSize": 94320,
+      "totalGzipSize": 91704,
+      "totalParsedSize": 284592,
+      "totalStatSize": 532313
     }
   ]
 }

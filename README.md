@@ -42,7 +42,8 @@ let nextConfig = {
 };
 
 if (shouldAnalyzeBundles) {
-  const withNextBundleAnalyzer = require('next-bundle-analyzer')(/* options come there */);
+  const withNextBundleAnalyzer =
+    require('next-bundle-analyzer')(/* options come there */);
   nextConfig = withNextBundleAnalyzer(nextConfig);
 }
 
@@ -54,11 +55,11 @@ required conditionally to prevent breaking Next.js in production.
 
 ## Options
 
-| Option         | Values                                    | Default                   | Description                                                                           |
-| -------------- | ----------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------- |
-| clientOnly     | `true` `false`                            | `true`                    | When `true`, generate only a report for client side build.                            |
-| enabled        | `true` `false`                            | `true`                    | Allows to enable/disable the plugin.                                                  |
-| format         | `'html'` `'json'`<br />`['html', 'json']` | `'html'`                  | The format of the report(s) to generate. It can be a single format or a list.         |
-| openHtmlReport | `true` `false`                            | `true`                    | When `true`, report opens automatically once generated.                               |
-| reportDir      | `string`                                  | `'analyze'`               | Name of the directory that will contain the reports. Relative to Webpack output path. |
-| reportFilename | `string`                                  | `'client'` and `'server'` | Name of the report without the extension.                                             |
+| Option         | Values                                               | Default                   | Description                                                                           |
+| -------------- | ---------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------- |
+| clientOnly     | `true` `false`                                       | `true`                    | When `true`, generate only a report for client side build.                            |
+| enabled        | `true` `false`                                       | `true`                    | Allows to enable/disable the plugin.                                                  |
+| format         | `'html'` `'json'` <code>['html',&nbsp;'json']</code> | `'html'`                  | The format of the report(s) to generate. It can be a single format or a list.         |
+| openHtmlReport | `true` `false`                                       | `true`                    | When `true`, report opens automatically once generated.                               |
+| reportDir      | `string`                                             | `'analyze'`               | Name of the directory that will contain the reports. Relative to Webpack output path. |
+| reportFilename | `string`                                             | `'client'` and `'server'` | Name of the report without the extension.                                             |
