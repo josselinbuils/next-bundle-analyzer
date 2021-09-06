@@ -1,0 +1,65 @@
+{
+  "name": "next-bundle-analyzer",
+  "version": "0.1.0",
+  "description": "NextJS version of famous Webpack Bundle Analyzer.",
+  "repository": "https://github.com/josselinbuils/next-bundle-analyzer.git",
+  "author": "Josselin BUILS",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && yarn build:plugin && yarn build:client",
+    "build:client": "NODE_ENV=production webpack",
+    "build:plugin": "rollup -c",
+    "dev": "yarn dev:plugin & yarn dev:client",
+    "dev:plugin": "yarn build:plugin -w",
+    "dev:client": "NODE_ENV=development webpack serve",
+    "lint": "eslint .",
+    "pre-commit": "exec-staged",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "open": "8.2.1",
+    "webpack-bundle-analyzer": "4.4.2"
+  },
+  "peerDependencies": {
+    "next": "10 | ^11"
+  },
+  "devDependencies": {
+    "@carrotsearch/foamtree": "3.5.0",
+    "@josselinbuils/eslint-config-typescript": "0.3.0",
+    "@josselinbuils/exec-staged": "1.0.2",
+    "@prefresh/webpack": "3.3.2",
+    "@rollup/plugin-commonjs": "20.0.0",
+    "@rollup/plugin-typescript": "8.2.5",
+    "@types/node": "16.7.10",
+    "@types/webpack": "5.28.0",
+    "@typescript-eslint/eslint-plugin": "4.30.0",
+    "@typescript-eslint/parser": "4.30.0",
+    "classnames": "2.3.1",
+    "css-loader": "6.2.0",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-preact": "1.1.4",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-typescript": "2.4.0",
+    "eslint-plugin-import": "2.24.2",
+    "html-inline-script-webpack-plugin": "2.0.2",
+    "html-webpack-plugin": "5.3.2",
+    "husky": "7.0.2",
+    "next": "11.1.2",
+    "preact": "10.5.14",
+    "prettier": "2.3.2",
+    "rollup": "2.56.3",
+    "sass": "1.39.0",
+    "sass-loader": "12.1.0",
+    "style-loader": "3.2.1",
+    "ts-loader": "9.2.5",
+    "typescript": "4.3.5",
+    "webpack": "5.52.0",
+    "webpack-cli": "4.8.0",
+    "webpack-dev-server": "4.1.0"
+  }
+}

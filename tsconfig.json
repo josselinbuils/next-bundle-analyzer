@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "rootDir": "src",
+    "strict": true,
+    "target": "ES2019"
+  },
+  "include": ["src"]
+}
