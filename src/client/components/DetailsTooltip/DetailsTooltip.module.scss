@@ -1,0 +1,21 @@
+.detailsTooltip {
+  font: normal 11px Verdana, sans-serif;
+  position: absolute;
+  padding: 0.3rem 0.625rem;
+  border-radius: 0.25rem;
+  background: #fff;
+  border: 0.0625rem solid #aaa;
+  opacity: 0.9;
+  max-width: 40rem;
+
+  p {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .label {
+    margin-bottom: 1rem;
+  }
+}
