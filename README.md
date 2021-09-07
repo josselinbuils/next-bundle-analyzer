@@ -16,6 +16,8 @@ client builds of Next.
 This library generates customized Webpack Bundle Analyzer reports in order to
 make them easier to use for Next users.
 
+![Demo](demo.gif)
+
 ## Installation
 
 We recommend installing `next-bundle-analyzer` as dev dependency:
