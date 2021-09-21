@@ -10,7 +10,9 @@ export type {
 } from './interfaces/BuildStats';
 
 export default function withNextBundleAnalyzer(options: Options) {
-  const { clientOnly, enabled, ...otherOptions } = getInternalOptions(options);
+  const internalOptions = getInternalOptions(options);
+  const { clientOnly, enabled, reportDir } = internalOptions;
+  let { reportFilename } = internalOptions;
 
   return (nextConfig: any = {}) => ({
     ...nextConfig,
@@ -18,13 +20,19 @@ export default function withNextBundleAnalyzer(options: Options) {
       const { isServer } = webpackOptions;
 
       if ((enabled && !isServer) || !clientOnly) {
+        if (!clientOnly) {
+          reportFilename = isServer
+            ? `${reportFilename}-server`
+            : `${reportFilename}-client`;
+        }
+
         webpackConfig.plugins.push(
           new NextBundleAnalyzerPlugin({
-            ...otherOptions,
+            ...internalOptions,
             clientOnly,
             enabled,
-            reportDir: isServer ? '../../analyze' : './analyze',
-            reportFilename: isServer ? 'server' : 'client',
+            reportDir: isServer ? `../../${reportDir}` : `./${reportDir}`,
+            reportFilename,
           })
         );
       }

@@ -6,7 +6,7 @@ export function getInternalOptions({
   format = 'html',
   openHtmlReport = true,
   reportDir = 'analyze',
-  reportFilename = 'report',
+  reportFilename = 'bundles',
 }: Options | undefined = {}): InternalOptions {
   if (!Array.isArray(format)) {
     format = [format];
