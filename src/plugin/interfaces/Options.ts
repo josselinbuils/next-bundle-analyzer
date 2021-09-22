@@ -1,6 +1,8 @@
 export type ReportFormat = 'html' | 'json';
 
-export type ObjectFilter = { [key: string]: boolean | ObjectFilter };
+export type ObjectFilter =
+  | { [key: string]: boolean | ObjectFilter }
+  | { [key: string]: boolean | ObjectFilter }[];
 
 export interface Options {
   clientOnly?: boolean;
