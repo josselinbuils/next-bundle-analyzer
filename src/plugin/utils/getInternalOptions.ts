@@ -4,10 +4,14 @@ export function getInternalOptions({
   clientOnly = true,
   enabled = true,
   format = 'html',
-  openHtmlReport = true,
+  html = {},
+  json = {},
   reportDir = 'analyze',
   reportFilename = 'bundles',
 }: Options | undefined = {}): InternalOptions {
+  const { open = true } = html;
+  const { filter = null } = json;
+
   if (!Array.isArray(format)) {
     format = [format];
   }
@@ -15,7 +19,8 @@ export function getInternalOptions({
     clientOnly,
     enabled,
     format,
-    openHtmlReport,
+    html: { open },
+    json: { filter },
     reportDir,
     reportFilename,
   };

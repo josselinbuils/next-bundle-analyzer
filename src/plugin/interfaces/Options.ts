@@ -1,14 +1,21 @@
 export type ReportFormat = 'html' | 'json';
 
-export interface InternalOptions extends Required<Options> {
-  format: ReportFormat[];
-}
+export type ObjectFilter = { [key: string]: boolean | ObjectFilter };
 
 export interface Options {
   clientOnly?: boolean;
   enabled?: boolean;
   format?: ReportFormat | ReportFormat[];
-  openHtmlReport?: boolean;
+  html?: {
+    open?: boolean;
+  };
+  json?: {
+    filter?: ObjectFilter | null;
+  };
   reportDir?: string;
   reportFilename?: string;
+}
+
+export interface InternalOptions extends DeepRequired<Options> {
+  format: ReportFormat[];
 }
