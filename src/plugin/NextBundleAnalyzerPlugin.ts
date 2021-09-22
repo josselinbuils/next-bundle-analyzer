@@ -11,6 +11,7 @@ import { getPages } from './utils/getPages';
 import { removeGroupIds } from './utils/removeGroupIds';
 import { saveReport } from './utils/saveReport';
 import { getMetadata } from './utils/getMetadata';
+import { filterObject } from './utils/filterObject';
 
 const templatePath = path.join(__dirname, '../client/client.html');
 
@@ -26,12 +27,7 @@ export class NextBundleAnalyzerPlugin {
       const { outputPath } = compiler;
       const buildManifestPath = path.join(outputPath, 'build-manifest.json');
 
-      const {
-        format,
-        openHtmlReport,
-        reportDir,
-        reportFilename,
-      } = this.options;
+      const { format, reportDir, reportFilename } = this.options;
 
       try {
         const useBuildManifest = existsSync(buildManifestPath);
@@ -55,9 +51,9 @@ export class NextBundleAnalyzerPlugin {
           metadata,
           pages,
         };
-        const stringifiedStats = JSON.stringify(buildStats);
 
         if (format.includes('html')) {
+          const { html } = this.options;
           const reportPath = path.join(
             outputPath,
             reportDir,
@@ -66,23 +62,28 @@ export class NextBundleAnalyzerPlugin {
           const template = await fs.readFile(templatePath, 'utf8');
           const title = `${metadata.project ?? 'Bundle'} ${metadata.date}`;
           const content = template
-            .replace(DATA_PLACEHOLDER, stringifiedStats)
+            .replace(DATA_PLACEHOLDER, JSON.stringify(buildStats))
             .replace(TITLE_PLACEHOLDER, title);
 
           await saveReport('html', reportPath, content);
 
-          if (openHtmlReport) {
+          if (html.open) {
             await open(reportPath);
           }
         }
 
         if (format.includes('json')) {
+          const { json } = this.options;
           const reportPath = path.join(
             outputPath,
             reportDir,
             `${reportFilename}.json`
           );
-          await saveReport('json', reportPath, stringifiedStats);
+          await saveReport(
+            'json',
+            reportPath,
+            JSON.stringify(filterObject(buildStats, json.filter))
+          );
         }
       } catch (error: any) {
         console.error(error);

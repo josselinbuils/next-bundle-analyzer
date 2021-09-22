@@ -57,11 +57,26 @@ required conditionally to prevent breaking Next.js in production.
 
 ## Options
 
+### Root options
+
 | Option         | Values                                               | Default                                                                                         | Description                                                                           |
 | -------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | clientOnly     | `true` `false`                                       | `true`                                                                                          | When `true`, generate only a report for client side build.                            |
 | enabled        | `true` `false`                                       | `true`                                                                                          | Allows to enable/disable the plugin.                                                  |
 | format         | `'html'` `'json'` <code>['html',&nbsp;'json']</code> | `'html'`                                                                                        | The format of the report(s) to generate. It can be a single format or a list.         |
-| openHtmlReport | `true` `false`                                       | `true`                                                                                          | When `true`, report opens automatically once generated.                               |
+| html           | See [HTML options](#html-options).                   | `{}`                                                                                            | Options related to the HTML report.                                                   |
+| json           | See [JSON options](#json-options).                   | `{}`                                                                                            | Options related to the JSON report.                                                   |
 | reportDir      | `string`                                             | `'analyze'`                                                                                     | Name of the directory that will contain the reports. Relative to Webpack output path. |
 | reportFilename | `string`                                             | `'bundles'`<br><br>`'-client'` and `'-server'` suffixes will be added if `clientOnly` is false. | Name of the report without the extension.                                             |
+
+### HTML options
+
+| Option | Values         | Default | Description                                             |
+| ------ | -------------- | ------- | ------------------------------------------------------- |
+| open   | `true` `false` | `true`  | When `true`, report opens automatically once generated. |
+
+### JSON options
+
+| Option | Values                                                                                                   | Default | Description                                                         |
+| ------ | -------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------------- |
+| filter | Object with the same structure than the JSON report to filter.<br><br>Use `true` as value to keep a key. | `null`  | Filter to apply to the JSON report in order to keep only some keys. |
