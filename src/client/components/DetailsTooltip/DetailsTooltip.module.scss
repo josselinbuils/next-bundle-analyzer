@@ -1,5 +1,8 @@
+@import '../../constants';
+
 .detailsTooltip {
-  font: normal 11px Verdana, sans-serif;
+  font-family: $fontFamily;
+  font-size: $fontSize;
   position: absolute;
   padding: 0.3rem 0.625rem;
   border-radius: 0.25rem;

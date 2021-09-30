@@ -1,18 +1,12 @@
 import { ClientState } from '../interfaces/ClientState';
-import {
-  BACK_ACTION,
-  ClientAction,
-  SET_ACTIVE_GROUP_ACTION,
-  SET_DATA_ACTION,
-  SET_OVERFLEW_GROUP_ACTION,
-} from '../interfaces/ClientAction';
+import { ClientAction } from '../interfaces/ClientAction';
 
 export function clientReducer(
   state: ClientState,
   action: ClientAction
 ): ClientState {
   switch (action.type) {
-    case BACK_ACTION: {
+    case 'BackAction': {
       const current = state.data.past.pop();
 
       if (!current) {
@@ -29,19 +23,10 @@ export function clientReducer(
       };
     }
 
-    case SET_ACTIVE_GROUP_ACTION:
-      return {
-        ...state,
-        activeGroup: action.payload,
-      };
+    case 'SetActiveGroupAction':
+      return { ...state, activeGroup: action.payload };
 
-    case SET_OVERFLEW_GROUP_ACTION:
-      return {
-        ...state,
-        overflewGroup: action.payload,
-      };
-
-    case SET_DATA_ACTION:
+    case 'SetDataAction':
       return {
         ...state,
         data: {
@@ -49,6 +34,15 @@ export function clientReducer(
           current: action.payload,
         },
       };
+
+    case 'SetOverflewGroupAction':
+      return { ...state, overflewGroup: action.payload };
+
+    case 'SetSearchQueryAction':
+      return { ...state, searchQuery: action.payload };
+
+    case 'SetSidebarPinnedAction':
+      return { ...state, sidebarPinned: action.payload };
 
     default:
       return state;

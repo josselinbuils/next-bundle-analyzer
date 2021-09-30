@@ -6,9 +6,13 @@ export interface ClientData {
 
 export interface ClientState {
   activeGroup: ClientGroup | undefined;
-  overflewGroup: ClientGroup | undefined;
   data: {
     past: ClientData[];
     current: ClientData;
   };
+  hasFoundModules: boolean;
+  isSearching: boolean;
+  overflewGroup: ClientGroup | undefined;
+  searchQuery: string;
+  sidebarPinned: boolean;
 }

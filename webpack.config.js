@@ -1,4 +1,5 @@
 const PreactRefreshPlugin = require('@prefresh/webpack');
+const cssnano = require('cssnano');
 const HtmlInlineScriptPlugin = require('html-inline-script-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
@@ -17,14 +18,26 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: ['postcss-icss-values', cssnano()],
+              },
+            },
+          },
+        ],
         exclude: /node_modules/,
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: 'client.html',
+      filename: isProduction ? 'client.html' : 'index.html',
       inject: 'body',
       template: path.join(__dirname, 'src/client/client.ejs'),
       templateParameters: {

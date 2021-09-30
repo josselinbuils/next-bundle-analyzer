@@ -1,0 +1,29 @@
+@import '../../constants';
+
+.button {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 5px 7px;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+
+  &:focus,
+  &:hover {
+    background: #ffefd7;
+  }
+
+  &.active {
+    background: #ffa500;
+    color: #000;
+  }
+
+  &[disabled] {
+    cursor: default;
+  }
+}
