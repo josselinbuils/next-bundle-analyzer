@@ -11,6 +11,7 @@ export interface ChunkGroup extends Group {
   groups?: ChunkGroup[];
   gzipSize: number;
   inaccurateSizes?: true;
+  isAsset?: boolean;
   label: string;
   path?: string;
   statSize: number;

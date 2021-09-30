@@ -1,0 +1,24 @@
+@import '../../constants';
+
+.container {
+  white-space: nowrap;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+}
+
+.input {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  display: block;
+  flex: 1;
+  padding: 5px;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.row {
+  display: flex;
+}

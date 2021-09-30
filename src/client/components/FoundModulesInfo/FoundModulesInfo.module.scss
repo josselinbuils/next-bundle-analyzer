@@ -1,0 +1,11 @@
+.foundModulesInfo {
+  display: flex;
+  font: var(--main-font);
+  margin: 8px 0 0;
+}
+
+.foundModulesInfoItem {
+  & + & {
+    margin-left: 15px;
+  }
+}

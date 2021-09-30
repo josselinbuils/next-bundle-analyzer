@@ -1,8 +1,8 @@
 import { BuildStats, ChunkGroup } from '../../interfaces/BuildStats';
+import { MAIN_SIZE_PROPERTY } from '../constants';
 import { ClientGroup } from '../interfaces/ClientGroup';
 import { ClientData } from '../interfaces/ClientState';
 
-const SORT_PROPERTY = 'parsedSize';
 let id: number;
 
 export function computeTreeData(buildStats: BuildStats): ClientData {
@@ -75,15 +75,11 @@ function formatGroups(groups: ChunkGroup[]): ClientGroup[] {
   return groups.map((group) => {
     id += 1;
 
-    const clientGroup: ClientGroup = {
+    return {
       ...group,
+      groups: group.groups ? formatGroups(group.groups) : undefined,
       id: id.toString(),
-      weight: group[SORT_PROPERTY],
+      weight: group[MAIN_SIZE_PROPERTY],
     };
-
-    if (clientGroup.groups) {
-      clientGroup.groups = formatGroups(clientGroup.groups);
-    }
-    return clientGroup;
   });
 }

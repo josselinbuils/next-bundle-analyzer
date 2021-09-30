@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'preact';
 import { useEffect, useRef } from 'preact/compat';
+import { Ref } from 'preact/hooks';
 import {
   EventHandler,
   GroupColorDecoratorFunction,
@@ -15,6 +16,7 @@ interface Props {
   onGroupClick?: EventHandler;
   onGroupHover?: EventHandler;
   onGroupLeave?: EventHandler;
+  treemapRef: Ref<any>;
 }
 
 export const Treemap: FunctionComponent<Props> = ({
@@ -25,16 +27,16 @@ export const Treemap: FunctionComponent<Props> = ({
   onGroupClick,
   onGroupHover,
   onGroupLeave,
+  treemapRef,
 }) => {
   const elementRef = useRef<HTMLDivElement>(null);
-  const treemapRef = useRef<any>();
   const zoomOutDisabledRef = useRef(false);
 
   useEffect(() => {
     const resizeListener = () => treemapRef.current?.resize();
     window.addEventListener('resize', resizeListener);
     return () => window.removeEventListener('resize', resizeListener);
-  }, []);
+  }, [treemapRef]);
 
   useEffect(() => {
     if (elementRef.current) {
@@ -98,6 +100,7 @@ export const Treemap: FunctionComponent<Props> = ({
     onGroupDoubleClick,
     onGroupHover,
     onGroupLeave,
+    treemapRef,
   ]);
 
   return <div className={className} ref={elementRef} />;
