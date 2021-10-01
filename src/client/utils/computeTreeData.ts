@@ -20,8 +20,10 @@ export function computeTreeData(buildStats: BuildStats): ClientData {
     statSize: commonChunks.statSize,
   };
 
-  const otherGroups = chunks.filter(({ label }) =>
-    pages.every((page) => !page.chunks.includes(label))
+  const otherGroups = chunks.filter(
+    ({ label }) =>
+      !commonChunks.chunks.includes(label) &&
+      pages.every((page) => !page.chunks.includes(label))
   );
   const otherGroup: ChunkGroup = {
     label: 'others',
