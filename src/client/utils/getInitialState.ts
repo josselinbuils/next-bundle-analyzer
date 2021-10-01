@@ -1,4 +1,5 @@
 import { ClientData, ClientState } from '../interfaces/ClientState';
+import { filterPageGroups } from './filterPageGroups';
 
 export function getInitialState(data: ClientData): ClientState {
   return {
@@ -11,6 +12,7 @@ export function getInitialState(data: ClientData): ClientState {
     isSearching: false,
     overflewGroup: undefined,
     searchQuery: '',
+    selectedPageGroups: filterPageGroups(data.groups),
     sidebarPinned: false,
   };
 }

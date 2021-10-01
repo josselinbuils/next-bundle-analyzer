@@ -28,6 +28,11 @@ export type SetSearchQueryAction = ActionWithPayload<
   string
 >;
 
+export type SetSelectedPageGroupsAction = ActionWithPayload<
+  'SetSelectedPageGroupsAction',
+  ClientGroup[]
+>;
+
 export type SetSidebarPinnedAction = ActionWithPayload<
   'SetSidebarPinnedAction',
   boolean
@@ -39,4 +44,5 @@ export type ClientAction =
   | SetDataAction
   | SetOverflewGroupAction
   | SetSearchQueryAction
+  | SetSelectedPageGroupsAction
   | SetSidebarPinnedAction;

@@ -3,22 +3,24 @@ import { useCallback, useMemo, useReducer, useRef } from 'preact/compat';
 import styles from './Client.module.scss';
 import { ArrowIcon } from './components/ArrowIcon';
 import { Button } from './components/Button/Button';
+import { DetailsTooltip } from './components/DetailsTooltip/DetailsTooltip';
+import { FoundModulesInfo } from './components/FoundModulesInfo/FoundModulesInfo';
+import { ModuleList } from './components/ModuleList/ModuleList';
+import { PageFilter } from './components/PageFilter/PageFilter';
 import { Search } from './components/Search/Search';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { Treemap } from './components/Treemap/Treemap';
+import { ClientAction } from './interfaces/ClientAction';
+import { ClientGroup } from './interfaces/ClientGroup';
+import { ClientData, ClientState } from './interfaces/ClientState';
 import {
   EventHandler,
   GroupColorDecoratorFunction,
 } from '../interfaces/Foamtree';
 import { clientReducer } from './utils/clientReducer';
-import { ClientGroup } from './interfaces/ClientGroup';
-import { DetailsTooltip } from './components/DetailsTooltip/DetailsTooltip';
-import { ClientAction } from './interfaces/ClientAction';
-import { ClientData, ClientState } from './interfaces/ClientState';
+import { filterPageGroups } from './utils/filterPageGroups';
+import { ChunkModules, findModulesByChunk } from './utils/findModulesByChunk';
 import { getInitialState } from './utils/getInitialState';
-import { findModulesByChunk } from './utils/findModulesByChunk';
-import { FoundModulesInfo } from './components/FoundModulesInfo/FoundModulesInfo';
-import { ModuleList } from './components/ModuleList/ModuleList';
 import { getQueryRegex } from './utils/getQueryRegex';
 
 interface Props {
@@ -31,22 +33,32 @@ export const Client: FunctionComponent<Props> = ({ data: baseData }) => {
     baseData,
     getInitialState
   );
-  const { activeGroup, data, overflewGroup, searchQuery, sidebarPinned } =
-    state;
+  const {
+    activeGroup,
+    data,
+    overflewGroup,
+    searchQuery,
+    selectedPageGroups,
+    sidebarPinned,
+  } = state;
   const colorMapRef = useRef(new Map<string, any>());
   const treemapRef = useRef<any>();
+  const currentData = useMemo(
+    () => filterCurrentData(data.current, selectedPageGroups),
+    [data, selectedPageGroups]
+  );
   const queryRegex = useMemo(() => getQueryRegex(searchQuery), [searchQuery]);
   const foundModulesByChunk = useMemo(
-    () => findModulesByChunk(data.current.groups, searchQuery),
-    [data, searchQuery]
+    () => findModulesByChunk(currentData.groups, searchQuery),
+    [currentData, searchQuery]
   );
   const foundModules = useMemo(
-    () =>
-      foundModulesByChunk.reduce(
-        (arr, chunk) => [...arr, ...chunk.moduleGroups],
-        [] as ClientGroup[]
-      ),
+    () => getFoundModules(foundModulesByChunk),
     [foundModulesByChunk]
+  );
+  const pageGroups = useMemo(
+    () => filterPageGroups(baseData.groups),
+    [baseData.groups]
   );
   const isSearching = !!searchQuery;
 
@@ -157,6 +169,16 @@ export const Client: FunctionComponent<Props> = ({ data: baseData }) => {
             )}
           </div>
         )}
+        <PageFilter
+          pages={pageGroups}
+          selectedPages={selectedPageGroups}
+          onChange={(selectedPages) =>
+            dispatch({
+              type: 'SetSelectedPageGroupsAction',
+              payload: selectedPages,
+            })
+          }
+        />
       </Sidebar>
       <div className={styles.mapContainer}>
         {data.past.length > 0 && (
@@ -170,7 +192,7 @@ export const Client: FunctionComponent<Props> = ({ data: baseData }) => {
         )}
         <Treemap
           className={styles.map}
-          data={data.current}
+          data={currentData}
           groupColorDecorator={groupColorDecorator}
           onGroupClick={onGroupClick as unknown as EventHandler}
           onGroupHover={onGroupHover}
@@ -182,3 +204,22 @@ export const Client: FunctionComponent<Props> = ({ data: baseData }) => {
     </div>
   );
 };
+
+function filterCurrentData(
+  data: ClientData,
+  selectedPageGroups: ClientGroup[]
+): ClientData {
+  return {
+    groups: data.groups.filter(
+      (group) =>
+        !group.label.startsWith('/') || selectedPageGroups.includes(group)
+    ),
+  };
+}
+
+function getFoundModules(foundModulesByChunk: ChunkModules[]): ClientGroup[] {
+  return foundModulesByChunk.reduce(
+    (groups, chunk) => [...groups, ...chunk.moduleGroups],
+    [] as ClientGroup[]
+  );
+}

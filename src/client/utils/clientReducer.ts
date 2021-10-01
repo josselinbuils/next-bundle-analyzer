@@ -41,6 +41,9 @@ export function clientReducer(
     case 'SetSearchQueryAction':
       return { ...state, searchQuery: action.payload };
 
+    case 'SetSelectedPageGroupsAction':
+      return { ...state, selectedPageGroups: action.payload };
+
     case 'SetSidebarPinnedAction':
       return { ...state, sidebarPinned: action.payload };
 
