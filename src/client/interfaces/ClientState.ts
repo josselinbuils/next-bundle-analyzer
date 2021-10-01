@@ -14,5 +14,6 @@ export interface ClientState {
   isSearching: boolean;
   overflewGroup: ClientGroup | undefined;
   searchQuery: string;
+  selectedPageGroups: ClientGroup[];
   sidebarPinned: boolean;
 }

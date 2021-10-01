@@ -1,0 +1,21 @@
+@import '../../constants';
+
+.container {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  white-space: nowrap;
+}
+
+.page {
+  display: block;
+
+  & + & {
+    margin-top: 1px;
+  }
+}
+
+.label {
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}

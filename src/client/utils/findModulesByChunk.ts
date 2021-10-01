@@ -2,14 +2,19 @@ import { MAIN_SIZE_PROPERTY } from '../constants';
 import { ClientGroup } from '../interfaces/ClientGroup';
 import { getQueryRegex } from './getQueryRegex';
 
+interface ChunkGroupWithParents {
+  chunkGroup: ClientGroup;
+  parentGroups: ClientGroup[];
+}
+
+export interface ChunkModules extends ChunkGroupWithParents {
+  moduleGroups: ClientGroup[];
+}
+
 export function findModulesByChunk(
   groups: ClientGroup[],
   query: string
-): {
-  chunkGroup: ClientGroup;
-  moduleGroups: ClientGroup[];
-  parentGroups: ClientGroup[];
-}[] {
+): ChunkModules[] {
   if (!query || query.length < 3) {
     return [];
   }
@@ -73,10 +78,7 @@ export function findModulesByChunk(
 function getChunkGroups(
   groups: ClientGroup[] = [],
   parentGroups: ClientGroup[] = []
-): {
-  chunkGroup: ClientGroup;
-  parentGroups: ClientGroup[];
-}[] {
+): ChunkGroupWithParents[] {
   return groups
     .map((group) => {
       if (!group.isAsset) {
