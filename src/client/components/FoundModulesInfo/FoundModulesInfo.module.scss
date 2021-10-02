@@ -1,7 +1,9 @@
 .foundModulesInfo {
   display: flex;
-  font: var(--main-font);
-  margin: 8px 0 0;
+
+  &:not(.hidden) {
+    margin: 8px 0 0;
+  }
 }
 
 .foundModulesInfoItem {

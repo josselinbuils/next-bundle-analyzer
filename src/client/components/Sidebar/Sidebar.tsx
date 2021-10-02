@@ -8,7 +8,7 @@ import { PinIcon } from './PinIcon';
 const toggleTime = parseInt(styles.toggleTime, 10);
 
 interface Props {
-  className: string;
+  className?: string;
   pinned?: boolean;
   onPinStateChange(pinned: boolean): unknown;
   onResize(): unknown;
@@ -82,7 +82,7 @@ export const Sidebar: FunctionComponent<Props> = ({
       startPageX: event.pageX,
       initialWidth: width,
     };
-    document.body.classList.add('resizing', 'col');
+    document.body.classList.add('resizing');
     document.addEventListener('mousemove', handleResize, true);
     document.addEventListener('mouseup', handleResizeEnd, true);
   }
@@ -123,12 +123,14 @@ export const Sidebar: FunctionComponent<Props> = ({
 
   return (
     <div
-      className={cn(styles.container, className, {
+      className={cn(styles.sidebar, className, {
         [styles.hidden]: !visible,
         [styles.pinned]: pinned,
       })}
       onClick={() => setAllowHide(false)}
+      onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onMouseMove={() => setAllowHide(true)}
       ref={containerRef}
       style={width ? { width } : undefined}
     >
@@ -146,15 +148,9 @@ export const Sidebar: FunctionComponent<Props> = ({
           {pinned && (
             <div className={styles.resizer} onMouseDown={handleResizeStart} />
           )}
+          {children}
         </>
       )}
-      <div
-        className={styles.content}
-        onMouseEnter={handleMouseEnter}
-        onMouseMove={() => setAllowHide(true)}
-      >
-        {visible ? children : null}
-      </div>
     </div>
   );
 };

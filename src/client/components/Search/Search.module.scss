@@ -1,11 +1,5 @@
 @import '../../constants';
 
-.container {
-  white-space: nowrap;
-  font-family: $fontFamily;
-  font-size: $fontSize;
-}
-
 .input {
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -21,4 +15,8 @@
 
 .row {
   display: flex;
+}
+
+.search {
+  white-space: nowrap;
 }

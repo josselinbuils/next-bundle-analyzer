@@ -1,27 +1,27 @@
+import cn from 'classnames';
 import filesize from 'filesize';
 import { FunctionComponent, JSX } from 'preact';
 import { useMemo } from 'preact/compat';
-import { MAIN_SIZE_PROPERTY } from '../../constants';
+import { MAIN_SIZE_PROPERTY, MIN_SEARCH_CHARACTERS } from '../../constants';
 import styles from './FoundModulesInfo.module.scss';
 import { ClientGroup } from '../../interfaces/ClientGroup';
 
 interface Props {
   foundModules: ClientGroup[];
-  isSearching: boolean;
+  searchQuery: string;
 }
 
 export const FoundModulesInfo: FunctionComponent<Props> = ({
   foundModules,
-  isSearching,
+  searchQuery,
 }) => {
   const foundModuleSize = useMemo(
     () => computeFoundModuleSize(foundModules),
     [foundModules]
   );
-  // `&nbsp;` to reserve space
-  let content: JSX.Element | string = '\u00A0';
+  let content: JSX.Element | string = '';
 
-  if (isSearching) {
+  if (searchQuery) {
     if (foundModules.length > 0) {
       content = (
         <>
@@ -33,12 +33,18 @@ export const FoundModulesInfo: FunctionComponent<Props> = ({
           </div>
         </>
       );
+    } else if (searchQuery.length < MIN_SEARCH_CHARACTERS) {
+      content = `Minimum ${MIN_SEARCH_CHARACTERS} characters.`;
     } else {
       content = 'Nothing found';
     }
   }
 
-  return <div className={styles.foundModulesInfo}>{content}</div>;
+  return (
+    <div className={cn(styles.foundModulesInfo, { [styles.hidden]: !content })}>
+      {content}
+    </div>
+  );
 };
 
 function computeFoundModuleSize(foundModules: ClientGroup[]): string {
