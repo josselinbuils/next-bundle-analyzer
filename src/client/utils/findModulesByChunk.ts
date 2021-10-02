@@ -1,4 +1,4 @@
-import { MAIN_SIZE_PROPERTY } from '../constants';
+import { MAIN_SIZE_PROPERTY, MIN_SEARCH_CHARACTERS } from '../constants';
 import { ClientGroup } from '../interfaces/ClientGroup';
 import { getQueryRegex } from './getQueryRegex';
 
@@ -15,7 +15,7 @@ export function findModulesByChunk(
   groups: ClientGroup[],
   query: string
 ): ChunkModules[] {
-  if (!query || query.length < 3) {
+  if (!query || query.length < MIN_SEARCH_CHARACTERS) {
     return [];
   }
 

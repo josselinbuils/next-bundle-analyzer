@@ -60,7 +60,6 @@ export const Client: FunctionComponent<Props> = ({ data: baseData }) => {
     () => filterPageGroups(baseData.groups),
     [baseData.groups]
   );
-  const isSearching = !!searchQuery;
 
   const groupColorDecorator = useCallback<GroupColorDecoratorFunction>(
     (_, { group }, variables) => {
@@ -143,9 +142,9 @@ export const Client: FunctionComponent<Props> = ({ data: baseData }) => {
         />
         <FoundModulesInfo
           foundModules={foundModules}
-          isSearching={isSearching}
+          searchQuery={searchQuery}
         />
-        {isSearching && foundModules.length > 0 && (
+        {!!searchQuery && foundModules.length > 0 && (
           <div className={styles.foundModulesContainer}>
             {foundModulesByChunk.map(
               ({ chunkGroup, moduleGroups, parentGroups }) => (
@@ -170,6 +169,7 @@ export const Client: FunctionComponent<Props> = ({ data: baseData }) => {
           </div>
         )}
         <PageFilter
+          className={styles.pageFilter}
           pages={pageGroups}
           selectedPages={selectedPageGroups}
           onChange={(selectedPages) =>

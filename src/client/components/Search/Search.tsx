@@ -62,7 +62,7 @@ export const Search: FunctionComponent<Props> = ({
   }, [autofocus]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.search}>
       <div className={styles.label}>{label}:</div>
       <div className={styles.row}>
         <input

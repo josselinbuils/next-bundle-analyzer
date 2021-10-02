@@ -21,6 +21,7 @@
 .foundModulesContainer {
   margin-top: 15px;
   overflow: auto;
+  flex: 1 1 auto;
 }
 
 .foundModulesChunk {
@@ -31,9 +32,9 @@
 
 .foundModulesChunkName {
   cursor: pointer;
-  font: var(--main-font);
   font-weight: bold;
   margin-bottom: 7px;
+  white-space: nowrap;
 }
 
 .foundModulesList {
@@ -49,7 +50,15 @@
   position: relative;
 }
 
+.pageFilter {
+  margin-top: 15px;
+  overflow: auto;
+  flex: 1 1 auto;
+  min-height: 80px;
+}
+
 .sidebar {
-  font-family: $fontFamily;
-  font-size: $fontSize;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,8 +1,6 @@
-import cn from 'classnames';
 import { FunctionComponent } from 'preact';
 import { ClientGroup } from '../../interfaces/ClientGroup';
 import { ModuleItem } from './ModuleItem';
-import styles from './ModuleList.module.scss';
 
 interface Props {
   className: string;
@@ -17,7 +15,7 @@ export const ModuleList: FunctionComponent<Props> = ({
   moduleGroups,
   onModuleClick,
 }) => (
-  <div className={cn(styles.container, className)}>
+  <div className={className}>
     {moduleGroups.map((moduleGroup) => (
       <ModuleItem
         key={module.id}

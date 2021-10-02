@@ -1,6 +1,14 @@
+@import 'constants';
+
 html,
 body {
   height: 100%;
   margin: 0;
   overflow: hidden;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+}
+
+body.resizing * {
+  user-select: none;
 }

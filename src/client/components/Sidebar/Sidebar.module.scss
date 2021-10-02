@@ -1,6 +1,25 @@
 @value toggleTime: 200ms;
 
-.container {
+.pinButton {
+  cursor: pointer;
+  height: 26px;
+  line-height: 0;
+  position: absolute;
+  top: 10px;
+  width: 27px;
+  right: 15px;
+}
+
+.resizer {
+  bottom: 0;
+  cursor: col-resize;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 7px;
+}
+
+.sidebar {
   background: #fff;
   border: none;
   border-right: 1px solid #aaa;
@@ -9,6 +28,7 @@
   opacity: 0.95;
   z-index: 2;
   left: 0;
+  padding: 25px 15px 15px;
 
   &:not(.hidden) {
     min-width: 200px;
@@ -28,37 +48,4 @@
   &.pinned {
     position: relative;
   }
-}
-
-.content {
-  box-sizing: border-box;
-  height: 100%;
-  overflow: hidden;
-  padding: 25px 20px 20px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.pinButton,
-.toggleButton {
-}
-
-.pinButton {
-  cursor: pointer;
-  height: 26px;
-  line-height: 0;
-  position: absolute;
-  top: 10px;
-  width: 27px;
-  right: 15px;
-}
-
-.resizer {
-  bottom: 0;
-  cursor: col-resize;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 7px;
 }

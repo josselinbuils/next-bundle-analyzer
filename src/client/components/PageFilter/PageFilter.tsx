@@ -32,7 +32,7 @@ export const PageFilter: FunctionComponent<Props> = ({
   }
 
   return (
-    <div className={cn(styles.container, className)}>
+    <div className={cn(styles.pageFilter, className)}>
       <div className={styles.label}>Show pages:</div>
       <div>
         <Checkbox
