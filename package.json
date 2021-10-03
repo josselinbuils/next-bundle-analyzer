@@ -1,7 +1,7 @@
 {
   "name": "next-bundle-analyzer",
   "version": "0.4.2",
-  "description": "NextJS version of famous Webpack Bundle Analyzer.",
+  "description": "NextJS version of Webpack Bundle Analyzer.",
   "repository": "https://github.com/josselinbuils/next-bundle-analyzer.git",
   "author": "Josselin BUILS",
   "license": "MIT",
