@@ -1,4 +1,8 @@
-import { BuildStats, ChunkGroup } from '../../interfaces/BuildStats';
+import {
+  BuildStats,
+  ChunkGroup,
+  CommonChunk,
+} from '../../interfaces/BuildStats';
 import { MAIN_SIZE_PROPERTY } from '../constants';
 import { ClientGroup } from '../interfaces/ClientGroup';
 import { ClientData } from '../interfaces/ClientState';
@@ -12,19 +16,65 @@ export function computeTreeData(buildStats: BuildStats): ClientData {
     return { groups: formatGroups(chunks) };
   }
 
-  const commonGroup: ChunkGroup = {
-    label: 'shared',
-    groups: chunks.filter(({ label }) => commonChunks.chunks.includes(label)),
-    gzipSize: commonChunks.gzipSize,
-    parsedSize: commonChunks.parsedSize,
-    statSize: commonChunks.statSize,
+  const sharedByAllPagesGroup: ChunkGroup = {
+    groups: chunks.filter(({ label }) =>
+      commonChunks.some(
+        (commonChunk) =>
+          commonChunk.chunk === label && commonChunk.sharedByPages === 'all'
+      )
+    ),
+    label: 'by all pages',
+    gzipSize: 0,
+    parsedSize: 0,
+    statSize: 0,
   };
+
+  const sharedByMultiplePagesGroup: ChunkGroup = {
+    groups: chunks
+      .map((chunk) => ({
+        chunk,
+        commonChunk: commonChunks.find(
+          (commonChunk) =>
+            commonChunk.chunk === chunk.label &&
+            Array.isArray(commonChunk.sharedByPages)
+        ),
+      }))
+      .filter(({ commonChunk }) => !!commonChunk)
+      .map(({ chunk, commonChunk }) => {
+        addSharedByPagesProperty([chunk], commonChunk as CommonChunk);
+        return chunk;
+      }),
+    label: 'by multiple pages',
+    gzipSize: 0,
+    parsedSize: 0,
+    statSize: 0,
+  };
+
+  const sharedGroup: ChunkGroup = {
+    label: 'shared',
+    gzipSize: 0,
+    parsedSize: 0,
+    statSize: 0,
+  };
+
+  [sharedByAllPagesGroup, sharedByMultiplePagesGroup].forEach((group) => {
+    (group.groups as ChunkGroup[]).forEach((g) => {
+      sharedGroup.gzipSize += g.gzipSize;
+      sharedGroup.parsedSize += g.parsedSize;
+      sharedGroup.statSize += g.statSize;
+
+      group.gzipSize += g.gzipSize;
+      group.parsedSize += g.parsedSize;
+      group.statSize += g.statSize;
+    });
+  });
 
   const otherGroups = chunks.filter(
     ({ label }) =>
-      !commonChunks.chunks.includes(label) &&
+      !commonChunks.some((commonChunk) => commonChunk.chunk === label) &&
       pages.every((page) => !page.chunks.includes(label))
   );
+
   const otherGroup: ChunkGroup = {
     label: 'others',
     groups: otherGroups,
@@ -33,10 +83,10 @@ export function computeTreeData(buildStats: BuildStats): ClientData {
     statSize: 0,
   };
 
-  otherGroups.forEach(({ gzipSize, parsedSize, statSize }) => {
-    otherGroup.gzipSize += gzipSize;
-    otherGroup.parsedSize += parsedSize;
-    otherGroup.statSize += statSize;
+  otherGroups.forEach((group) => {
+    otherGroup.gzipSize += group.gzipSize;
+    otherGroup.parsedSize += group.parsedSize;
+    otherGroup.statSize += group.statSize;
   });
 
   id = 0;
@@ -49,7 +99,7 @@ export function computeTreeData(buildStats: BuildStats): ClientData {
           groups: chunks.filter(
             ({ label }) =>
               page.chunks.includes(label) &&
-              !commonChunks.chunks.includes(label)
+              !commonChunks.some((commonChunk) => commonChunk.chunk === label)
           ),
           gzipSize: page.gzipSize,
           parsedSize: page.parsedSize,
@@ -58,7 +108,23 @@ export function computeTreeData(buildStats: BuildStats): ClientData {
 
         return {
           ...page,
-          groups: [commonGroup, pageGroup],
+          groups: [
+            {
+              ...sharedGroup,
+              groups: [
+                sharedByAllPagesGroup,
+                {
+                  ...sharedByMultiplePagesGroup,
+                  groups: (
+                    sharedByMultiplePagesGroup.groups as ChunkGroup[]
+                  ).filter((group) =>
+                    group.sharedByPages?.includes(page.label)
+                  ),
+                },
+              ].filter((group) => group.groups && group.groups.length > 0),
+            },
+            pageGroup,
+          ],
           gzipSize: page.totalGzipSize,
           parsedSize: page.totalParsedSize,
           statSize: page.totalStatSize,
@@ -67,6 +133,19 @@ export function computeTreeData(buildStats: BuildStats): ClientData {
       otherGroup,
     ]),
   };
+}
+
+function addSharedByPagesProperty(
+  groups: ChunkGroup[],
+  commonChunk: CommonChunk
+): void {
+  groups.forEach((group) => {
+    group.sharedByPages = commonChunk.sharedByPages;
+
+    if (group.groups !== undefined) {
+      addSharedByPagesProperty(group.groups, commonChunk);
+    }
+  });
 }
 
 /**

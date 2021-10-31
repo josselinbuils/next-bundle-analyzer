@@ -20,11 +20,17 @@
     margin-left: 2ch;
   }
 
-  .issuers {
+  .issuers,
+  .sharedByPages {
     margin-top: 1rem;
   }
 
   .label {
     margin-bottom: 1rem;
+  }
+
+  .sharedByPages ul {
+    padding-left: 1.4rem;
+    margin: 0;
   }
 }

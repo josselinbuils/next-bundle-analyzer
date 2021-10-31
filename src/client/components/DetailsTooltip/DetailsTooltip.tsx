@@ -19,6 +19,7 @@ export const DetailsTooltip: FunctionComponent<Props> = ({ group }) => {
     label,
     parsedSize,
     path,
+    sharedByPages,
     statSize,
   } = group;
 
@@ -79,6 +80,20 @@ export const DetailsTooltip: FunctionComponent<Props> = ({ group }) => {
       {!!path && (
         <p>
           Path: <strong>{path}</strong>
+        </p>
+      )}
+      {!!sharedByPages && (
+        <p className={styles.sharedByPages}>
+          Shared by:{' '}
+          {sharedByPages === 'all' ? (
+            'all pages'
+          ) : (
+            <ul>
+              {sharedByPages.map((page) => (
+                <li key={page}>{page}</li>
+              ))}
+            </ul>
+          )}
         </p>
       )}
       {!!issuers && (

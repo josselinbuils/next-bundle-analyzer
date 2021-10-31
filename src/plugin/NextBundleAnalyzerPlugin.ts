@@ -3,7 +3,7 @@ import open from 'open';
 import path from 'path';
 import { Compiler } from 'webpack';
 import { getViewerData } from 'webpack-bundle-analyzer/lib/analyzer';
-import { BuildStats, CommonChunks, Page } from '../interfaces/BuildStats';
+import { BuildStats, CommonChunk, Page } from '../interfaces/BuildStats';
 import { DATA_PLACEHOLDER, PLUGIN_NAME, TITLE_PLACEHOLDER } from './constants';
 import { InternalOptions } from './interfaces/Options';
 import { filterObject } from './utils/filterObject';
@@ -37,12 +37,12 @@ export class NextBundleAnalyzerPlugin {
 
         updateGroups(chunks, statsJson);
 
-        let commonChunks: CommonChunks | undefined;
+        let commonChunks: CommonChunk[] | undefined;
         let pages: Page[] | undefined;
 
         if (useBuildManifest) {
           const buildManifest = require(buildManifestPath);
-          commonChunks = getCommonChunks(buildManifest, chunks);
+          commonChunks = getCommonChunks(buildManifest);
           pages = getPages(buildManifest, chunks, commonChunks);
         }
 

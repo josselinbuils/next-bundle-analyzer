@@ -9082,19 +9082,36 @@
       "groups": []
     }
   ],
-  "commonChunks": {
-    "chunks": [
-      "static/chunks/webpack-9b3b3a44b497e79454b1.js",
-      "static/chunks/framework-09a88f8e6a8ced89af74.js",
-      "static/chunks/main-0aacef26032501bbb2cf.js",
-      "static/chunks/pages/_app-a8e423c6927b8ee16c02.js"
-    ],
-    "gzipSize": 78222,
-    "parsedSize": 242714,
-    "statSize": 437993
-  },
+  "commonChunks": [
+    {
+      "chunk": "static/chunks/webpack-9b3b3a44b497e79454b1.js",
+      "sharedByPages": "all"
+    },
+    {
+      "chunk": "static/chunks/framework-09a88f8e6a8ced89af74.js",
+      "sharedByPages": "all"
+    },
+    {
+      "chunk": "static/chunks/main-0aacef26032501bbb2cf.js",
+      "sharedByPages": "all"
+    },
+    {
+      "chunk": "static/chunks/701-a582e73532044942a6bf.js",
+      "sharedByPages": [
+        "/",
+        "/app/[app]"
+      ]
+    },
+    {
+      "chunk": "static/chunks/88-b20176f58ba1d847cc2c.js",
+      "sharedByPages": [
+        "/",
+        "/app/[app]"
+      ]
+    }
+  ],
   "metadata": {
-    "date": "2021-10-31T11:45:06.895Z",
+    "date": "2021-10-31T21:55:47.532Z",
     "gitCommitId": "3bdacbaa2199e676b68f9a3fa65d5e3f18942808",
     "project": "portfolio"
   },
@@ -9113,12 +9130,12 @@
         "static/css/db9675ef1422f799d815.css",
         "static/chunks/pages/index-77e01b43ca15ee7d3f89.js"
       ],
-      "gzipSize": 29354,
-      "parsedSize": 93036,
-      "statSize": 202552,
-      "totalGzipSize": 107576,
-      "totalParsedSize": 335750,
-      "totalStatSize": 640545
+      "gzipSize": 16246,
+      "parsedSize": 51727,
+      "statSize": 108741,
+      "totalGzipSize": 98155,
+      "totalParsedSize": 307306,
+      "totalStatSize": 561024
     },
     {
       "label": "/_error",
@@ -9131,9 +9148,9 @@
       "gzipSize": 243,
       "parsedSize": 323,
       "statSize": 323,
-      "totalGzipSize": 78465,
-      "totalParsedSize": 243037,
-      "totalStatSize": 438316
+      "totalGzipSize": 69044,
+      "totalParsedSize": 214593,
+      "totalStatSize": 358795
     },
     {
       "label": "/app/[app]",
@@ -9146,12 +9163,12 @@
         "static/css/7b6a4e27246d47f3ecce.css",
         "static/chunks/pages/app/[app]-af9115e3ddd797cd3d66.js"
       ],
-      "gzipSize": 13482,
-      "parsedSize": 41878,
-      "statSize": 94316,
-      "totalGzipSize": 91704,
-      "totalParsedSize": 284592,
-      "totalStatSize": 532309
+      "gzipSize": 374,
+      "parsedSize": 569,
+      "statSize": 505,
+      "totalGzipSize": 82283,
+      "totalParsedSize": 256148,
+      "totalStatSize": 452788
     }
   ]
 }

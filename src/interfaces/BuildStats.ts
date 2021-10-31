@@ -2,7 +2,7 @@ import { Group } from './Foamtree';
 
 export interface BuildStats {
   chunks: ChunkGroup[];
-  commonChunks?: CommonChunks;
+  commonChunks?: CommonChunk[];
   metadata: Metadata;
   pages?: Page[];
 }
@@ -14,16 +14,15 @@ export interface ChunkGroup extends Group {
   isAsset?: boolean;
   issuers?: string[];
   label: string;
+  parsedSize: number;
   path?: string;
   statSize: number;
-  parsedSize: number;
+  sharedByPages?: 'all' | string[];
 }
 
-export interface CommonChunks {
-  chunks: string[];
-  gzipSize: number;
-  parsedSize: number;
-  statSize: number;
+export interface CommonChunk {
+  chunk: string;
+  sharedByPages?: 'all' | string[];
 }
 
 export interface Metadata {

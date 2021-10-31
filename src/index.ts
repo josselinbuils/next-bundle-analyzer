@@ -5,7 +5,7 @@ import { getInternalOptions } from './plugin/utils/getInternalOptions';
 export type {
   BuildStats,
   ChunkGroup,
-  CommonChunks,
+  CommonChunk,
   Page,
 } from './interfaces/BuildStats';
 
