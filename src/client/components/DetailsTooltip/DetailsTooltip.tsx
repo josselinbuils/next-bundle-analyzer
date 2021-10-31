@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { FunctionComponent } from 'preact';
+import { FunctionComponent, VNode } from 'preact';
 import { useEffect, useRef } from 'preact/compat';
 import { ClientGroup } from '../../interfaces/ClientGroup';
 import styles from './DetailsTooltip.module.scss';
@@ -15,7 +15,7 @@ export const DetailsTooltip: FunctionComponent<Props> = ({ group }) => {
   const {
     gzipSize,
     inaccurateSizes,
-    issuer,
+    issuers,
     label,
     parsedSize,
     path,
@@ -81,14 +81,34 @@ export const DetailsTooltip: FunctionComponent<Props> = ({ group }) => {
           Path: <strong>{path}</strong>
         </p>
       )}
-      {!!issuer && (
-        <p>
-          Issuer: <strong>{issuer}</strong>
-        </p>
+      {!!issuers && (
+        <p className={styles.issuers}>Issuers: {formatIssuers(issuers)}</p>
       )}
     </div>
   );
 };
+
+function formatIssuers(issuers: string[]): VNode {
+  return (
+    <>
+      {issuers
+        .slice()
+        .reverse()
+        .map((issuer, index) => (
+          <p className={styles.issuer} key={issuer}>
+            {index === 0 ? (
+              <strong>{issuer}</strong>
+            ) : (
+              <>
+                <span className={styles.arrow}>↳ </span>
+                {issuer}
+              </>
+            )}
+          </p>
+        ))}
+    </>
+  );
+}
 
 function formatSize(size: number): number {
   return Math.round(size / 10) / 100;

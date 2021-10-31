@@ -12,6 +12,18 @@
     word-break: break-all;
   }
 
+  .arrow {
+    margin-left: -2ch;
+  }
+
+  .issuer:not(:first-child) {
+    margin-left: 2ch;
+  }
+
+  .issuers {
+    margin-top: 1rem;
+  }
+
   .label {
     margin-bottom: 1rem;
   }

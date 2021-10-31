@@ -5,18 +5,20 @@ export function updateGroups(
   groups: ChunkGroup[],
   stats: StatsCompilation
 ): void {
+  const modules = stats.chunks?.map((chunk) => chunk.modules)?.flat();
+
   groups.forEach((group) => {
     if ((group as any).id !== undefined) {
       delete (group as any).id;
     }
 
-    const issuer = stats.chunks
-      ?.map(({ modules }) => modules)
-      ?.flat()
-      ?.find((m) => m?.name === group.path)?.issuerName;
+    const issuers = modules
+      ?.find((module) => module?.name === group.path)
+      ?.issuerPath?.map(({ name }) => name)
+      ?.filter(Boolean) as string[] | undefined;
 
-    if (issuer) {
-      group.issuer = issuer;
+    if (issuers && issuers.length > 0) {
+      group.issuers = issuers;
     }
 
     if (group.groups !== undefined) {
