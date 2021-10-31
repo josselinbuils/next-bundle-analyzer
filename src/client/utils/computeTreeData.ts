@@ -16,59 +16,6 @@ export function computeTreeData(buildStats: BuildStats): ClientData {
     return { groups: formatGroups(chunks) };
   }
 
-  const sharedByAllPagesGroup: ChunkGroup = {
-    groups: chunks.filter(({ label }) =>
-      commonChunks.some(
-        (commonChunk) =>
-          commonChunk.chunk === label && commonChunk.sharedByPages === 'all'
-      )
-    ),
-    label: 'by all pages',
-    gzipSize: 0,
-    parsedSize: 0,
-    statSize: 0,
-  };
-
-  const sharedByMultiplePagesGroup: ChunkGroup = {
-    groups: chunks
-      .map((chunk) => ({
-        chunk,
-        commonChunk: commonChunks.find(
-          (commonChunk) =>
-            commonChunk.chunk === chunk.label &&
-            Array.isArray(commonChunk.sharedByPages)
-        ),
-      }))
-      .filter(({ commonChunk }) => !!commonChunk)
-      .map(({ chunk, commonChunk }) => {
-        addSharedByPagesProperty([chunk], commonChunk as CommonChunk);
-        return chunk;
-      }),
-    label: 'by multiple pages',
-    gzipSize: 0,
-    parsedSize: 0,
-    statSize: 0,
-  };
-
-  const sharedGroup: ChunkGroup = {
-    label: 'shared',
-    gzipSize: 0,
-    parsedSize: 0,
-    statSize: 0,
-  };
-
-  [sharedByAllPagesGroup, sharedByMultiplePagesGroup].forEach((group) => {
-    (group.groups as ChunkGroup[]).forEach((g) => {
-      sharedGroup.gzipSize += g.gzipSize;
-      sharedGroup.parsedSize += g.parsedSize;
-      sharedGroup.statSize += g.statSize;
-
-      group.gzipSize += g.gzipSize;
-      group.parsedSize += g.parsedSize;
-      group.statSize += g.statSize;
-    });
-  });
-
   const otherGroups = chunks.filter(
     ({ label }) =>
       !commonChunks.some((commonChunk) => commonChunk.chunk === label) &&
@@ -108,23 +55,7 @@ export function computeTreeData(buildStats: BuildStats): ClientData {
 
         return {
           ...page,
-          groups: [
-            {
-              ...sharedGroup,
-              groups: [
-                sharedByAllPagesGroup,
-                {
-                  ...sharedByMultiplePagesGroup,
-                  groups: (
-                    sharedByMultiplePagesGroup.groups as ChunkGroup[]
-                  ).filter((group) =>
-                    group.sharedByPages?.includes(page.label)
-                  ),
-                },
-              ].filter((group) => group.groups && group.groups.length > 0),
-            },
-            pageGroup,
-          ],
+          groups: [getSharedGroup(chunks, commonChunks, page.label), pageGroup],
           gzipSize: page.totalGzipSize,
           parsedSize: page.totalParsedSize,
           statSize: page.totalStatSize,
@@ -146,6 +77,72 @@ function addSharedByPagesProperty(
       addSharedByPagesProperty(group.groups, commonChunk);
     }
   });
+}
+
+function getSharedGroup(
+  chunks: ChunkGroup[],
+  commonChunks: CommonChunk[],
+  pageLabel: string
+): ChunkGroup {
+  const sharedByAllPagesGroup: ChunkGroup = {
+    groups: chunks.filter(({ label }) =>
+      commonChunks.some(
+        (commonChunk) =>
+          commonChunk.chunk === label && commonChunk.sharedByPages === 'all'
+      )
+    ),
+    label: 'by all pages',
+    gzipSize: 0,
+    parsedSize: 0,
+    statSize: 0,
+  };
+
+  const sharedByMultiplePagesGroup: ChunkGroup = {
+    groups: chunks
+      .map((chunk) => ({
+        chunk,
+        commonChunk: commonChunks.find(
+          (commonChunk) =>
+            commonChunk.chunk === chunk.label &&
+            Array.isArray(commonChunk.sharedByPages)
+        ),
+      }))
+      .filter(
+        ({ commonChunk }) =>
+          !!commonChunk &&
+          (commonChunk.sharedByPages as string[]).includes(pageLabel)
+      )
+      .map(({ chunk, commonChunk }) => {
+        addSharedByPagesProperty([chunk], commonChunk as CommonChunk);
+        return chunk;
+      }),
+    label: 'by multiple pages',
+    gzipSize: 0,
+    parsedSize: 0,
+    statSize: 0,
+  };
+
+  const sharedGroup: ChunkGroup = {
+    label: 'shared',
+    groups: [sharedByAllPagesGroup, sharedByMultiplePagesGroup],
+    gzipSize: 0,
+    parsedSize: 0,
+    statSize: 0,
+  };
+
+  (sharedGroup.groups as ChunkGroup[]).forEach((group) => {
+    (group.groups as ChunkGroup[]).forEach((g) => {
+      sharedGroup.gzipSize += g.gzipSize;
+      sharedGroup.parsedSize += g.parsedSize;
+      sharedGroup.statSize += g.statSize;
+
+      group.gzipSize += g.gzipSize;
+      group.parsedSize += g.parsedSize;
+      group.statSize += g.statSize;
+    });
+  });
+
+  return sharedGroup;
 }
 
 /**
