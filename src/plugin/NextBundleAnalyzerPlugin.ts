@@ -6,12 +6,12 @@ import { getViewerData } from 'webpack-bundle-analyzer/lib/analyzer';
 import { BuildStats, CommonChunks, Page } from '../interfaces/BuildStats';
 import { DATA_PLACEHOLDER, PLUGIN_NAME, TITLE_PLACEHOLDER } from './constants';
 import { InternalOptions } from './interfaces/Options';
-import { getCommonChunks } from './utils/getCommonChunks';
-import { getPages } from './utils/getPages';
-import { removeGroupIds } from './utils/removeGroupIds';
-import { saveReport } from './utils/saveReport';
-import { getMetadata } from './utils/getMetadata';
 import { filterObject } from './utils/filterObject';
+import { getCommonChunks } from './utils/getCommonChunks';
+import { getMetadata } from './utils/getMetadata';
+import { getPages } from './utils/getPages';
+import { saveReport } from './utils/saveReport';
+import { updateGroups } from './utils/updateGroups';
 
 const templatePath = path.join(__dirname, '../client/client.html');
 
@@ -31,10 +31,11 @@ export class NextBundleAnalyzerPlugin {
 
       try {
         const useBuildManifest = existsSync(buildManifestPath);
-        const chunks = getViewerData(stats.toJson(), outputPath);
+        const statsJson = stats.toJson();
+        const chunks = getViewerData(statsJson, outputPath);
         const metadata = getMetadata();
 
-        removeGroupIds(chunks);
+        updateGroups(chunks, statsJson);
 
         let commonChunks: CommonChunks | undefined;
         let pages: Page[] | undefined;

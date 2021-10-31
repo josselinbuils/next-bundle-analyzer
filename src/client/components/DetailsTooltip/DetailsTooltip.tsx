@@ -15,6 +15,7 @@ export const DetailsTooltip: FunctionComponent<Props> = ({ group }) => {
   const {
     gzipSize,
     inaccurateSizes,
+    issuer,
     label,
     parsedSize,
     path,
@@ -64,12 +65,10 @@ export const DetailsTooltip: FunctionComponent<Props> = ({ group }) => {
       <p className={styles.label}>
         <strong>{label}</strong>
       </p>
-      <p>
-        Stat size: <strong>{formatSize(statSize)} ko</strong>
-      </p>
+      <p>Stat size: {formatSize(statSize)} ko</p>
       {parsedSize > 0 && !inaccurateSizes && (
         <p>
-          <strong>Parsed size: {formatSize(parsedSize)} ko</strong>
+          Parsed size: <strong>{formatSize(parsedSize)} ko</strong>
         </p>
       )}
       {gzipSize > 0 && !inaccurateSizes && (
@@ -80,6 +79,11 @@ export const DetailsTooltip: FunctionComponent<Props> = ({ group }) => {
       {!!path && (
         <p>
           Path: <strong>{path}</strong>
+        </p>
+      )}
+      {!!issuer && (
+        <p>
+          Issuer: <strong>{issuer}</strong>
         </p>
       )}
     </div>

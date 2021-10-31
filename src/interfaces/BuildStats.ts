@@ -12,6 +12,7 @@ export interface ChunkGroup extends Group {
   gzipSize: number;
   inaccurateSizes?: true;
   isAsset?: boolean;
+  issuer?: string;
   label: string;
   path?: string;
   statSize: number;

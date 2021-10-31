@@ -17,7 +17,8 @@
               "path": "./node_modules/prettier/standalone.js",
               "statSize": 544419,
               "parsedSize": 542808,
-              "gzipSize": 167975
+              "gzipSize": 167975,
+              "issuer": "./apps/CodeEditor/components/Editor/utils/formatCode.ts"
             }
           ],
           "parsedSize": 542808,
@@ -42,7 +43,8 @@
               "path": "./node_modules/prettier/parser-babel.js",
               "statSize": 371653,
               "parsedSize": 371097,
-              "gzipSize": 95360
+              "gzipSize": 95360,
+              "issuer": "./apps/CodeEditor/components/Editor/utils/formatCode.ts"
             }
           ],
           "parsedSize": 371097,
@@ -67,7 +69,8 @@
               "path": "./node_modules/dicom-parser/dist/dicomParser.min.js",
               "statSize": 162565,
               "parsedSize": 161562,
-              "gzipSize": 45575
+              "gzipSize": 45575,
+              "issuer": "./apps/DICOMViewer/utils/decodeFrames.ts"
             }
           ],
           "parsedSize": 161562,
@@ -97,14 +100,16 @@
                   "path": "./node_modules/prop-types/factoryWithThrowingShims.js",
                   "statSize": 1621,
                   "parsedSize": 651,
-                  "gzipSize": 400
+                  "gzipSize": 400,
+                  "issuer": "./node_modules/prop-types/index.js"
                 },
                 {
                   "label": "index.js",
                   "path": "./node_modules/prop-types/index.js",
                   "statSize": 710,
                   "parsedSize": 36,
-                  "gzipSize": 56
+                  "gzipSize": 56,
+                  "issuer": "./node_modules/@fortawesome/react-fontawesome/index.es.js"
                 },
                 {
                   "label": "lib",
@@ -116,7 +121,8 @@
                       "path": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
                       "statSize": 314,
                       "parsedSize": 82,
-                      "gzipSize": 102
+                      "gzipSize": 102,
+                      "issuer": "./node_modules/prop-types/factoryWithThrowingShims.js"
                     }
                   ],
                   "parsedSize": 82,
@@ -141,7 +147,8 @@
                       "path": "./node_modules/react-dom/cjs/react-dom.production.min.js",
                       "statSize": 120688,
                       "parsedSize": 118696,
-                      "gzipSize": 38201
+                      "gzipSize": 38201,
+                      "issuer": "./node_modules/react-dom/index.js"
                     }
                   ],
                   "parsedSize": 118696,
@@ -152,7 +159,8 @@
                   "path": "./node_modules/react-dom/index.js",
                   "statSize": 1363,
                   "parsedSize": 254,
-                  "gzipSize": 177
+                  "gzipSize": 177,
+                  "issuer": "./node_modules/next/dist/client/index.js"
                 }
               ],
               "parsedSize": 118950,
@@ -173,14 +181,16 @@
                       "path": "./node_modules/react/cjs/react-jsx-runtime.production.min.js",
                       "statSize": 962,
                       "parsedSize": 670,
-                      "gzipSize": 430
+                      "gzipSize": 430,
+                      "issuer": "./node_modules/react/jsx-runtime.js"
                     },
                     {
                       "label": "react.production.min.js",
                       "path": "./node_modules/react/cjs/react.production.min.js",
                       "statSize": 6450,
                       "parsedSize": 5972,
-                      "gzipSize": 2448
+                      "gzipSize": 2448,
+                      "issuer": "./node_modules/react/index.js"
                     }
                   ],
                   "parsedSize": 6642,
@@ -191,14 +201,16 @@
                   "path": "./node_modules/react/index.js",
                   "statSize": 190,
                   "parsedSize": 47,
-                  "gzipSize": 67
+                  "gzipSize": 67,
+                  "issuer": "./node_modules/next/dist/client/router.js"
                 },
                 {
                   "label": "jsx-runtime.js",
                   "path": "./node_modules/react/jsx-runtime.js",
                   "statSize": 214,
                   "parsedSize": 47,
-                  "gzipSize": 67
+                  "gzipSize": 67,
+                  "issuer": "./pages/_app.tsx"
                 }
               ],
               "parsedSize": 6736,
@@ -219,7 +231,8 @@
                       "path": "./node_modules/scheduler/cjs/scheduler.production.min.js",
                       "statSize": 4830,
                       "parsedSize": 4402,
-                      "gzipSize": 1754
+                      "gzipSize": 1754,
+                      "issuer": "./node_modules/scheduler/index.js"
                     }
                   ],
                   "parsedSize": 4402,
@@ -230,7 +243,8 @@
                   "path": "./node_modules/scheduler/index.js",
                   "statSize": 198,
                   "parsedSize": 45,
-                  "gzipSize": 65
+                  "gzipSize": 65,
+                  "issuer": "./node_modules/react-dom/cjs/react-dom.production.min.js"
                 }
               ],
               "parsedSize": 4447,
@@ -264,14 +278,16 @@
                   "path": "./platform/components/Spinner/Spinner.module.scss",
                   "statSize": 225,
                   "parsedSize": 182,
-                  "gzipSize": 121
+                  "gzipSize": 121,
+                  "issuer": "./platform/components/Spinner/Spinner.tsx"
                 },
                 {
                   "label": "Spinner.tsx",
                   "path": "./platform/components/Spinner/Spinner.tsx",
                   "statSize": 969,
                   "parsedSize": 505,
-                  "gzipSize": 306
+                  "gzipSize": 306,
+                  "issuer": "./apps/DICOMViewer/components/SelectDataset/SelectDataset.tsx"
                 }
               ],
               "parsedSize": 687,
@@ -287,14 +303,16 @@
                   "path": "./platform/utils/cancelable.ts",
                   "statSize": 489,
                   "parsedSize": 233,
-                  "gzipSize": 177
+                  "gzipSize": 177,
+                  "issuer": "./apps/DICOMViewer/components/SelectDataset/SelectDataset.tsx"
                 },
                 {
                   "label": "getBaseURL.ts",
                   "path": "./platform/utils/getBaseURL.ts",
                   "statSize": 181,
                   "parsedSize": 151,
-                  "gzipSize": 138
+                  "gzipSize": 138,
+                  "issuer": "./apps/DICOMViewer/components/SelectDataset/utils/loadDatasetList.ts"
                 }
               ],
               "parsedSize": 384,
@@ -314,7 +332,8 @@
               "path": "./apps/DICOMViewer/DICOMViewer.module.scss",
               "statSize": 178,
               "parsedSize": 137,
-              "gzipSize": 112
+              "gzipSize": 112,
+              "issuer": "./apps/DICOMViewer/DICOMViewer.tsx"
             },
             {
               "label": "DICOMViewer.tsx + 60 modules (concatenated)",
@@ -1109,7 +1128,8 @@
                       "path": "./apps/DICOMViewer/components/AnnotationsElement/AnnotationsElement.module.scss",
                       "statSize": 421,
                       "parsedSize": 374,
-                      "gzipSize": 176
+                      "gzipSize": 176,
+                      "issuer": "./apps/DICOMViewer/components/AnnotationsElement/AnnotationsElement.tsx"
                     }
                   ],
                   "parsedSize": 374,
@@ -1125,7 +1145,8 @@
                       "path": "./apps/DICOMViewer/components/ColorPalette/ColorPalette.module.scss",
                       "statSize": 277,
                       "parsedSize": 232,
-                      "gzipSize": 148
+                      "gzipSize": 148,
+                      "issuer": "./apps/DICOMViewer/components/ColorPalette/ColorPalette.tsx"
                     },
                     {
                       "label": "components",
@@ -1142,7 +1163,8 @@
                               "path": "./apps/DICOMViewer/components/ColorPalette/components/BarPreview/BarPreview.module.scss",
                               "statSize": 103,
                               "parsedSize": 66,
-                              "gzipSize": 70
+                              "gzipSize": 70,
+                              "issuer": "./apps/DICOMViewer/components/ColorPalette/components/BarPreview/BarPreview.tsx"
                             }
                           ],
                           "parsedSize": 66,
@@ -1158,7 +1180,8 @@
                               "path": "./apps/DICOMViewer/components/ColorPalette/components/GraphPreview/GraphPreview.module.scss",
                               "statSize": 163,
                               "parsedSize": 124,
-                              "gzipSize": 104
+                              "gzipSize": 104,
+                              "issuer": "./apps/DICOMViewer/components/ColorPalette/components/GraphPreview/GraphPreview.tsx"
                             }
                           ],
                           "parsedSize": 124,
@@ -1179,7 +1202,8 @@
                                   "path": "./apps/DICOMViewer/components/ColorPalette/components/LUTComponentList/ColorPicker/ColorPicker.module.scss",
                                   "statSize": 106,
                                   "parsedSize": 69,
-                                  "gzipSize": 71
+                                  "gzipSize": 71,
+                                  "issuer": "./apps/DICOMViewer/components/ColorPalette/components/LUTComponentList/ColorPicker/ColorPicker.tsx"
                                 }
                               ],
                               "parsedSize": 69,
@@ -1190,7 +1214,8 @@
                               "path": "./apps/DICOMViewer/components/ColorPalette/components/LUTComponentList/LUTComponentList.module.scss",
                               "statSize": 251,
                               "parsedSize": 208,
-                              "gzipSize": 143
+                              "gzipSize": 143,
+                              "issuer": "./apps/DICOMViewer/components/ColorPalette/components/LUTComponentList/LUTComponentList.tsx"
                             }
                           ],
                           "parsedSize": 277,
@@ -1214,7 +1239,8 @@
                       "path": "./apps/DICOMViewer/components/LeftToolbar/LeftToolbar.module.scss",
                       "statSize": 233,
                       "parsedSize": 190,
-                      "gzipSize": 126
+                      "gzipSize": 126,
+                      "issuer": "./apps/DICOMViewer/components/LeftToolbar/LeftToolbar.tsx"
                     }
                   ],
                   "parsedSize": 190,
@@ -1235,7 +1261,8 @@
                           "path": "./apps/DICOMViewer/components/SelectDataset/ProgressRing/ProgressRing.module.scss",
                           "statSize": 163,
                           "parsedSize": 124,
-                          "gzipSize": 97
+                          "gzipSize": 97,
+                          "issuer": "./apps/DICOMViewer/components/SelectDataset/ProgressRing/ProgressRing.tsx"
                         }
                       ],
                       "parsedSize": 124,
@@ -1246,7 +1273,8 @@
                       "path": "./apps/DICOMViewer/components/SelectDataset/SelectDataset.module.scss",
                       "statSize": 282,
                       "parsedSize": 237,
-                      "gzipSize": 151
+                      "gzipSize": 151,
+                      "issuer": "./apps/DICOMViewer/components/SelectDataset/SelectDataset.tsx"
                     }
                   ],
                   "parsedSize": 361,
@@ -1262,7 +1290,8 @@
                       "path": "./apps/DICOMViewer/components/ViewportElement/ViewportElement.module.scss",
                       "statSize": 104,
                       "parsedSize": 67,
-                      "gzipSize": 73
+                      "gzipSize": 73,
+                      "issuer": "./apps/DICOMViewer/components/ViewportElement/ViewportElement.tsx"
                     }
                   ],
                   "parsedSize": 67,
@@ -1300,7 +1329,8 @@
                   "path": "./node_modules/@next/polyfill-module/dist/polyfill-module.js",
                   "statSize": 845,
                   "parsedSize": 863,
-                  "gzipSize": 377
+                  "gzipSize": 377,
+                  "issuer": "./node_modules/next/dist/client/index.js"
                 }
               ],
               "parsedSize": 863,
@@ -1326,7 +1356,8 @@
                           "path": "./node_modules/next/dist/build/polyfills/object-assign.js",
                           "statSize": 163,
                           "parsedSize": 98,
-                          "gzipSize": 99
+                          "gzipSize": 99,
+                          "issuer": "./node_modules/react/cjs/react.production.min.js"
                         }
                       ],
                       "parsedSize": 98,
@@ -1342,14 +1373,16 @@
                           "path": "./node_modules/next/dist/client/head-manager.js",
                           "statSize": 3869,
                           "parsedSize": 1869,
-                          "gzipSize": 957
+                          "gzipSize": 957,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "index.js",
                           "path": "./node_modules/next/dist/client/index.js",
                           "statSize": 32991,
                           "parsedSize": 10442,
-                          "gzipSize": 3989
+                          "gzipSize": 3989,
+                          "issuer": "./node_modules/next/dist/client/next.js"
                         },
                         {
                           "label": "next.js",
@@ -1363,21 +1396,24 @@
                           "path": "./node_modules/next/dist/client/normalize-trailing-slash.js",
                           "statSize": 647,
                           "parsedSize": 241,
-                          "gzipSize": 189
+                          "gzipSize": 189,
+                          "issuer": "./node_modules/next/dist/shared/lib/router/router.js"
                         },
                         {
                           "label": "page-loader.js",
                           "path": "./node_modules/next/dist/client/page-loader.js",
                           "statSize": 4962,
                           "parsedSize": 1593,
-                          "gzipSize": 818
+                          "gzipSize": 818,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "performance-relayer.js",
                           "path": "./node_modules/next/dist/client/performance-relayer.js",
                           "statSize": 2434,
                           "parsedSize": 252,
-                          "gzipSize": 201
+                          "gzipSize": 201,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "portal",
@@ -1389,7 +1425,8 @@
                               "path": "./node_modules/next/dist/client/portal/index.js",
                               "statSize": 1219,
                               "parsedSize": 509,
-                              "gzipSize": 316
+                              "gzipSize": 316,
+                              "issuer": "./node_modules/next/dist/client/index.js"
                             }
                           ],
                           "parsedSize": 509,
@@ -1400,21 +1437,24 @@
                           "path": "./node_modules/next/dist/client/request-idle-callback.js",
                           "statSize": 786,
                           "parsedSize": 550,
-                          "gzipSize": 285
+                          "gzipSize": 285,
+                          "issuer": "./node_modules/next/dist/client/script.js"
                         },
                         {
                           "label": "route-announcer.js",
                           "path": "./node_modules/next/dist/client/route-announcer.js",
                           "statSize": 2706,
                           "parsedSize": 773,
-                          "gzipSize": 505
+                          "gzipSize": 505,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "route-loader.js",
                           "path": "./node_modules/next/dist/client/route-loader.js",
                           "statSize": 9965,
                           "parsedSize": 3576,
-                          "gzipSize": 1393
+                          "gzipSize": 1393,
+                          "issuer": "./node_modules/next/dist/shared/lib/router/router.js"
                         },
                         {
                           "label": "router.js",
@@ -1428,14 +1468,16 @@
                           "path": "./node_modules/next/dist/client/script.js",
                           "statSize": 6975,
                           "parsedSize": 2953,
-                          "gzipSize": 1304
+                          "gzipSize": 1304,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "with-router.js",
                           "path": "./node_modules/next/dist/client/with-router.js",
                           "statSize": 901,
                           "parsedSize": 339,
-                          "gzipSize": 233
+                          "gzipSize": 233,
+                          "issuer": "./node_modules/next/dist/client/router.js"
                         }
                       ],
                       "parsedSize": 26549,
@@ -1451,7 +1493,8 @@
                           "path": "./node_modules/next/dist/compiled/web-vitals/web-vitals.umd.js",
                           "statSize": 4666,
                           "parsedSize": 4584,
-                          "gzipSize": 1814
+                          "gzipSize": 1814,
+                          "issuer": "./node_modules/next/dist/client/performance-relayer.js"
                         }
                       ],
                       "parsedSize": 4584,
@@ -1467,7 +1510,8 @@
                           "path": "./node_modules/next/dist/pages/_error.js",
                           "statSize": 4775,
                           "parsedSize": 2523,
-                          "gzipSize": 1217
+                          "gzipSize": 1217,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         }
                       ],
                       "parsedSize": 2523,
@@ -1483,7 +1527,8 @@
                           "path": "./node_modules/next/dist/server/denormalize-page-path.js",
                           "statSize": 521,
                           "parsedSize": 249,
-                          "gzipSize": 205
+                          "gzipSize": 205,
+                          "issuer": "./node_modules/next/dist/shared/lib/router/router.js"
                         }
                       ],
                       "parsedSize": 249,
@@ -1499,28 +1544,32 @@
                           "path": "./node_modules/next/dist/shared/lib/amp-context.js",
                           "statSize": 447,
                           "parsedSize": 203,
-                          "gzipSize": 170
+                          "gzipSize": 170,
+                          "issuer": "./node_modules/next/dist/shared/lib/head.js"
                         },
                         {
                           "label": "amp.js",
                           "path": "./node_modules/next/dist/shared/lib/amp.js",
                           "statSize": 972,
                           "parsedSize": 401,
-                          "gzipSize": 285
+                          "gzipSize": 285,
+                          "issuer": "./node_modules/next/dist/shared/lib/head.js"
                         },
                         {
                           "label": "head-manager-context.js",
                           "path": "./node_modules/next/dist/shared/lib/head-manager-context.js",
                           "statSize": 465,
                           "parsedSize": 209,
-                          "gzipSize": 174
+                          "gzipSize": 174,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "head.js",
                           "path": "./node_modules/next/dist/shared/lib/head.js",
                           "statSize": 6888,
                           "parsedSize": 2904,
-                          "gzipSize": 1260
+                          "gzipSize": 1260,
+                          "issuer": "./node_modules/next/dist/pages/_error.js"
                         },
                         {
                           "label": "i18n",
@@ -1532,7 +1581,8 @@
                               "path": "./node_modules/next/dist/shared/lib/i18n/normalize-locale-path.js",
                               "statSize": 662,
                               "parsedSize": 286,
-                              "gzipSize": 223
+                              "gzipSize": 223,
+                              "issuer": "./node_modules/next/dist/shared/lib/router/router.js"
                             }
                           ],
                           "parsedSize": 286,
@@ -1543,14 +1593,16 @@
                           "path": "./node_modules/next/dist/shared/lib/mitt.js",
                           "statSize": 722,
                           "parsedSize": 393,
-                          "gzipSize": 281
+                          "gzipSize": 281,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "router-context.js",
                           "path": "./node_modules/next/dist/shared/lib/router-context.js",
                           "statSize": 437,
                           "parsedSize": 201,
-                          "gzipSize": 170
+                          "gzipSize": 170,
+                          "issuer": "./node_modules/next/dist/client/router.js"
                         },
                         {
                           "label": "router",
@@ -1562,7 +1614,8 @@
                               "path": "./node_modules/next/dist/shared/lib/router/router.js",
                               "statSize": 60560,
                               "parsedSize": 15974,
-                              "gzipSize": 5721
+                              "gzipSize": 5721,
+                              "issuer": "./node_modules/next/dist/client/router.js"
                             },
                             {
                               "label": "utils",
@@ -1574,49 +1627,56 @@
                                   "path": "./node_modules/next/dist/shared/lib/router/utils/format-url.js",
                                   "statSize": 2165,
                                   "parsedSize": 1072,
-                                  "gzipSize": 623
+                                  "gzipSize": 623,
+                                  "issuer": "./node_modules/next/dist/shared/lib/utils.js"
                                 },
                                 {
                                   "label": "get-asset-path-from-route.js",
                                   "path": "./node_modules/next/dist/shared/lib/router/utils/get-asset-path-from-route.js",
                                   "statSize": 385,
                                   "parsedSize": 250,
-                                  "gzipSize": 195
+                                  "gzipSize": 195,
+                                  "issuer": "./node_modules/next/dist/client/page-loader.js"
                                 },
                                 {
                                   "label": "is-dynamic.js",
                                   "path": "./node_modules/next/dist/shared/lib/router/utils/is-dynamic.js",
                                   "statSize": 269,
                                   "parsedSize": 152,
-                                  "gzipSize": 154
+                                  "gzipSize": 154,
+                                  "issuer": "./node_modules/next/dist/client/index.js"
                                 },
                                 {
                                   "label": "parse-relative-url.js",
                                   "path": "./node_modules/next/dist/shared/lib/router/utils/parse-relative-url.js",
                                   "statSize": 938,
                                   "parsedSize": 467,
-                                  "gzipSize": 320
+                                  "gzipSize": 320,
+                                  "issuer": "./node_modules/next/dist/shared/lib/router/router.js"
                                 },
                                 {
                                   "label": "querystring.js",
                                   "path": "./node_modules/next/dist/shared/lib/router/utils/querystring.js",
                                   "statSize": 1862,
                                   "parsedSize": 838,
-                                  "gzipSize": 446
+                                  "gzipSize": 446,
+                                  "issuer": "./node_modules/next/dist/client/index.js"
                                 },
                                 {
                                   "label": "route-matcher.js",
                                   "path": "./node_modules/next/dist/shared/lib/router/utils/route-matcher.js",
                                   "statSize": 952,
                                   "parsedSize": 484,
-                                  "gzipSize": 330
+                                  "gzipSize": 330,
+                                  "issuer": "./node_modules/next/dist/shared/lib/router/router.js"
                                 },
                                 {
                                   "label": "route-regex.js",
                                   "path": "./node_modules/next/dist/shared/lib/router/utils/route-regex.js",
                                   "statSize": 3915,
                                   "parsedSize": 934,
-                                  "gzipSize": 471
+                                  "gzipSize": 471,
+                                  "issuer": "./node_modules/next/dist/shared/lib/router/router.js"
                                 }
                               ],
                               "parsedSize": 4197,
@@ -1631,21 +1691,24 @@
                           "path": "./node_modules/next/dist/shared/lib/runtime-config.js",
                           "statSize": 323,
                           "parsedSize": 159,
-                          "gzipSize": 142
+                          "gzipSize": 142,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "side-effect.js",
                           "path": "./node_modules/next/dist/shared/lib/side-effect.js",
                           "statSize": 3402,
                           "parsedSize": 1352,
-                          "gzipSize": 592
+                          "gzipSize": 592,
+                          "issuer": "./node_modules/next/dist/shared/lib/head.js"
                         },
                         {
                           "label": "utils.js",
                           "path": "./node_modules/next/dist/shared/lib/utils.js",
                           "statSize": 7571,
                           "parsedSize": 2609,
-                          "gzipSize": 1221
+                          "gzipSize": 1221,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         }
                       ],
                       "parsedSize": 28888,
@@ -1670,168 +1733,192 @@
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/arrayLikeToArray.js",
                           "statSize": 312,
                           "parsedSize": 179,
-                          "gzipSize": 151
+                          "gzipSize": 151,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js"
                         },
                         {
                           "label": "arrayWithHoles.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/arrayWithHoles.js",
                           "statSize": 184,
                           "parsedSize": 116,
-                          "gzipSize": 99
+                          "gzipSize": 99,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/slicedToArray.js"
                         },
                         {
                           "label": "arrayWithoutHoles.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/arrayWithoutHoles.js",
                           "statSize": 266,
                           "parsedSize": 137,
-                          "gzipSize": 120
+                          "gzipSize": 120,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/toConsumableArray.js"
                         },
                         {
                           "label": "assertThisInitialized.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/assertThisInitialized.js",
                           "statSize": 297,
                           "parsedSize": 196,
-                          "gzipSize": 153
+                          "gzipSize": 153,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"
                         },
                         {
                           "label": "asyncToGenerator.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/asyncToGenerator.js",
                           "statSize": 887,
                           "parsedSize": 389,
-                          "gzipSize": 246
+                          "gzipSize": 246,
+                          "issuer": "./node_modules/next/dist/shared/lib/router/router.js"
                         },
                         {
                           "label": "classCallCheck.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/classCallCheck.js",
                           "statSize": 274,
                           "parsedSize": 167,
-                          "gzipSize": 140
+                          "gzipSize": 140,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "construct.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/construct.js",
                           "statSize": 908,
                           "parsedSize": 420,
-                          "gzipSize": 225
+                          "gzipSize": 225,
+                          "issuer": "./node_modules/next/dist/client/router.js"
                         },
                         {
                           "label": "createClass.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/createClass.js",
                           "statSize": 674,
                           "parsedSize": 296,
-                          "gzipSize": 216
+                          "gzipSize": 216,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "defineProperty.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/defineProperty.js",
                           "statSize": 367,
                           "parsedSize": 193,
-                          "gzipSize": 150
+                          "gzipSize": 150,
+                          "issuer": "./node_modules/next/dist/shared/lib/head.js"
                         },
                         {
                           "label": "getPrototypeOf.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/getPrototypeOf.js",
                           "statSize": 425,
                           "parsedSize": 268,
-                          "gzipSize": 146
+                          "gzipSize": 146,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "inherits.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/inherits.js",
                           "statSize": 586,
                           "parsedSize": 320,
-                          "gzipSize": 227
+                          "gzipSize": 227,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "isNativeFunction.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/isNativeFunction.js",
                           "statSize": 218,
                           "parsedSize": 149,
-                          "gzipSize": 131
+                          "gzipSize": 131,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/wrapNativeSuper.js"
                         },
                         {
                           "label": "isNativeReflectConstruct.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js",
                           "statSize": 477,
                           "parsedSize": 330,
-                          "gzipSize": 203
+                          "gzipSize": 203,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/construct.js"
                         },
                         {
                           "label": "iterableToArray.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/iterableToArray.js",
                           "statSize": 274,
                           "parsedSize": 188,
-                          "gzipSize": 149
+                          "gzipSize": 149,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/toConsumableArray.js"
                         },
                         {
                           "label": "iterableToArrayLimit.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/iterableToArrayLimit.js",
                           "statSize": 711,
                           "parsedSize": 386,
-                          "gzipSize": 272
+                          "gzipSize": 272,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/slicedToArray.js"
                         },
                         {
                           "label": "nonIterableRest.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/nonIterableRest.js",
                           "statSize": 309,
                           "parsedSize": 247,
-                          "gzipSize": 194
+                          "gzipSize": 194,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/slicedToArray.js"
                         },
                         {
                           "label": "nonIterableSpread.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/nonIterableSpread.js",
                           "statSize": 308,
                           "parsedSize": 242,
-                          "gzipSize": 192
+                          "gzipSize": 192,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/toConsumableArray.js"
                         },
                         {
                           "label": "possibleConstructorReturn.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/possibleConstructorReturn.js",
                           "statSize": 564,
                           "parsedSize": 286,
-                          "gzipSize": 212
+                          "gzipSize": 212,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "setPrototypeOf.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/setPrototypeOf.js",
                           "statSize": 395,
                           "parsedSize": 231,
-                          "gzipSize": 137
+                          "gzipSize": 137,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/construct.js"
                         },
                         {
                           "label": "slicedToArray.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/slicedToArray.js",
                           "statSize": 522,
                           "parsedSize": 170,
-                          "gzipSize": 141
+                          "gzipSize": 141,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         },
                         {
                           "label": "toConsumableArray.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/toConsumableArray.js",
                           "statSize": 521,
                           "parsedSize": 164,
-                          "gzipSize": 140
+                          "gzipSize": 140,
+                          "issuer": "./node_modules/next/dist/shared/lib/side-effect.js"
                         },
                         {
                           "label": "typeof.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/typeof.js",
                           "statSize": 723,
                           "parsedSize": 438,
-                          "gzipSize": 183
+                          "gzipSize": 183,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"
                         },
                         {
                           "label": "unsupportedIterableToArray.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js",
                           "statSize": 609,
                           "parsedSize": 378,
-                          "gzipSize": 273
+                          "gzipSize": 273,
+                          "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/slicedToArray.js"
                         },
                         {
                           "label": "wrapNativeSuper.js",
                           "path": "./node_modules/next/node_modules/@babel/runtime/helpers/wrapNativeSuper.js",
                           "statSize": 1299,
                           "parsedSize": 639,
-                          "gzipSize": 357
+                          "gzipSize": 357,
+                          "issuer": "./node_modules/next/dist/shared/lib/utils.js"
                         }
                       ],
                       "parsedSize": 6529,
@@ -1847,7 +1934,8 @@
                           "path": "./node_modules/next/node_modules/@babel/runtime/regenerator/index.js",
                           "statSize": 49,
                           "parsedSize": 34,
-                          "gzipSize": 54
+                          "gzipSize": 54,
+                          "issuer": "./node_modules/next/dist/client/index.js"
                         }
                       ],
                       "parsedSize": 34,
@@ -1871,7 +1959,8 @@
                   "path": "./node_modules/regenerator-runtime/runtime.js",
                   "statSize": 24843,
                   "parsedSize": 6510,
-                  "gzipSize": 2400
+                  "gzipSize": 2400,
+                  "issuer": "./node_modules/next/node_modules/@babel/runtime/regenerator/index.js"
                 }
               ],
               "parsedSize": 6510,
@@ -1891,7 +1980,8 @@
               "path": "./utils/resolve-rewrites (ignored)",
               "statSize": 15,
               "parsedSize": 12,
-              "gzipSize": 32
+              "gzipSize": 32,
+              "issuer": "./node_modules/next/dist/shared/lib/router/router.js"
             }
           ],
           "parsedSize": 12,
@@ -1921,7 +2011,8 @@
                   "path": "./node_modules/@josselinbuils/hooks/useList.mjs",
                   "statSize": 1080,
                   "parsedSize": 493,
-                  "gzipSize": 280
+                  "gzipSize": 280,
+                  "issuer": "./apps/Terminal/Terminal.tsx"
                 }
               ],
               "parsedSize": 493,
@@ -1942,7 +2033,8 @@
                       "path": "./node_modules/@fortawesome/free-brands-svg-icons/faJsSquare.js",
                       "statSize": 1224,
                       "parsedSize": 743,
-                      "gzipSize": 457
+                      "gzipSize": 457,
+                      "issuer": "./apps/CodeEditor/components/Editor/components/Tab/Tab.tsx"
                     }
                   ],
                   "parsedSize": 743,
@@ -1958,42 +2050,48 @@
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faBomb.js",
                       "statSize": 1440,
                       "parsedSize": 963,
-                      "gzipSize": 462
+                      "gzipSize": 462,
+                      "issuer": "./apps/CodeEditor/components/Console/components/Logs/Logs.tsx"
                     },
                     {
                       "label": "faCamera.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faCamera.js",
                       "statSize": 944,
                       "parsedSize": 465,
-                      "gzipSize": 301
+                      "gzipSize": 301,
+                      "issuer": "./apps/CodeEditor/components/Editor/Editor.tsx"
                     },
                     {
                       "label": "faFolderOpen.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faFolderOpen.js",
                       "statSize": 933,
                       "parsedSize": 450,
-                      "gzipSize": 324
+                      "gzipSize": 324,
+                      "issuer": "./apps/CodeEditor/components/Editor/Editor.tsx"
                     },
                     {
                       "label": "faPlay.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faPlay.js",
                       "statSize": 709,
                       "parsedSize": 232,
-                      "gzipSize": 209
+                      "gzipSize": 209,
+                      "issuer": "./apps/CodeEditor/components/Console/Console.tsx"
                     },
                     {
                       "label": "faStream.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faStream.js",
                       "statSize": 922,
                       "parsedSize": 443,
-                      "gzipSize": 234
+                      "gzipSize": 234,
+                      "issuer": "./apps/CodeEditor/components/Editor/Editor.tsx"
                     },
                     {
                       "label": "faTrash.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faTrash.js",
                       "statSize": 834,
                       "parsedSize": 355,
-                      "gzipSize": 254
+                      "gzipSize": 254,
+                      "issuer": "./apps/CodeEditor/components/Console/Console.tsx"
                     }
                   ],
                   "parsedSize": 2908,
@@ -2013,7 +2111,8 @@
                   "path": "./node_modules/diff-match-patch/index.js",
                   "statSize": 78052,
                   "parsedSize": 18971,
-                  "gzipSize": 6211
+                  "gzipSize": 6211,
+                  "issuer": "./apps/CodeEditor/utils/diffs.ts"
                 }
               ],
               "parsedSize": 18971,
@@ -2034,70 +2133,80 @@
                       "path": "./node_modules/prismjs/components/prism-css.min.js",
                       "statSize": 1204,
                       "parsedSize": 1215,
-                      "gzipSize": 601
+                      "gzipSize": 601,
+                      "issuer": "./platform/utils/highlightCode/highlightCode.ts"
                     },
                     {
                       "label": "prism-javascript.min.js",
                       "path": "./node_modules/prismjs/components/prism-javascript.min.js",
                       "statSize": 4036,
                       "parsedSize": 4047,
-                      "gzipSize": 1499
+                      "gzipSize": 1499,
+                      "issuer": "./platform/utils/highlightCode/highlightCode.ts"
                     },
                     {
                       "label": "prism-json.min.js",
                       "path": "./node_modules/prismjs/components/prism-json.min.js",
                       "statSize": 449,
                       "parsedSize": 460,
-                      "gzipSize": 276
+                      "gzipSize": 276,
+                      "issuer": "./platform/utils/highlightCode/highlightCode.ts"
                     },
                     {
                       "label": "prism-markdown.min.js",
                       "path": "./node_modules/prismjs/components/prism-markdown.min.js",
                       "statSize": 5172,
                       "parsedSize": 5179,
-                      "gzipSize": 1977
+                      "gzipSize": 1977,
+                      "issuer": "./platform/utils/highlightCode/highlightCode.ts"
                     },
                     {
                       "label": "prism-markup-templating.min.js",
                       "path": "./node_modules/prismjs/components/prism-markup-templating.min.js",
                       "statSize": 1060,
                       "parsedSize": 1073,
-                      "gzipSize": 555
+                      "gzipSize": 555,
+                      "issuer": "./platform/utils/highlightCode/highlightCode.ts"
                     },
                     {
                       "label": "prism-markup.min.js",
                       "path": "./node_modules/prismjs/components/prism-markup.min.js",
                       "statSize": 2736,
                       "parsedSize": 2751,
-                      "gzipSize": 1037
+                      "gzipSize": 1037,
+                      "issuer": "./platform/utils/highlightCode/highlightCode.ts"
                     },
                     {
                       "label": "prism-php.min.js",
                       "path": "./node_modules/prismjs/components/prism-php.min.js",
                       "statSize": 6512,
                       "parsedSize": 6523,
-                      "gzipSize": 1967
+                      "gzipSize": 1967,
+                      "issuer": "./platform/utils/highlightCode/highlightCode.ts"
                     },
                     {
                       "label": "prism-scss.min.js",
                       "path": "./node_modules/prismjs/components/prism-scss.min.js",
                       "statSize": 1337,
                       "parsedSize": 1348,
-                      "gzipSize": 633
+                      "gzipSize": 633,
+                      "issuer": "./platform/utils/highlightCode/highlightCode.ts"
                     },
                     {
                       "label": "prism-typescript.min.js",
                       "path": "./node_modules/prismjs/components/prism-typescript.min.js",
                       "statSize": 1226,
                       "parsedSize": 1237,
-                      "gzipSize": 559
+                      "gzipSize": 559,
+                      "issuer": "./platform/utils/highlightCode/highlightCode.ts"
                     },
                     {
                       "label": "prism-yaml.min.js",
                       "path": "./node_modules/prismjs/components/prism-yaml.min.js",
                       "statSize": 1958,
                       "parsedSize": 1981,
-                      "gzipSize": 860
+                      "gzipSize": 860,
+                      "issuer": "./platform/utils/highlightCode/highlightCode.ts"
                     }
                   ],
                   "parsedSize": 25814,
@@ -2108,7 +2217,8 @@
                   "path": "./node_modules/prismjs/prism.js",
                   "statSize": 54031,
                   "parsedSize": 17584,
-                  "gzipSize": 6582
+                  "gzipSize": 6582,
+                  "issuer": "./platform/utils/highlightCode/highlightCode.ts"
                 }
               ],
               "parsedSize": 43398,
@@ -2137,7 +2247,8 @@
               "path": "./apps/CodeEditor/CodeEditor.module.scss",
               "statSize": 177,
               "parsedSize": 136,
-              "gzipSize": 104
+              "gzipSize": 104,
+              "issuer": "./apps/CodeEditor/CodeEditor.tsx"
             },
             {
               "label": "CodeEditor.tsx + 61 modules (concatenated)",
@@ -2980,7 +3091,8 @@
                       "path": "./apps/CodeEditor/components/Console/Console.module.scss",
                       "statSize": 191,
                       "parsedSize": 148,
-                      "gzipSize": 120
+                      "gzipSize": 120,
+                      "issuer": "./apps/CodeEditor/components/Console/Console.tsx"
                     },
                     {
                       "label": "components/Logs",
@@ -2992,7 +3104,8 @@
                           "path": "./apps/CodeEditor/components/Console/components/Logs/Logs.module.scss",
                           "statSize": 201,
                           "parsedSize": 156,
-                          "gzipSize": 131
+                          "gzipSize": 131,
+                          "issuer": "./apps/CodeEditor/components/Console/components/Logs/Logs.tsx"
                         }
                       ],
                       "parsedSize": 156,
@@ -3008,7 +3121,8 @@
                           "path": "./apps/CodeEditor/components/Console/utils/execCode.ts",
                           "statSize": 189,
                           "parsedSize": 266,
-                          "gzipSize": 175
+                          "gzipSize": 175,
+                          "issuer": "./apps/CodeEditor/components/Console/Console.tsx"
                         }
                       ],
                       "parsedSize": 266,
@@ -3028,7 +3142,8 @@
                       "path": "./apps/CodeEditor/components/Editor/Editor.module.scss",
                       "statSize": 401,
                       "parsedSize": 348,
-                      "gzipSize": 215
+                      "gzipSize": 215,
+                      "issuer": "./apps/CodeEditor/components/Editor/Editor.tsx"
                     },
                     {
                       "label": "components",
@@ -3045,7 +3160,8 @@
                               "path": "./apps/CodeEditor/components/Editor/components/Cursor/Cursor.module.scss",
                               "statSize": 91,
                               "parsedSize": 54,
-                              "gzipSize": 66
+                              "gzipSize": 66,
+                              "issuer": "./apps/CodeEditor/components/Editor/components/Cursor/Cursor.tsx"
                             }
                           ],
                           "parsedSize": 54,
@@ -3061,7 +3177,8 @@
                               "path": "./apps/CodeEditor/components/Editor/components/Highlight/Highlight.module.scss",
                               "statSize": 96,
                               "parsedSize": 59,
-                              "gzipSize": 72
+                              "gzipSize": 72,
+                              "issuer": "./apps/CodeEditor/components/Editor/components/Highlight/Highlight.tsx"
                             }
                           ],
                           "parsedSize": 59,
@@ -3077,7 +3194,8 @@
                               "path": "./apps/CodeEditor/components/Editor/components/LineNumbers/LineNumbers.module.scss",
                               "statSize": 106,
                               "parsedSize": 69,
-                              "gzipSize": 71
+                              "gzipSize": 71,
+                              "issuer": "./apps/CodeEditor/components/Editor/components/LineNumbers/LineNumbers.tsx"
                             }
                           ],
                           "parsedSize": 69,
@@ -3093,7 +3211,8 @@
                               "path": "./apps/CodeEditor/components/Editor/components/Tab/Tab.module.scss",
                               "statSize": 107,
                               "parsedSize": 68,
-                              "gzipSize": 80
+                              "gzipSize": 80,
+                              "issuer": "./apps/CodeEditor/components/Editor/components/Tab/Tab.tsx"
                             }
                           ],
                           "parsedSize": 68,
@@ -3109,7 +3228,8 @@
                               "path": "./apps/CodeEditor/components/Editor/components/Tabs/Tabs.module.scss",
                               "statSize": 85,
                               "parsedSize": 48,
-                              "gzipSize": 64
+                              "gzipSize": 64,
+                              "issuer": "./apps/CodeEditor/components/Editor/components/Tabs/Tabs.tsx"
                             }
                           ],
                           "parsedSize": 48,
@@ -3133,7 +3253,8 @@
                       "path": "./apps/CodeEditor/components/Shortcut/Shortcut.module.scss",
                       "statSize": 87,
                       "parsedSize": 50,
-                      "gzipSize": 67
+                      "gzipSize": 67,
+                      "issuer": "./apps/CodeEditor/components/Shortcut/Shortcut.tsx"
                     }
                   ],
                   "parsedSize": 50,
@@ -3149,7 +3270,8 @@
                       "path": "./apps/CodeEditor/components/StatusBar/StatusBar.module.scss",
                       "statSize": 100,
                       "parsedSize": 63,
-                      "gzipSize": 69
+                      "gzipSize": 69,
+                      "issuer": "./apps/CodeEditor/components/StatusBar/StatusBar.tsx"
                     }
                   ],
                   "parsedSize": 63,
@@ -3165,7 +3287,8 @@
                       "path": "./apps/CodeEditor/components/ToolButton/ToolButton.module.scss",
                       "statSize": 141,
                       "parsedSize": 102,
-                      "gzipSize": 88
+                      "gzipSize": 88,
+                      "issuer": "./apps/CodeEditor/components/ToolButton/ToolButton.tsx"
                     }
                   ],
                   "parsedSize": 102,
@@ -3181,7 +3304,8 @@
                       "path": "./apps/CodeEditor/components/Toolbar/Toolbar.module.scss",
                       "statSize": 135,
                       "parsedSize": 96,
-                      "gzipSize": 87
+                      "gzipSize": 87,
+                      "issuer": "./apps/CodeEditor/components/Toolbar/Toolbar.tsx"
                     }
                   ],
                   "parsedSize": 96,
@@ -3205,7 +3329,8 @@
               "path": "./platform/utils/highlightCode/darcula.module.scss",
               "statSize": 889,
               "parsedSize": 812,
-              "gzipSize": 407
+              "gzipSize": 407,
+              "issuer": "./platform/utils/highlightCode/highlightCode.ts"
             }
           ],
           "parsedSize": 812,
@@ -3240,14 +3365,16 @@
                       "path": "./platform/components/ButtonLink/ButtonLink.module.scss",
                       "statSize": 103,
                       "parsedSize": 66,
-                      "gzipSize": 70
+                      "gzipSize": 70,
+                      "issuer": "./platform/components/ButtonLink/ButtonLink.tsx"
                     },
                     {
                       "label": "ButtonLink.tsx",
                       "path": "./platform/components/ButtonLink/ButtonLink.tsx",
                       "statSize": 1722,
                       "parsedSize": 903,
-                      "gzipSize": 463
+                      "gzipSize": 463,
+                      "issuer": "./apps/Reddit/components/Header/FilterButton.tsx"
                     }
                   ],
                   "parsedSize": 969,
@@ -3263,14 +3390,16 @@
                       "path": "./platform/components/Spinner/Spinner.module.scss",
                       "statSize": 225,
                       "parsedSize": 182,
-                      "gzipSize": 121
+                      "gzipSize": 121,
+                      "issuer": "./platform/components/Spinner/Spinner.tsx"
                     },
                     {
                       "label": "Spinner.tsx",
                       "path": "./platform/components/Spinner/Spinner.tsx",
                       "statSize": 969,
                       "parsedSize": 505,
-                      "gzipSize": 306
+                      "gzipSize": 306,
+                      "issuer": "./apps/DICOMViewer/components/SelectDataset/SelectDataset.tsx"
                     }
                   ],
                   "parsedSize": 687,
@@ -3286,7 +3415,8 @@
                       "path": "./platform/components/Select/Select.module.scss",
                       "statSize": 157,
                       "parsedSize": 116,
-                      "gzipSize": 104
+                      "gzipSize": 104,
+                      "issuer": "./platform/components/Select/Select.tsx"
                     }
                   ],
                   "parsedSize": 116,
@@ -3306,14 +3436,16 @@
                   "path": "./platform/utils/cancelable.ts",
                   "statSize": 489,
                   "parsedSize": 233,
-                  "gzipSize": 177
+                  "gzipSize": 177,
+                  "issuer": "./apps/DICOMViewer/components/SelectDataset/SelectDataset.tsx"
                 },
                 {
                   "label": "getBaseURL.ts",
                   "path": "./platform/utils/getBaseURL.ts",
                   "statSize": 181,
                   "parsedSize": 151,
-                  "gzipSize": 138
+                  "gzipSize": 138,
+                  "issuer": "./apps/DICOMViewer/components/SelectDataset/utils/loadDatasetList.ts"
                 }
               ],
               "parsedSize": 384,
@@ -3711,7 +3843,8 @@
                       "path": "./apps/MP3Player/components/Button/Button.module.scss",
                       "statSize": 125,
                       "parsedSize": 86,
-                      "gzipSize": 86
+                      "gzipSize": 86,
+                      "issuer": "./apps/MP3Player/components/Button/Button.tsx"
                     }
                   ],
                   "parsedSize": 86,
@@ -3727,7 +3860,8 @@
                       "path": "./apps/MP3Player/components/Controls/Controls.module.scss",
                       "statSize": 281,
                       "parsedSize": 236,
-                      "gzipSize": 146
+                      "gzipSize": 146,
+                      "issuer": "./apps/MP3Player/components/Controls/Controls.tsx"
                     }
                   ],
                   "parsedSize": 236,
@@ -3743,7 +3877,8 @@
                       "path": "./apps/MP3Player/components/MiniPlayer/MiniPlayer.module.scss",
                       "statSize": 257,
                       "parsedSize": 212,
-                      "gzipSize": 148
+                      "gzipSize": 148,
+                      "issuer": "./apps/MP3Player/components/MiniPlayer/MiniPlayer.tsx"
                     }
                   ],
                   "parsedSize": 212,
@@ -3759,7 +3894,8 @@
                       "path": "./apps/MP3Player/components/MusicPreview/MusicPreview.module.scss",
                       "statSize": 163,
                       "parsedSize": 124,
-                      "gzipSize": 94
+                      "gzipSize": 94,
+                      "issuer": "./apps/MP3Player/components/MusicPreview/MusicPreview.tsx"
                     }
                   ],
                   "parsedSize": 124,
@@ -3775,7 +3911,8 @@
                       "path": "./apps/MP3Player/components/Player/Player.module.scss",
                       "statSize": 185,
                       "parsedSize": 142,
-                      "gzipSize": 118
+                      "gzipSize": 118,
+                      "issuer": "./apps/MP3Player/components/Player/Player.tsx"
                     },
                     {
                       "label": "components",
@@ -3792,14 +3929,16 @@
                               "path": "./apps/MP3Player/components/Player/components/Footer/Footer.module.scss",
                               "statSize": 119,
                               "parsedSize": 80,
-                              "gzipSize": 83
+                              "gzipSize": 83,
+                              "issuer": "./apps/MP3Player/components/Player/components/Footer/Footer.tsx"
                             },
                             {
                               "label": "MusicInfo.module.scss",
                               "path": "./apps/MP3Player/components/Player/components/Footer/MusicInfo.module.scss",
                               "statSize": 166,
                               "parsedSize": 125,
-                              "gzipSize": 105
+                              "gzipSize": 105,
+                              "issuer": "./apps/MP3Player/components/Player/components/Footer/MusicInfo.tsx"
                             }
                           ],
                           "parsedSize": 205,
@@ -3815,7 +3954,8 @@
                               "path": "./apps/MP3Player/components/Player/components/JamendoLink/JamendoLink.module.scss",
                               "statSize": 106,
                               "parsedSize": 69,
-                              "gzipSize": 71
+                              "gzipSize": 71,
+                              "issuer": "./apps/MP3Player/components/Player/components/JamendoLink/JamendoLink.tsx"
                             }
                           ],
                           "parsedSize": 69,
@@ -3831,7 +3971,8 @@
                               "path": "./apps/MP3Player/components/Player/components/Logo/Logo.module.scss",
                               "statSize": 85,
                               "parsedSize": 48,
-                              "gzipSize": 64
+                              "gzipSize": 64,
+                              "issuer": "./apps/MP3Player/components/Player/components/Logo/Logo.tsx"
                             }
                           ],
                           "parsedSize": 48,
@@ -3847,7 +3988,8 @@
                               "path": "./apps/MP3Player/components/Player/components/Menu/MenuItem.module.scss",
                               "statSize": 125,
                               "parsedSize": 86,
-                              "gzipSize": 88
+                              "gzipSize": 88,
+                              "issuer": "./apps/MP3Player/components/Player/components/Menu/MenuItem.tsx"
                             }
                           ],
                           "parsedSize": 86,
@@ -3863,7 +4005,8 @@
                               "path": "./apps/MP3Player/components/Player/components/Musics/Musics.module.scss",
                               "statSize": 523,
                               "parsedSize": 464,
-                              "gzipSize": 256
+                              "gzipSize": 256,
+                              "issuer": "./apps/MP3Player/components/Player/components/Musics/Musics.tsx"
                             }
                           ],
                           "parsedSize": 464,
@@ -3887,14 +4030,16 @@
                       "path": "./apps/MP3Player/components/SeekBar/ProgressBar.module.scss",
                       "statSize": 225,
                       "parsedSize": 182,
-                      "gzipSize": 130
+                      "gzipSize": 130,
+                      "issuer": "./apps/MP3Player/components/SeekBar/ProgressBar.tsx"
                     },
                     {
                       "label": "SeekBar.module.scss",
                       "path": "./apps/MP3Player/components/SeekBar/SeekBar.module.scss",
                       "statSize": 223,
                       "parsedSize": 180,
-                      "gzipSize": 134
+                      "gzipSize": 134,
+                      "issuer": "./apps/MP3Player/components/SeekBar/SeekBar.tsx"
                     }
                   ],
                   "parsedSize": 362,
@@ -3923,63 +4068,72 @@
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faArrowDown.js",
                   "statSize": 857,
                   "parsedSize": 375,
-                  "gzipSize": 272
+                  "gzipSize": 272,
+                  "issuer": "./platform/components/Select/Select.tsx"
                 },
                 {
                   "label": "faList.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faList.js",
                   "statSize": 1156,
                   "parsedSize": 679,
-                  "gzipSize": 227
+                  "gzipSize": 227,
+                  "issuer": "./apps/MP3Player/components/SeekBar/SeekBar.tsx"
                 },
                 {
                   "label": "faMusic.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faMusic.js",
                   "statSize": 844,
                   "parsedSize": 366,
-                  "gzipSize": 255
+                  "gzipSize": 255,
+                  "issuer": "./apps/MP3Player/components/MusicPreview/MusicPreview.tsx"
                 },
                 {
                   "label": "faPauseCircle.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faPauseCircle.js",
                   "statSize": 882,
                   "parsedSize": 398,
-                  "gzipSize": 238
+                  "gzipSize": 238,
+                  "issuer": "./apps/MP3Player/components/Controls/Controls.tsx"
                 },
                 {
                   "label": "faPlayCircle.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faPlayCircle.js",
                   "statSize": 788,
                   "parsedSize": 305,
-                  "gzipSize": 236
+                  "gzipSize": 236,
+                  "issuer": "./apps/MP3Player/components/Controls/Controls.tsx"
                 },
                 {
                   "label": "faRandom.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faRandom.js",
                   "statSize": 1274,
                   "parsedSize": 795,
-                  "gzipSize": 444
+                  "gzipSize": 444,
+                  "issuer": "./apps/MP3Player/components/Controls/Controls.tsx"
                 },
                 {
                   "label": "faRedoAlt.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faRedoAlt.js",
                   "statSize": 1150,
                   "parsedSize": 670,
-                  "gzipSize": 442
+                  "gzipSize": 442,
+                  "issuer": "./apps/MP3Player/components/Controls/Controls.tsx"
                 },
                 {
                   "label": "faStepBackward.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faStepBackward.js",
                   "statSize": 797,
                   "parsedSize": 312,
-                  "gzipSize": 255
+                  "gzipSize": 255,
+                  "issuer": "./apps/MP3Player/components/Controls/Controls.tsx"
                 },
                 {
                   "label": "faStepForward.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faStepForward.js",
                   "statSize": 796,
                   "parsedSize": 312,
-                  "gzipSize": 252
+                  "gzipSize": 252,
+                  "issuer": "./apps/MP3Player/components/Controls/Controls.tsx"
                 }
               ],
               "parsedSize": 4212,
@@ -3995,7 +4149,8 @@
                   "path": "./node_modules/dayjs/dayjs.min.js",
                   "statSize": 6494,
                   "parsedSize": 6310,
-                  "gzipSize": 2789
+                  "gzipSize": 2789,
+                  "issuer": "./apps/MP3Player/components/AudioProvider/AudioController.ts"
                 }
               ],
               "parsedSize": 6310,
@@ -4029,14 +4184,16 @@
                   "path": "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js",
                   "statSize": 76794,
                   "parsedSize": 26619,
-                  "gzipSize": 8842
+                  "gzipSize": 8842,
+                  "issuer": "./pages/_app.tsx"
                 },
                 {
                   "label": "styles.css",
                   "path": "./node_modules/@fortawesome/fontawesome-svg-core/styles.css",
                   "statSize": 39,
                   "parsedSize": 12,
-                  "gzipSize": 32
+                  "gzipSize": 32,
+                  "issuer": "./pages/_app.tsx"
                 }
               ],
               "parsedSize": 26631,
@@ -4052,7 +4209,8 @@
                   "path": "./node_modules/next/head.js",
                   "statSize": 51,
                   "parsedSize": 33,
-                  "gzipSize": 53
+                  "gzipSize": 53,
+                  "issuer": "./pages/_app.tsx"
                 },
                 {
                   "label": "node_modules/@babel/runtime/helpers/esm",
@@ -4064,7 +4222,8 @@
                       "path": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/defineProperty.js",
                       "statSize": 269,
                       "parsedSize": 181,
-                      "gzipSize": 149
+                      "gzipSize": 149,
+                      "issuer": "./pages/_app.tsx"
                     }
                   ],
                   "parsedSize": 181,
@@ -4088,14 +4247,16 @@
               "path": "./pages/_app.tsx",
               "statSize": 2329,
               "parsedSize": 1207,
-              "gzipSize": 550
+              "gzipSize": 550,
+              "issuer": "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F_app&absolutePagePath=private-next-pages%2F_app.tsx!"
             },
             {
               "label": "index.scss",
               "path": "./pages/index.scss",
               "statSize": 39,
               "parsedSize": 12,
-              "gzipSize": 32
+              "gzipSize": 32,
+              "issuer": "./pages/_app.tsx"
             }
           ],
           "parsedSize": 1219,
@@ -4106,7 +4267,7 @@
     {
       "label": "static/chunks/88-b20176f58ba1d847cc2c.js",
       "isAsset": true,
-      "statSize": 60615,
+      "statSize": 60611,
       "parsedSize": 25194,
       "gzipSize": 7120,
       "groups": [
@@ -4120,7 +4281,8 @@
               "path": "./apps/Terminal/TerminalDescriptor.ts",
               "statSize": 326,
               "parsedSize": 250,
-              "gzipSize": 207
+              "gzipSize": 207,
+              "issuer": "./pages/index.tsx"
             }
           ],
           "parsedSize": 250,
@@ -4129,7 +4291,7 @@
         {
           "label": "platform",
           "path": "./platform",
-          "statSize": 60289,
+          "statSize": 60285,
           "groups": [
             {
               "label": "appDescriptors.ts + 7 modules (concatenated)",
@@ -4310,7 +4472,8 @@
                       "path": "./platform/components/Desktop/Desktop.module.scss",
                       "statSize": 94,
                       "parsedSize": 57,
-                      "gzipSize": 67
+                      "gzipSize": 67,
+                      "issuer": "./platform/components/Desktop/Desktop.tsx"
                     },
                     {
                       "label": "components",
@@ -4327,14 +4490,16 @@
                               "path": "./platform/components/Desktop/components/TaskBar/Task.module.scss",
                               "statSize": 339,
                               "parsedSize": 290,
-                              "gzipSize": 189
+                              "gzipSize": 189,
+                              "issuer": "./platform/components/Desktop/components/TaskBar/Task.tsx"
                             },
                             {
                               "label": "TaskBar.module.scss",
                               "path": "./platform/components/Desktop/components/TaskBar/TaskBar.module.scss",
                               "statSize": 94,
                               "parsedSize": 57,
-                              "gzipSize": 67
+                              "gzipSize": 67,
+                              "issuer": "./platform/components/Desktop/components/TaskBar/TaskBar.tsx"
                             }
                           ],
                           "parsedSize": 347,
@@ -4350,14 +4515,16 @@
                               "path": "./platform/components/Desktop/components/VisibleArea/Selection.module.scss",
                               "statSize": 100,
                               "parsedSize": 63,
-                              "gzipSize": 66
+                              "gzipSize": 66,
+                              "issuer": "./platform/components/Desktop/components/VisibleArea/Selection.tsx"
                             },
                             {
                               "label": "VisibleArea.module.scss",
                               "path": "./platform/components/Desktop/components/VisibleArea/VisibleArea.module.scss",
                               "statSize": 106,
                               "parsedSize": 69,
-                              "gzipSize": 71
+                              "gzipSize": 71,
+                              "issuer": "./platform/components/Desktop/components/VisibleArea/VisibleArea.tsx"
                             }
                           ],
                           "parsedSize": 132,
@@ -4667,7 +4834,8 @@
                       "path": "./platform/components/Tooltip/Tooltip.module.scss",
                       "statSize": 94,
                       "parsedSize": 57,
-                      "gzipSize": 67
+                      "gzipSize": 67,
+                      "issuer": "./platform/components/Tooltip/Tooltip.tsx"
                     }
                   ],
                   "parsedSize": 57,
@@ -4680,7 +4848,7 @@
             {
               "label": "constants.ts + 1 modules (concatenated)",
               "path": "./platform/constants.ts + 1 modules (concatenated)",
-              "statSize": 2541,
+              "statSize": 2537,
               "parsedSize": 411,
               "gzipSize": 265,
               "concatenated": true,
@@ -4695,20 +4863,20 @@
                       "path": "./platform/constants.ts + 1 modules (concatenated)/platform/constants.ts",
                       "statSize": 584,
                       "parsedSize": 94,
-                      "gzipSize": 60,
+                      "gzipSize": 61,
                       "inaccurateSizes": true
                     }
                   ],
                   "parsedSize": 94,
-                  "gzipSize": 60,
+                  "gzipSize": 61,
                   "inaccurateSizes": true
                 },
                 {
                   "label": "package.json",
                   "path": "./platform/constants.ts + 1 modules (concatenated)/package.json",
-                  "statSize": 1957,
+                  "statSize": 1953,
                   "parsedSize": 316,
-                  "gzipSize": 204,
+                  "gzipSize": 203,
                   "inaccurateSizes": true
                 }
               ]
@@ -4723,7 +4891,8 @@
                   "path": "./platform/hooks/useToolbar.ts",
                   "statSize": 3043,
                   "parsedSize": 1189,
-                  "gzipSize": 598
+                  "gzipSize": 598,
+                  "issuer": "./platform/components/Desktop/components/TaskBar/TaskBar.tsx"
                 }
               ],
               "parsedSize": 1189,
@@ -4749,14 +4918,16 @@
                           "path": "./platform/providers/ContextMenuProvider/ContextMenu/ContextMenu.module.scss",
                           "statSize": 106,
                           "parsedSize": 69,
-                          "gzipSize": 71
+                          "gzipSize": 71,
+                          "issuer": "./platform/providers/ContextMenuProvider/ContextMenu/ContextMenu.tsx"
                         },
                         {
                           "label": "ContextMenuItem.module.scss",
                           "path": "./platform/providers/ContextMenuProvider/ContextMenu/ContextMenuItem.module.scss",
                           "statSize": 254,
                           "parsedSize": 209,
-                          "gzipSize": 141
+                          "gzipSize": 141,
+                          "issuer": "./platform/providers/ContextMenuProvider/ContextMenu/ContextMenuItem.tsx"
                         }
                       ],
                       "parsedSize": 278,
@@ -4767,21 +4938,24 @@
                       "path": "./platform/providers/ContextMenuProvider/ContextMenuContext.ts",
                       "statSize": 323,
                       "parsedSize": 226,
-                      "gzipSize": 172
+                      "gzipSize": 172,
+                      "issuer": "./platform/providers/ContextMenuProvider/ContextMenuProvider.tsx"
                     },
                     {
                       "label": "ContextMenuProvider.module.scss",
                       "path": "./platform/providers/ContextMenuProvider/ContextMenuProvider.module.scss",
                       "statSize": 157,
                       "parsedSize": 118,
-                      "gzipSize": 106
+                      "gzipSize": 106,
+                      "issuer": "./platform/providers/ContextMenuProvider/ContextMenuProvider.tsx"
                     },
                     {
                       "label": "useContextMenu.ts",
                       "path": "./platform/providers/ContextMenuProvider/useContextMenu.ts",
                       "statSize": 172,
                       "parsedSize": 126,
-                      "gzipSize": 119
+                      "gzipSize": 119,
+                      "issuer": "./platform/components/Desktop/components/TaskBar/Task.tsx"
                     }
                   ],
                   "parsedSize": 748,
@@ -4797,21 +4971,24 @@
                       "path": "./platform/providers/InjectorProvider/InjectorContext.ts",
                       "statSize": 99,
                       "parsedSize": 97,
-                      "gzipSize": 106
+                      "gzipSize": 106,
+                      "issuer": "./platform/providers/InjectorProvider/InjectorProvider.tsx"
                     },
                     {
                       "label": "InjectorProvider.tsx",
                       "path": "./platform/providers/InjectorProvider/InjectorProvider.tsx",
                       "statSize": 412,
                       "parsedSize": 202,
-                      "gzipSize": 172
+                      "gzipSize": 172,
+                      "issuer": "./pages/app/[app].tsx"
                     },
                     {
                       "label": "useInjector.ts",
                       "path": "./platform/providers/InjectorProvider/useInjector.ts",
                       "statSize": 355,
                       "parsedSize": 184,
-                      "gzipSize": 162
+                      "gzipSize": 162,
+                      "issuer": "./platform/components/Home.tsx"
                     }
                   ],
                   "parsedSize": 483,
@@ -4827,14 +5004,16 @@
                       "path": "./platform/providers/TooltipProvider/TooltipContext.ts",
                       "statSize": 286,
                       "parsedSize": 227,
-                      "gzipSize": 172
+                      "gzipSize": 172,
+                      "issuer": "./platform/providers/TooltipProvider/TooltipProvider.tsx"
                     },
                     {
                       "label": "WithTooltip.ts",
                       "path": "./platform/providers/TooltipProvider/WithTooltip.ts",
                       "statSize": 3454,
                       "parsedSize": 1538,
-                      "gzipSize": 744
+                      "gzipSize": 744,
+                      "issuer": "./platform/components/Desktop/components/TaskBar/Task.tsx"
                     }
                   ],
                   "parsedSize": 1765,
@@ -4854,7 +5033,8 @@
                   "path": "./platform/services/WindowManager/WindowManager.ts",
                   "statSize": 7880,
                   "parsedSize": 3579,
-                  "gzipSize": 1268
+                  "gzipSize": 1268,
+                  "issuer": "./pages/index.tsx"
                 }
               ],
               "parsedSize": 3579,
@@ -4870,21 +5050,24 @@
                   "path": "./platform/utils/createGUID.ts",
                   "statSize": 268,
                   "parsedSize": 213,
-                  "gzipSize": 173
+                  "gzipSize": 173,
+                  "issuer": "./platform/providers/ContextMenuProvider/ContextMenu/ContextMenu.tsx"
                 },
                 {
                   "label": "getAppDescriptors.ts",
                   "path": "./platform/utils/getAppDescriptors.ts",
                   "statSize": 364,
                   "parsedSize": 246,
-                  "gzipSize": 173
+                  "gzipSize": 173,
+                  "issuer": "./platform/components/Home.tsx"
                 },
                 {
                   "label": "noop.ts",
                   "path": "./platform/utils/noop.ts",
                   "statSize": 25,
                   "parsedSize": 75,
-                  "gzipSize": 81
+                  "gzipSize": 81,
+                  "issuer": "./apps/Terminal/executors/BuildManager/BuildManagerClient.ts"
                 }
               ],
               "parsedSize": 534,
@@ -4923,7 +5106,8 @@
                       "path": "./node_modules/@fortawesome/free-regular-svg-icons/faPlusSquare.js",
                       "statSize": 1011,
                       "parsedSize": 528,
-                      "gzipSize": 313
+                      "gzipSize": 313,
+                      "issuer": "./apps/DICOMViewer/components/ColorPalette/components/LUTComponentList/LUTComponentList.tsx"
                     }
                   ],
                   "parsedSize": 528,
@@ -4939,63 +5123,72 @@
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faAdjust.js",
                       "statSize": 761,
                       "parsedSize": 282,
-                      "gzipSize": 218
+                      "gzipSize": 218,
+                      "issuer": "./apps/DICOMViewer/components/LeftToolbar/LeftToolbar.tsx"
                     },
                     {
                       "label": "faArrowsAlt.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faArrowsAlt.js",
                       "statSize": 1288,
                       "parsedSize": 806,
-                      "gzipSize": 400
+                      "gzipSize": 400,
+                      "issuer": "./apps/DICOMViewer/components/LeftToolbar/LeftToolbar.tsx"
                     },
                     {
                       "label": "faArrowsAltV.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faArrowsAltV.js",
                       "statSize": 945,
                       "parsedSize": 462,
-                      "gzipSize": 296
+                      "gzipSize": 296,
+                      "issuer": "./apps/DICOMViewer/components/LeftToolbar/LeftToolbar.tsx"
                     },
                     {
                       "label": "faCheck.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faCheck.js",
                       "statSize": 874,
                       "parsedSize": 396,
-                      "gzipSize": 247
+                      "gzipSize": 247,
+                      "issuer": "./apps/DICOMViewer/components/AnnotationsElement/AnnotationsElement.tsx"
                     },
                     {
                       "label": "faLongArrowAltRight.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faLongArrowAltRight.js",
                       "statSize": 853,
                       "parsedSize": 363,
-                      "gzipSize": 266
+                      "gzipSize": 266,
+                      "issuer": "./apps/DICOMViewer/components/ColorPalette/components/LUTComponentList/LUTComponentList.tsx"
                     },
                     {
                       "label": "faPalette.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faPalette.js",
                       "statSize": 1085,
                       "parsedSize": 605,
-                      "gzipSize": 300
+                      "gzipSize": 300,
+                      "issuer": "./apps/DICOMViewer/components/ColorPalette/ColorPalette.tsx"
                     },
                     {
                       "label": "faSearch.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faSearch.js",
                       "statSize": 947,
                       "parsedSize": 468,
-                      "gzipSize": 307
+                      "gzipSize": 307,
+                      "issuer": "./apps/DICOMViewer/components/LeftToolbar/LeftToolbar.tsx"
                     },
                     {
                       "label": "faSyncAlt.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faSyncAlt.js",
                       "statSize": 1367,
                       "parsedSize": 887,
-                      "gzipSize": 537
+                      "gzipSize": 537,
+                      "issuer": "./apps/DICOMViewer/components/LeftToolbar/LeftToolbar.tsx"
                     },
                     {
                       "label": "faTrashAlt.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faTrashAlt.js",
                       "statSize": 966,
                       "parsedSize": 485,
-                      "gzipSize": 277
+                      "gzipSize": 277,
+                      "issuer": "./apps/DICOMViewer/components/ColorPalette/components/LUTComponentList/LUTComponentList.tsx"
                     }
                   ],
                   "parsedSize": 4754,
@@ -5015,7 +5208,8 @@
                   "path": "./node_modules/js-untar/build/dist/untar.js",
                   "statSize": 6416,
                   "parsedSize": 6386,
-                  "gzipSize": 2325
+                  "gzipSize": 2325,
+                  "issuer": "./apps/DICOMViewer/components/SelectDataset/utils/loadFrames.ts"
                 }
               ],
               "parsedSize": 6386,
@@ -5031,7 +5225,8 @@
                   "path": "./node_modules/lodash.clonedeep/index.js",
                   "statSize": 45025,
                   "parsedSize": 8526,
-                  "gzipSize": 3144
+                  "gzipSize": 3144,
+                  "issuer": "./apps/DICOMViewer/utils/computeFrames.ts"
                 }
               ],
               "parsedSize": 8526,
@@ -5177,7 +5372,8 @@
               "path": "./apps/Terminal/Terminal.module.scss",
               "statSize": 201,
               "parsedSize": 158,
-              "gzipSize": 124
+              "gzipSize": 124,
+              "issuer": "./apps/Terminal/Terminal.tsx"
             },
             {
               "label": "Terminal.tsx + 18 modules (concatenated)",
@@ -5481,7 +5677,8 @@
                   "path": "./apps/Terminal/components/CommandHelp/CommandHelp.module.scss",
                   "statSize": 260,
                   "parsedSize": 215,
-                  "gzipSize": 138
+                  "gzipSize": 138,
+                  "issuer": "./apps/Terminal/components/CommandHelp/CommandHelp.tsx"
                 }
               ],
               "parsedSize": 215,
@@ -5502,7 +5699,8 @@
                       "path": "./apps/Terminal/executors/About/About.module.scss",
                       "statSize": 204,
                       "parsedSize": 159,
-                      "gzipSize": 135
+                      "gzipSize": 135,
+                      "issuer": "./apps/Terminal/executors/About/About.tsx"
                     }
                   ],
                   "parsedSize": 159,
@@ -5518,7 +5716,8 @@
                       "path": "./apps/Terminal/executors/BashError/BashError.module.scss",
                       "statSize": 92,
                       "parsedSize": 55,
-                      "gzipSize": 69
+                      "gzipSize": 69,
+                      "issuer": "./apps/Terminal/executors/BashError/BashError.tsx"
                     }
                   ],
                   "parsedSize": 55,
@@ -5534,7 +5733,8 @@
                       "path": "./apps/Terminal/executors/BuildManager/BuildManager.module.scss",
                       "statSize": 209,
                       "parsedSize": 166,
-                      "gzipSize": 128
+                      "gzipSize": 128,
+                      "issuer": "./apps/Terminal/executors/BuildManager/BuildManager.tsx"
                     }
                   ],
                   "parsedSize": 166,
@@ -5550,7 +5750,8 @@
                       "path": "./apps/Terminal/executors/Command/Command.module.scss",
                       "statSize": 133,
                       "parsedSize": 94,
-                      "gzipSize": 89
+                      "gzipSize": 89,
+                      "issuer": "./apps/Terminal/executors/Command/Command.tsx"
                     }
                   ],
                   "parsedSize": 94,
@@ -5566,7 +5767,8 @@
                       "path": "./apps/Terminal/executors/Help/Help.module.scss",
                       "statSize": 157,
                       "parsedSize": 116,
-                      "gzipSize": 106
+                      "gzipSize": 106,
+                      "issuer": "./apps/Terminal/executors/Help/Help.tsx"
                     }
                   ],
                   "parsedSize": 116,
@@ -5582,7 +5784,8 @@
                       "path": "./apps/Terminal/executors/Skills/Skills.module.scss",
                       "statSize": 153,
                       "parsedSize": 112,
-                      "gzipSize": 103
+                      "gzipSize": 103,
+                      "issuer": "./apps/Terminal/executors/Skills/Skills.tsx"
                     }
                   ],
                   "parsedSize": 112,
@@ -5598,7 +5801,8 @@
                       "path": "./apps/Terminal/executors/Work/Work.module.scss",
                       "statSize": 221,
                       "parsedSize": 176,
-                      "gzipSize": 139
+                      "gzipSize": 139,
+                      "issuer": "./apps/Terminal/executors/Work/Work.tsx"
                     }
                   ],
                   "parsedSize": 176,
@@ -5636,21 +5840,24 @@
                   "path": "./node_modules/@fortawesome/free-brands-svg-icons/faGithub.js",
                   "statSize": 1906,
                   "parsedSize": 1427,
-                  "gzipSize": 724
+                  "gzipSize": 724,
+                  "issuer": "./apps/Terminal/executors/About/About.tsx"
                 },
                 {
                   "label": "faLinkedin.js",
                   "path": "./node_modules/@fortawesome/free-brands-svg-icons/faLinkedin.js",
                   "statSize": 1030,
                   "parsedSize": 549,
-                  "gzipSize": 361
+                  "gzipSize": 361,
+                  "issuer": "./apps/Terminal/executors/About/About.tsx"
                 },
                 {
                   "label": "faTwitter.js",
                   "path": "./node_modules/@fortawesome/free-brands-svg-icons/faTwitter.js",
                   "statSize": 1395,
                   "parsedSize": 915,
-                  "gzipSize": 546
+                  "gzipSize": 546,
+                  "issuer": "./apps/Terminal/executors/About/About.tsx"
                 }
               ],
               "parsedSize": 2891,
@@ -5666,14 +5873,16 @@
                   "path": "./node_modules/@josselinbuils/hooks/useLazy.mjs",
                   "statSize": 1879,
                   "parsedSize": 666,
-                  "gzipSize": 404
+                  "gzipSize": 404,
+                  "issuer": "./platform/components/Image/Image.tsx"
                 },
                 {
                   "label": "useList.mjs",
                   "path": "./node_modules/@josselinbuils/hooks/useList.mjs",
                   "statSize": 1080,
                   "parsedSize": 493,
-                  "gzipSize": 280
+                  "gzipSize": 280,
+                  "issuer": "./apps/Terminal/Terminal.tsx"
                 }
               ],
               "parsedSize": 1159,
@@ -5689,7 +5898,8 @@
                   "path": "./node_modules/ansi_up/ansi_up.js",
                   "statSize": 21923,
                   "parsedSize": 12895,
-                  "gzipSize": 2807
+                  "gzipSize": 2807,
+                  "issuer": "./apps/Terminal/executors/BuildManager/utils/formatLogs.ts"
                 }
               ],
               "parsedSize": 12895,
@@ -5728,7 +5938,8 @@
                       "path": "./node_modules/@fortawesome/free-brands-svg-icons/faRedditAlien.js",
                       "statSize": 1459,
                       "parsedSize": 975,
-                      "gzipSize": 524
+                      "gzipSize": 524,
+                      "issuer": "./apps/Reddit/RedditDescriptor.ts"
                     }
                   ],
                   "parsedSize": 975,
@@ -5744,56 +5955,64 @@
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faBlog.js",
                       "statSize": 1217,
                       "parsedSize": 740,
-                      "gzipSize": 455
+                      "gzipSize": 455,
+                      "issuer": "./apps/Blog/BlogDescriptor.ts"
                     },
                     {
                       "label": "faCode.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faCode.js",
                       "statSize": 1138,
                       "parsedSize": 661,
-                      "gzipSize": 403
+                      "gzipSize": 403,
+                      "issuer": "./apps/CodeEditor/CodeEditorDescriptor.ts"
                     },
                     {
                       "label": "faGamepad.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faGamepad.js",
                       "statSize": 952,
                       "parsedSize": 472,
-                      "gzipSize": 257
+                      "gzipSize": 257,
+                      "issuer": "./apps/Teravia/TeraviaDescriptor.ts"
                     },
                     {
                       "label": "faHeadphones.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faHeadphones.js",
                       "statSize": 1078,
                       "parsedSize": 595,
-                      "gzipSize": 384
+                      "gzipSize": 384,
+                      "issuer": "./apps/MP3Player/MP3PlayerDescriptor.ts"
                     },
                     {
                       "label": "faHeartbeat.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faHeartbeat.js",
                       "statSize": 1014,
                       "parsedSize": 532,
-                      "gzipSize": 368
+                      "gzipSize": 368,
+                      "issuer": "./apps/DICOMViewer/DICOMViewerDescriptor.ts"
                     },
                     {
                       "label": "faStickyNote.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faStickyNote.js",
                       "statSize": 798,
                       "parsedSize": 315,
-                      "gzipSize": 257
+                      "gzipSize": 257,
+                      "issuer": "./apps/Notes/NotesDescriptor.ts"
                     },
                     {
                       "label": "faTerminal.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faTerminal.js",
                       "statSize": 1007,
                       "parsedSize": 526,
-                      "gzipSize": 325
+                      "gzipSize": 325,
+                      "issuer": "./apps/Terminal/TerminalDescriptor.ts"
                     },
                     {
                       "label": "faTimes.js",
                       "path": "./node_modules/@fortawesome/free-solid-svg-icons/faTimes.js",
                       "statSize": 1015,
                       "parsedSize": 537,
-                      "gzipSize": 271
+                      "gzipSize": 271,
+                      "issuer": "./platform/components/Window/TitleBar.tsx"
                     }
                   ],
                   "parsedSize": 4378,
@@ -5809,7 +6028,8 @@
                       "path": "./node_modules/@fortawesome/react-fontawesome/index.es.js",
                       "statSize": 11366,
                       "parsedSize": 5270,
-                      "gzipSize": 2140
+                      "gzipSize": 2140,
+                      "issuer": "./apps/Terminal/executors/About/About.tsx"
                     }
                   ],
                   "parsedSize": 5270,
@@ -5834,21 +6054,24 @@
                       "path": "./node_modules/@josselinbuils/hooks/useDynamicRef.mjs",
                       "statSize": 430,
                       "parsedSize": 133,
-                      "gzipSize": 126
+                      "gzipSize": 126,
+                      "issuer": "./node_modules/@josselinbuils/hooks/useKeyMap.mjs"
                     },
                     {
                       "label": "useEventListener.mjs",
                       "path": "./node_modules/@josselinbuils/hooks/useEventListener.mjs",
                       "statSize": 701,
                       "parsedSize": 345,
-                      "gzipSize": 232
+                      "gzipSize": 232,
+                      "issuer": "./node_modules/@josselinbuils/hooks/useKeyMap.mjs"
                     },
                     {
                       "label": "useKeyMap.mjs",
                       "path": "./node_modules/@josselinbuils/hooks/useKeyMap.mjs",
                       "statSize": 1973,
                       "parsedSize": 820,
-                      "gzipSize": 495
+                      "gzipSize": 495,
+                      "issuer": "./apps/Terminal/Terminal.tsx"
                     }
                   ],
                   "parsedSize": 1298,
@@ -5864,7 +6087,8 @@
                       "path": "./node_modules/@josselinbuils/utils/Subject.mjs",
                       "statSize": 2231,
                       "parsedSize": 504,
-                      "gzipSize": 276
+                      "gzipSize": 276,
+                      "issuer": "./platform/services/WindowManager/WindowManager.ts"
                     }
                   ],
                   "parsedSize": 504,
@@ -5884,7 +6108,8 @@
                   "path": "./node_modules/classnames/index.js",
                   "statSize": 1328,
                   "parsedSize": 531,
-                  "gzipSize": 327
+                  "gzipSize": 327,
+                  "issuer": "./platform/providers/ContextMenuProvider/ContextMenuProvider.tsx"
                 }
               ],
               "parsedSize": 531,
@@ -5900,28 +6125,32 @@
                   "path": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js",
                   "statSize": 212,
                   "parsedSize": 167,
-                  "gzipSize": 146
+                  "gzipSize": 146,
+                  "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js"
                 },
                 {
                   "label": "asyncToGenerator.js",
                   "path": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js",
                   "statSize": 787,
                   "parsedSize": 377,
-                  "gzipSize": 237
+                  "gzipSize": 237,
+                  "issuer": "./apps/Terminal/Terminal.tsx"
                 },
                 {
                   "label": "classCallCheck.js",
                   "path": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/classCallCheck.js",
                   "statSize": 176,
                   "parsedSize": 155,
-                  "gzipSize": 139
+                  "gzipSize": 139,
+                  "issuer": "./platform/services/WindowManager/WindowManager.ts"
                 },
                 {
                   "label": "createClass.js",
                   "path": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/createClass.js",
                   "statSize": 579,
                   "parsedSize": 284,
-                  "gzipSize": 213
+                  "gzipSize": 213,
+                  "issuer": "./platform/services/WindowManager/WindowManager.ts"
                 },
                 {
                   "label": "objectWithoutProperties.js + 1 modules (concatenated)",
@@ -6068,7 +6297,8 @@
                   "path": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js",
                   "statSize": 495,
                   "parsedSize": 374,
-                  "gzipSize": 274
+                  "gzipSize": 274,
+                  "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js"
                 }
               ],
               "parsedSize": 2907,
@@ -6097,7 +6327,8 @@
               "path": "./apps/Reddit/Reddit.module.scss",
               "statSize": 446,
               "parsedSize": 112,
-              "gzipSize": 103
+              "gzipSize": 103,
+              "issuer": "./apps/Reddit/Reddit.tsx"
             },
             {
               "label": "Reddit.tsx + 18 modules (concatenated)",
@@ -6386,14 +6617,16 @@
                       "path": "./apps/Reddit/components/Header/FilterButton.module.scss",
                       "statSize": 109,
                       "parsedSize": 72,
-                      "gzipSize": 73
+                      "gzipSize": 73,
+                      "issuer": "./apps/Reddit/components/Header/FilterButton.tsx"
                     },
                     {
                       "label": "Header.module.scss",
                       "path": "./apps/Reddit/components/Header/Header.module.scss",
                       "statSize": 119,
                       "parsedSize": 80,
-                      "gzipSize": 83
+                      "gzipSize": 83,
+                      "issuer": "./apps/Reddit/components/Header/Header.tsx"
                     }
                   ],
                   "parsedSize": 152,
@@ -6409,7 +6642,8 @@
                       "path": "./apps/Reddit/components/Icon/Icon.module.scss",
                       "statSize": 199,
                       "parsedSize": 156,
-                      "gzipSize": 122
+                      "gzipSize": 122,
+                      "issuer": "./apps/Reddit/components/Icon/Icon.tsx"
                     }
                   ],
                   "parsedSize": 156,
@@ -6425,7 +6659,8 @@
                       "path": "./apps/Reddit/components/Logo/Logo.module.scss",
                       "statSize": 111,
                       "parsedSize": 72,
-                      "gzipSize": 81
+                      "gzipSize": 81,
+                      "issuer": "./apps/Reddit/components/Logo/Logo.tsx"
                     }
                   ],
                   "parsedSize": 72,
@@ -6441,14 +6676,16 @@
                       "path": "./apps/Reddit/components/Menu/Menu.module.scss",
                       "statSize": 85,
                       "parsedSize": 48,
-                      "gzipSize": 64
+                      "gzipSize": 64,
+                      "issuer": "./apps/Reddit/components/Menu/Menu.tsx"
                     },
                     {
                       "label": "MenuItem.module.scss",
                       "path": "./apps/Reddit/components/Menu/MenuItem.module.scss",
                       "statSize": 123,
                       "parsedSize": 84,
-                      "gzipSize": 85
+                      "gzipSize": 85,
+                      "issuer": "./apps/Reddit/components/Menu/MenuItem.tsx"
                     }
                   ],
                   "parsedSize": 132,
@@ -6464,14 +6701,16 @@
                       "path": "./apps/Reddit/components/Posts/Post/Post.module.scss",
                       "statSize": 301,
                       "parsedSize": 250,
-                      "gzipSize": 182
+                      "gzipSize": 182,
+                      "issuer": "./apps/Reddit/components/Posts/Post/Post.tsx"
                     },
                     {
                       "label": "PostDetails.module.scss",
                       "path": "./apps/Reddit/components/Posts/Post/PostDetails.module.scss",
                       "statSize": 178,
                       "parsedSize": 137,
-                      "gzipSize": 112
+                      "gzipSize": 112,
+                      "issuer": "./apps/Reddit/components/Posts/Post/PostDetails.tsx"
                     }
                   ],
                   "parsedSize": 387,
@@ -6500,7 +6739,8 @@
                   "path": "./node_modules/@fortawesome/free-brands-svg-icons/faReddit.js",
                   "statSize": 1510,
                   "parsedSize": 1031,
-                  "gzipSize": 526
+                  "gzipSize": 526,
+                  "issuer": "./apps/Reddit/components/Icon/Icon.tsx"
                 }
               ],
               "parsedSize": 1031,
@@ -6516,7 +6756,8 @@
                   "path": "./node_modules/@fortawesome/free-regular-svg-icons/faComment.js",
                   "statSize": 1042,
                   "parsedSize": 562,
-                  "gzipSize": 376
+                  "gzipSize": 376,
+                  "issuer": "./apps/Reddit/components/Posts/Post/Post.tsx"
                 }
               ],
               "parsedSize": 562,
@@ -6532,21 +6773,24 @@
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faAnchor.js",
                   "statSize": 1427,
                   "parsedSize": 948,
-                  "gzipSize": 525
+                  "gzipSize": 525,
+                  "issuer": "./apps/Reddit/components/Posts/Post/PostDetails.tsx"
                 },
                 {
                   "label": "faChartBar.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faChartBar.js",
                   "statSize": 1269,
                   "parsedSize": 788,
-                  "gzipSize": 309
+                  "gzipSize": 309,
+                  "issuer": "./apps/Reddit/components/Header/FilterButton.tsx"
                 },
                 {
                   "label": "faFireAlt.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faFireAlt.js",
                   "statSize": 1031,
                   "parsedSize": 551,
-                  "gzipSize": 380
+                  "gzipSize": 380,
+                  "issuer": "./apps/Reddit/components/Header/FilterButton.tsx"
                 }
               ],
               "parsedSize": 2287,
@@ -6576,14 +6820,16 @@
                       "path": "./platform/components/ButtonLink/ButtonLink.module.scss",
                       "statSize": 103,
                       "parsedSize": 66,
-                      "gzipSize": 70
+                      "gzipSize": 70,
+                      "issuer": "./platform/components/ButtonLink/ButtonLink.tsx"
                     },
                     {
                       "label": "ButtonLink.tsx",
                       "path": "./platform/components/ButtonLink/ButtonLink.tsx",
                       "statSize": 1722,
                       "parsedSize": 903,
-                      "gzipSize": 463
+                      "gzipSize": 463,
+                      "issuer": "./apps/Reddit/components/Header/FilterButton.tsx"
                     }
                   ],
                   "parsedSize": 969,
@@ -6599,14 +6845,16 @@
                       "path": "./platform/components/Spinner/Spinner.module.scss",
                       "statSize": 225,
                       "parsedSize": 182,
-                      "gzipSize": 121
+                      "gzipSize": 121,
+                      "issuer": "./platform/components/Spinner/Spinner.tsx"
                     },
                     {
                       "label": "Spinner.tsx",
                       "path": "./platform/components/Spinner/Spinner.tsx",
                       "statSize": 969,
                       "parsedSize": 505,
-                      "gzipSize": 306
+                      "gzipSize": 306,
+                      "issuer": "./apps/DICOMViewer/components/SelectDataset/SelectDataset.tsx"
                     }
                   ],
                   "parsedSize": 687,
@@ -6626,14 +6874,16 @@
                   "path": "./platform/utils/cancelable.ts",
                   "statSize": 489,
                   "parsedSize": 233,
-                  "gzipSize": 177
+                  "gzipSize": 177,
+                  "issuer": "./apps/DICOMViewer/components/SelectDataset/SelectDataset.tsx"
                 },
                 {
                   "label": "getBaseURL.ts",
                   "path": "./platform/utils/getBaseURL.ts",
                   "statSize": 181,
                   "parsedSize": 151,
-                  "gzipSize": 138
+                  "gzipSize": 138,
+                  "issuer": "./apps/DICOMViewer/components/SelectDataset/utils/loadDatasetList.ts"
                 }
               ],
               "parsedSize": 384,
@@ -6667,14 +6917,16 @@
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faMinus.js",
                   "statSize": 716,
                   "parsedSize": 238,
-                  "gzipSize": 194
+                  "gzipSize": 194,
+                  "issuer": "./platform/components/Window/TitleBar.tsx"
                 },
                 {
                   "label": "faPlus.js",
                   "path": "./node_modules/@fortawesome/free-solid-svg-icons/faPlus.js",
                   "statSize": 837,
                   "parsedSize": 360,
-                  "gzipSize": 221
+                  "gzipSize": 221,
+                  "issuer": "./platform/components/Window/TitleBar.tsx"
                 }
               ],
               "parsedSize": 598,
@@ -6690,7 +6942,8 @@
                   "path": "./node_modules/@josselinbuils/utils/Deferred.mjs",
                   "statSize": 793,
                   "parsedSize": 184,
-                  "gzipSize": 156
+                  "gzipSize": 156,
+                  "issuer": "./apps/Terminal/Terminal.tsx"
                 }
               ],
               "parsedSize": 184,
@@ -6706,21 +6959,24 @@
                   "path": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js",
                   "statSize": 192,
                   "parsedSize": 184,
-                  "gzipSize": 154
+                  "gzipSize": 154,
+                  "issuer": "./platform/components/Window/Window.tsx"
                 },
                 {
                   "label": "getPrototypeOf.js",
                   "path": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js",
                   "statSize": 230,
                   "parsedSize": 190,
-                  "gzipSize": 136
+                  "gzipSize": 136,
+                  "issuer": "./platform/components/Window/Window.tsx"
                 },
                 {
                   "label": "inherits.js",
                   "path": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/inherits.js",
                   "statSize": 490,
                   "parsedSize": 311,
-                  "gzipSize": 235
+                  "gzipSize": 235,
+                  "issuer": "./platform/components/Window/Window.tsx"
                 },
                 {
                   "label": "possibleConstructorReturn.js + 1 modules (concatenated)",
@@ -6763,7 +7019,8 @@
                   "path": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js",
                   "statSize": 200,
                   "parsedSize": 153,
-                  "gzipSize": 126
+                  "gzipSize": 126,
+                  "issuer": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/inherits.js"
                 }
               ],
               "parsedSize": 1329,
@@ -6783,14 +7040,16 @@
               "path": "./platform/components/Window/TitleBar.module.scss",
               "statSize": 415,
               "parsedSize": 360,
-              "gzipSize": 207
+              "gzipSize": 207,
+              "issuer": "./platform/components/Window/TitleBar.tsx"
             },
             {
               "label": "Window.module.scss",
               "path": "./platform/components/Window/Window.module.scss",
               "statSize": 333,
               "parsedSize": 282,
-              "gzipSize": 188
+              "gzipSize": 188,
+              "issuer": "./platform/components/Window/Window.tsx"
             },
             {
               "label": "Window.tsx + 1 modules (concatenated)",
@@ -6859,14 +7118,16 @@
               "path": "./apps/Notes/Notes.module.scss",
               "statSize": 94,
               "parsedSize": 57,
-              "gzipSize": 70
+              "gzipSize": 70,
+              "issuer": "./apps/Notes/Notes.tsx"
             },
             {
               "label": "Notes.tsx",
               "path": "./apps/Notes/Notes.tsx",
               "statSize": 2637,
               "parsedSize": 1396,
-              "gzipSize": 723
+              "gzipSize": 723,
+              "issuer": "./apps/Notes/NotesDescriptor.ts"
             }
           ],
           "parsedSize": 1453,
@@ -6891,14 +7152,16 @@
               "path": "./apps/Teravia/Teravia.module.scss",
               "statSize": 129,
               "parsedSize": 90,
-              "gzipSize": 89
+              "gzipSize": 89,
+              "issuer": "./apps/Teravia/Teravia.tsx"
             },
             {
               "label": "Teravia.tsx",
               "path": "./apps/Teravia/Teravia.tsx",
               "statSize": 2265,
               "parsedSize": 1170,
-              "gzipSize": 636
+              "gzipSize": 636,
+              "issuer": "./apps/Teravia/TeraviaDescriptor.ts"
             }
           ],
           "parsedSize": 1260,
@@ -6923,14 +7186,16 @@
               "path": "./apps/Blog/Blog.module.scss",
               "statSize": 123,
               "parsedSize": 84,
-              "gzipSize": 86
+              "gzipSize": 86,
+              "issuer": "./apps/Blog/Blog.tsx"
             },
             {
               "label": "Blog.tsx",
               "path": "./apps/Blog/Blog.tsx",
               "statSize": 2086,
               "parsedSize": 1076,
-              "gzipSize": 576
+              "gzipSize": 576,
+              "issuer": "./apps/Blog/BlogDescriptor.ts"
             }
           ],
           "parsedSize": 1160,
@@ -6955,7 +7220,8 @@
               "path": "./pages/index.tsx",
               "statSize": 643,
               "parsedSize": 233,
-              "gzipSize": 194
+              "gzipSize": 194,
+              "issuer": "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=private-next-pages%2Findex.tsx!"
             }
           ],
           "parsedSize": 233,
@@ -6980,7 +7246,8 @@
               "path": "./node_modules/next/router.js",
               "statSize": 49,
               "parsedSize": 34,
-              "gzipSize": 54
+              "gzipSize": 54,
+              "issuer": "./pages/app/[app].tsx"
             }
           ],
           "parsedSize": 34,
@@ -6996,7 +7263,8 @@
               "path": "./pages/app/[app].tsx",
               "statSize": 456,
               "parsedSize": 191,
-              "gzipSize": 169
+              "gzipSize": 169,
+              "issuer": "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fapp%2F%5Bapp%5D&absolutePagePath=private-next-pages%2Fapp%2F%5Bapp%5D.tsx!"
             }
           ],
           "parsedSize": 191,
@@ -7025,8 +7293,8 @@
     "statSize": 437993
   },
   "metadata": {
-    "date": "2021-09-06T13:59:31.717Z",
-    "gitCommitId": "9cedb1b365e9bd1fd8738757bcd426bb5b94c69c",
+    "date": "2021-10-31T11:01:06.448Z",
+    "gitCommitId": "3bdacbaa2199e676b68f9a3fa65d5e3f18942808",
     "project": "portfolio"
   },
   "pages": [
@@ -7046,10 +7314,10 @@
       ],
       "gzipSize": 29354,
       "parsedSize": 93036,
-      "statSize": 202556,
+      "statSize": 202552,
       "totalGzipSize": 107576,
       "totalParsedSize": 335750,
-      "totalStatSize": 640549
+      "totalStatSize": 640545
     },
     {
       "label": "/_error",
@@ -7079,10 +7347,10 @@
       ],
       "gzipSize": 13482,
       "parsedSize": 41878,
-      "statSize": 94320,
+      "statSize": 94316,
       "totalGzipSize": 91704,
       "totalParsedSize": 284592,
-      "totalStatSize": 532313
+      "totalStatSize": 532309
     }
   ]
 }
