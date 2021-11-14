@@ -1,6 +1,6 @@
 {
   "name": "next-bundle-analyzer",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "NextJS version of Webpack Bundle Analyzer.",
   "repository": "https://github.com/josselinbuils/next-bundle-analyzer.git",
   "author": "Josselin BUILS",
@@ -22,35 +22,35 @@
     "test": "jest"
   },
   "dependencies": {
-    "open": "8.4.0",
-    "webpack-bundle-analyzer": "4.5.0"
+    "open": "^8.4.0",
+    "webpack-bundle-analyzer": "^4.5.0"
   },
   "peerDependencies": {
-    "next": "10 | ^11"
+    "next": "10 || ^11 || ^12"
   },
   "devDependencies": {
     "@carrotsearch/foamtree": "3.5.0",
-    "@josselinbuils/eslint-config-typescript": "0.3.0",
+    "@josselinbuils/eslint-config-typescript": "0.4.0",
     "@josselinbuils/exec-staged": "1.0.2",
     "@prefresh/webpack": "3.3.2",
     "@rollup/plugin-commonjs": "21.0.1",
     "@rollup/plugin-typescript": "8.3.0",
     "@types/jest": "27.0.2",
     "@types/lodash": "4.14.176",
-    "@types/node": "16.11.6",
+    "@types/node": "16.11.7",
     "@types/webpack": "5.28.0",
-    "@typescript-eslint/eslint-plugin": "5.2.0",
-    "@typescript-eslint/parser": "5.2.0",
+    "@typescript-eslint/eslint-plugin": "5.3.1",
+    "@typescript-eslint/parser": "5.3.1",
     "classnames": "2.3.1",
-    "css-loader": "6.5.0",
-    "cssnano": "5.0.8",
-    "eslint": "8.1.0",
-    "eslint-config-airbnb-base": "14.2.1",
+    "css-loader": "6.5.1",
+    "cssnano": "5.0.10",
+    "eslint": "8.2.0",
+    "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-preact": "1.2.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-import-resolver-typescript": "2.5.0",
-    "eslint-plugin-import": "2.25.2",
-    "filesize": "8.0.5",
+    "eslint-plugin-import": "2.25.3",
+    "filesize": "8.0.6",
     "html-inline-script-webpack-plugin": "2.0.3",
     "html-webpack-plugin": "5.5.0",
     "husky": "7.0.4",
@@ -61,16 +61,16 @@
     "postcss-loader": "6.2.0",
     "preact": "10.5.15",
     "prettier": "2.4.1",
-    "rollup": "2.58.3",
+    "rollup": "2.60.0",
     "sass": "1.43.4",
     "sass-loader": "12.3.0",
     "style-loader": "3.3.1",
     "ts-jest": "27.0.7",
     "ts-loader": "9.2.6",
     "typescript": "4.4.4",
-    "webpack": "5.61.0",
+    "webpack": "5.64.0",
     "webpack-cli": "4.9.1",
-    "webpack-dev-server": "4.4.0"
+    "webpack-dev-server": "4.5.0"
   },
   "keywords": [
     "Next",

@@ -2,7 +2,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import path from 'path';
 
-module.exports = {
+export default {
   input: 'src/index.ts',
   output: {
     dir: 'dist',
