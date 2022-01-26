@@ -43,9 +43,7 @@ module.exports = {
       templateParameters: {
         buildStats: isProduction
           ? 'DATA_PLACEHOLDER'
-          : JSON.stringify(
-              require('./src/client/__fixtures__/build-stats.json')
-            ),
+          : JSON.stringify(require('./src/client/__fixtures__/bundles.json')),
         title: isProduction ? 'TITLE_PLACEHOLDER' : 'Bundle',
       },
     }),

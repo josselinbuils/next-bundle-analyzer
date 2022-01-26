@@ -33,17 +33,27 @@ export const DetailsTooltip: FunctionComponent<Props> = ({ group }) => {
         }
 
         const boundingRect = element.getBoundingClientRect();
+        const xDelta = boundingRect.width + MARGIN;
+        const yDelta = boundingRect.height + MARGIN;
         let x = event.pageX;
         let y = event.pageY;
 
-        if (x + boundingRect.width + MARGIN > window.innerWidth) {
-          x -= boundingRect.width + MARGIN;
+        if (x + xDelta > window.innerWidth) {
+          if (x - xDelta > 0) {
+            x -= xDelta;
+          } else {
+            x = 0;
+          }
         } else {
           x += MARGIN;
         }
 
-        if (y + boundingRect.height + MARGIN > window.innerHeight) {
-          y -= boundingRect.height + MARGIN;
+        if (y + yDelta > window.innerHeight) {
+          if (y - yDelta > 0) {
+            y -= yDelta;
+          } else {
+            y = 0;
+          }
         } else {
           y += MARGIN;
         }
