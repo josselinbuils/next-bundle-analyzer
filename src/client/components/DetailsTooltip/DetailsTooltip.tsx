@@ -1,17 +1,50 @@
-import cn from 'classnames';
+import debounce from 'lodash/debounce';
 import type { FunctionComponent, VNode } from 'preact';
-import { useEffect, useRef } from 'preact/compat';
+import { useEffect, useMemo, useRef, useState } from 'preact/compat';
 import type { ClientGroup } from '../../interfaces/ClientGroup';
 import styles from './DetailsTooltip.module.scss';
 
-const MARGIN = 20;
+const MARGIN_PX = 20;
+const DISPLAY_GROUP_DEBOUNCE_DELAY_MS = 50;
 
 interface Props {
-  group: ClientGroup;
+  group: ClientGroup | undefined;
 }
 
 export const DetailsTooltip: FunctionComponent<Props> = ({ group }) => {
+  const [displayedGroup, setDisplayedGroup] = useState<ClientGroup>();
   const elementRef = useRef<HTMLDivElement>(null);
+  const softlySetDisplayedGroup = useMemo(
+    () => debounce(setDisplayedGroup, DISPLAY_GROUP_DEBOUNCE_DELAY_MS),
+    []
+  );
+
+  useEffect(() => {
+    function mouseMoveListener(event: MouseEvent) {
+      if (elementRef.current) {
+        requestAnimationFrame(() => {
+          setTooltipPosition(elementRef.current, event.pageX, event.pageY);
+        });
+      }
+    }
+
+    if (displayedGroup) {
+      window.addEventListener('mousemove', mouseMoveListener, true);
+
+      return () => {
+        window.removeEventListener('mousemove', mouseMoveListener, true);
+      };
+    }
+  }, [displayedGroup]);
+
+  useEffect(() => {
+    softlySetDisplayedGroup(group);
+  }, [group, softlySetDisplayedGroup]);
+
+  if (displayedGroup === undefined) {
+    return null;
+  }
+
   const {
     gzipSize,
     inaccurateSizes,
@@ -21,58 +54,10 @@ export const DetailsTooltip: FunctionComponent<Props> = ({ group }) => {
     path,
     sharedByPages,
     statSize,
-  } = group;
-
-  useEffect(() => {
-    function mouseMoveListener(event: MouseEvent) {
-      requestAnimationFrame(() => {
-        const element = elementRef.current;
-
-        if (!element) {
-          return;
-        }
-
-        const boundingRect = element.getBoundingClientRect();
-        const xDelta = boundingRect.width + MARGIN;
-        const yDelta = boundingRect.height + MARGIN;
-        let x = event.pageX;
-        let y = event.pageY;
-
-        if (x + xDelta > window.innerWidth) {
-          if (x - xDelta > 0) {
-            x -= xDelta;
-          } else {
-            x = 0;
-          }
-        } else {
-          x += MARGIN;
-        }
-
-        if (y + yDelta > window.innerHeight) {
-          if (y - yDelta > 0) {
-            y -= yDelta;
-          } else {
-            y = 0;
-          }
-        } else {
-          y += MARGIN;
-        }
-
-        element.style.left = `${x}px`;
-        element.style.top = `${y}px`;
-      });
-    }
-
-    window.addEventListener('mousemove', mouseMoveListener, true);
-    return () =>
-      window.removeEventListener('mousemove', mouseMoveListener, true);
-  }, []);
+  } = displayedGroup;
 
   return (
-    <div
-      className={cn(styles.detailsTooltip, { [styles.hidden]: !group })}
-      ref={elementRef}
-    >
+    <div className={styles.detailsTooltip} ref={elementRef}>
       <p className={styles.label}>
         <strong>{label}</strong>
       </p>
@@ -133,6 +118,44 @@ function formatIssuers(issuers: string[]): VNode {
         ))}
     </>
   );
+}
+
+function setTooltipPosition(
+  element: HTMLDivElement | null,
+  x: number,
+  y: number
+): void {
+  if (!element) {
+    return;
+  }
+
+  const boundingRect = element.getBoundingClientRect();
+  const xDelta = boundingRect.width + MARGIN_PX;
+  const yDelta = boundingRect.height + MARGIN_PX;
+
+  if (x + xDelta > window.innerWidth) {
+    if (x - xDelta > 0) {
+      x -= xDelta;
+    } else {
+      x = 0;
+    }
+  } else {
+    x += MARGIN_PX;
+  }
+
+  if (y + yDelta > window.innerHeight) {
+    if (y - yDelta > 0) {
+      y -= yDelta;
+    } else {
+      y = 0;
+    }
+  } else {
+    y += MARGIN_PX;
+  }
+
+  element.style.left = `${x}px`;
+  element.style.top = `${y}px`;
+  element.style.visibility = 'visible';
 }
 
 function formatSize(size: number): number {

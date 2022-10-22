@@ -6,11 +6,13 @@
   border: 0.0625rem solid #aaa;
   opacity: 0.9;
   max-width: 40rem;
+  min-width: 10rem;
   z-index: 3;
+  overflow-wrap: break-word;
+  visibility: hidden;
 
   p {
     margin: 0;
-    word-break: break-all;
   }
 
   .arrow {

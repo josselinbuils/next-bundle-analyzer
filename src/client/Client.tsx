@@ -201,7 +201,7 @@ export const Client: FunctionComponent<Props> = ({ data: baseData }) => {
           treemapRef={treemapRef}
         />
       </div>
-      {!!overflewGroup && <DetailsTooltip group={overflewGroup} />}
+      <DetailsTooltip group={overflewGroup} />
     </div>
   );
 };
