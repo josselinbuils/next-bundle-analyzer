@@ -1,5 +1,5 @@
-import { CommonChunk } from '../../interfaces/BuildStats';
-import { NextBuildManifest } from '../interfaces/NextBuildManifest';
+import type { CommonChunk } from '../../interfaces/BuildStats';
+import type { NextBuildManifest } from '../interfaces/NextBuildManifest';
 
 // @see https://github.com/vercel/next.js/blob/canary/packages/next/build/utils.ts
 export function getCommonChunks(

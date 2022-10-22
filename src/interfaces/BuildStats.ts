@@ -1,4 +1,4 @@
-import { Group } from './Foamtree';
+import type { Group } from './Foamtree';
 
 export interface BuildStats {
   chunks: ChunkGroup[];

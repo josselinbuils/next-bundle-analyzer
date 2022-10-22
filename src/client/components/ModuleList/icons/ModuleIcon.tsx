@@ -1,4 +1,4 @@
-import { FunctionComponent, JSX } from 'preact';
+import type { FunctionComponent, JSX } from 'preact';
 
 export const ModuleIcon: FunctionComponent<JSX.SVGAttributes> = (props) => (
   <svg width={11} height={13} xmlns="http://www.w3.org/2000/svg" {...props}>

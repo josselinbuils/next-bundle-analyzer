@@ -1,6 +1,6 @@
 import cn from 'classnames';
-import { FunctionComponent } from 'preact';
-import { ClientGroup } from '../../interfaces/ClientGroup';
+import type { FunctionComponent } from 'preact';
+import type { ClientGroup } from '../../interfaces/ClientGroup';
 import { Checkbox } from './Checkbox/Checkbox';
 import styles from './PageFilter.module.scss';
 

@@ -1,7 +1,7 @@
 import cn from 'classnames';
-import { FunctionComponent, VNode } from 'preact';
+import type { FunctionComponent, VNode } from 'preact';
 import { useEffect, useRef } from 'preact/compat';
-import { ClientGroup } from '../../interfaces/ClientGroup';
+import type { ClientGroup } from '../../interfaces/ClientGroup';
 import styles from './DetailsTooltip.module.scss';
 
 const MARGIN = 20;

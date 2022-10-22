@@ -1,11 +1,11 @@
-import {
+import type {
   BuildStats,
   ChunkGroup,
   CommonChunk,
 } from '../../interfaces/BuildStats';
 import { MAIN_SIZE_PROPERTY } from '../constants';
-import { ClientGroup } from '../interfaces/ClientGroup';
-import { ClientData } from '../interfaces/ClientState';
+import type { ClientGroup } from '../interfaces/ClientGroup';
+import type { ClientData } from '../interfaces/ClientState';
 
 let id: number;
 

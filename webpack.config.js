@@ -1,8 +1,8 @@
+const path = require('path');
 const PreactRefreshPlugin = require('@prefresh/webpack');
 const cssnano = require('cssnano');
 const HtmlInlineScriptPlugin = require('html-inline-script-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
 
 const isProduction = process.env.NODE_ENV === 'production';
 

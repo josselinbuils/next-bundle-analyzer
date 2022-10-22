@@ -1,5 +1,9 @@
-import { FunctionComponent } from 'preact';
+import type { FunctionComponent } from 'preact';
 import { useCallback, useMemo, useReducer, useRef } from 'preact/compat';
+import type {
+  EventHandler,
+  GroupColorDecoratorFunction,
+} from '../interfaces/Foamtree';
 import styles from './Client.module.scss';
 import { ArrowIcon } from './components/ArrowIcon';
 import { Button } from './components/Button/Button';
@@ -10,16 +14,13 @@ import { PageFilter } from './components/PageFilter/PageFilter';
 import { Search } from './components/Search/Search';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { Treemap } from './components/Treemap/Treemap';
-import { ClientAction } from './interfaces/ClientAction';
-import { ClientGroup } from './interfaces/ClientGroup';
-import { ClientData, ClientState } from './interfaces/ClientState';
-import {
-  EventHandler,
-  GroupColorDecoratorFunction,
-} from '../interfaces/Foamtree';
+import type { ClientAction } from './interfaces/ClientAction';
+import type { ClientGroup } from './interfaces/ClientGroup';
+import type { ClientData, ClientState } from './interfaces/ClientState';
 import { clientReducer } from './utils/clientReducer';
 import { filterPageGroups } from './utils/filterPageGroups';
-import { ChunkModules, findModulesByChunk } from './utils/findModulesByChunk';
+import type { ChunkModules } from './utils/findModulesByChunk';
+import { findModulesByChunk } from './utils/findModulesByChunk';
 import { getInitialState } from './utils/getInitialState';
 import { getQueryRegex } from './utils/getQueryRegex';
 

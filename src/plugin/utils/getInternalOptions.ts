@@ -1,4 +1,4 @@
-import { InternalOptions, Options } from '../interfaces/Options';
+import type { InternalOptions, Options } from '../interfaces/Options';
 
 export function getInternalOptions({
   clientOnly = true,

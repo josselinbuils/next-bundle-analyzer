@@ -1,5 +1,5 @@
 import { MAIN_SIZE_PROPERTY, MIN_SEARCH_CHARACTERS } from '../constants';
-import { ClientGroup } from '../interfaces/ClientGroup';
+import type { ClientGroup } from '../interfaces/ClientGroup';
 import { getQueryRegex } from './getQueryRegex';
 
 interface ChunkGroupWithParents {

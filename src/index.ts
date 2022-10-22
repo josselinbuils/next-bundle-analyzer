@@ -1,5 +1,5 @@
-import { Options } from './plugin/interfaces/Options';
 import { NextBundleAnalyzerPlugin } from './plugin/NextBundleAnalyzerPlugin';
+import type { Options } from './plugin/interfaces/Options';
 import { getInternalOptions } from './plugin/utils/getInternalOptions';
 
 export type {

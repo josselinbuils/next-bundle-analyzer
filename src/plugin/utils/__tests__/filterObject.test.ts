@@ -1,7 +1,7 @@
 import { filterObject } from '../filterObject';
 
 describe('filterObject', () => {
-  it('should act as pass through with a null filter ', () => {
+  it('should act as pass through with a null filter', () => {
     // Given
     const obj = {
       key1: 'value',
@@ -15,7 +15,7 @@ describe('filterObject', () => {
     expect(result).toEqual(obj);
   });
 
-  it('should filter an object ', () => {
+  it('should filter an object', () => {
     // Given
     const obj = {
       key1: 'value',

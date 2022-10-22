@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { FunctionComponent, JSX } from 'preact';
+import type { FunctionComponent, JSX } from 'preact';
 import styles from './Button.module.scss';
 
 interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {

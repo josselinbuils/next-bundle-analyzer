@@ -1,5 +1,5 @@
-import { ClientState } from '../interfaces/ClientState';
-import { ClientAction } from '../interfaces/ClientAction';
+import type { ClientAction } from '../interfaces/ClientAction';
+import type { ClientState } from '../interfaces/ClientState';
 
 export function clientReducer(
   state: ClientState,

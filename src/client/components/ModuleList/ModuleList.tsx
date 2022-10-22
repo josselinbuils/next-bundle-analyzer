@@ -1,5 +1,5 @@
-import { FunctionComponent } from 'preact';
-import { ClientGroup } from '../../interfaces/ClientGroup';
+import type { FunctionComponent } from 'preact';
+import type { ClientGroup } from '../../interfaces/ClientGroup';
 import { ModuleItem } from './ModuleItem';
 
 interface Props {

@@ -1,6 +1,10 @@
-import { ChunkGroup, CommonChunk, Page } from '../../interfaces/BuildStats';
+import type {
+  ChunkGroup,
+  CommonChunk,
+  Page,
+} from '../../interfaces/BuildStats';
 import { PLUGIN_NAME } from '../constants';
-import { NextBuildManifest } from '../interfaces/NextBuildManifest';
+import type { NextBuildManifest } from '../interfaces/NextBuildManifest';
 
 export function getPages(
   buildManifest: NextBuildManifest,

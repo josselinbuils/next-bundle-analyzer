@@ -1,4 +1,4 @@
-import { ObjectFilter } from '../interfaces/Options';
+import type { ObjectFilter } from '../interfaces/Options';
 
 export function filterObject(obj: any, filter: ObjectFilter | null): any {
   if (!filter) {

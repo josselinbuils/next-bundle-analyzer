@@ -1,11 +1,11 @@
-import { existsSync, promises as fs } from 'fs';
+import { existsSync, promises as fs } from 'node:fs';
+import path from 'node:path';
 import open from 'open';
-import path from 'path';
-import { Compiler } from 'webpack';
+import type { Compiler } from 'webpack';
 import { getViewerData } from 'webpack-bundle-analyzer/lib/analyzer';
-import { BuildStats, CommonChunk, Page } from '../interfaces/BuildStats';
+import type { BuildStats, CommonChunk, Page } from '../interfaces/BuildStats';
 import { DATA_PLACEHOLDER, PLUGIN_NAME, TITLE_PLACEHOLDER } from './constants';
-import { InternalOptions } from './interfaces/Options';
+import type { InternalOptions } from './interfaces/Options';
 import { filterObject } from './utils/filterObject';
 import { getCommonChunks } from './utils/getCommonChunks';
 import { getMetadata } from './utils/getMetadata';

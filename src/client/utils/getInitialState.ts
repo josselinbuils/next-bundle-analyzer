@@ -1,4 +1,4 @@
-import { ClientData, ClientState } from '../interfaces/ClientState';
+import type { ClientData, ClientState } from '../interfaces/ClientState';
 import { filterPageGroups } from './filterPageGroups';
 
 export function getInitialState(data: ClientData): ClientState {

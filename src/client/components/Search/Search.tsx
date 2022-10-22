@@ -1,5 +1,5 @@
 import debounce from 'lodash/debounce';
-import { FunctionComponent } from 'preact';
+import type { FunctionComponent } from 'preact';
 import { useEffect, useMemo, useRef } from 'preact/compat';
 import styles from './Search.module.scss';
 

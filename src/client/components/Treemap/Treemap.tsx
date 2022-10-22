@@ -1,11 +1,11 @@
-import { FunctionComponent } from 'preact';
+import type { FunctionComponent } from 'preact';
 import { useEffect, useRef } from 'preact/compat';
-import { Ref } from 'preact/hooks';
-import {
+import type { MutableRef } from 'preact/hooks';
+import type {
   EventHandler,
   GroupColorDecoratorFunction,
 } from '../../../interfaces/Foamtree';
-import { ClientData } from '../../interfaces/ClientState';
+import type { ClientData } from '../../interfaces/ClientState';
 import { createTreemap } from './createTreemap';
 
 interface Props {
@@ -16,7 +16,7 @@ interface Props {
   onGroupClick?: EventHandler;
   onGroupHover?: EventHandler;
   onGroupLeave?: EventHandler;
-  treemapRef: Ref<any>;
+  treemapRef: MutableRef<any>;
 }
 
 export const Treemap: FunctionComponent<Props> = ({

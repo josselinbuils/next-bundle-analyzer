@@ -1,8 +1,8 @@
-import { existsSync, promises as fs } from 'fs';
+import { existsSync, promises as fs } from 'node:fs';
+import path from 'node:path';
 import logger from 'next/dist/build/output/log';
-import path from 'path';
 import { PLUGIN_NAME } from '../constants';
-import { ReportFormat } from '../interfaces/Options';
+import type { ReportFormat } from '../interfaces/Options';
 
 export async function saveReport(
   reportType: ReportFormat,

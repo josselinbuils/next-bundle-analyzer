@@ -1,13 +1,13 @@
-import filesize from 'filesize';
+import { filesize } from 'filesize';
 import escape from 'lodash/escape';
 import escapeRegExp from 'lodash/escapeRegExp';
-import { FunctionComponent, JSX } from 'preact';
+import type { FunctionComponent, JSX } from 'preact';
 import { MAIN_SIZE_PROPERTY } from '../../constants';
-import { ClientGroup } from '../../interfaces/ClientGroup';
+import type { ClientGroup } from '../../interfaces/ClientGroup';
+import styles from './ModuleItem.module.scss';
 import { ChunkIcon } from './icons/ChunkIcon';
 import { FolderIcon } from './icons/FolderIcon';
 import { ModuleIcon } from './icons/ModuleIcon';
-import styles from './ModuleItem.module.scss';
 
 interface Props {
   highlightedText: string | RegExp;

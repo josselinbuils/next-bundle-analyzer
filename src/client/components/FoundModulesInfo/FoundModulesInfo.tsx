@@ -1,10 +1,10 @@
 import cn from 'classnames';
-import filesize from 'filesize';
-import { FunctionComponent, JSX } from 'preact';
+import { filesize } from 'filesize';
+import type { FunctionComponent, JSX } from 'preact';
 import { useMemo } from 'preact/compat';
 import { MAIN_SIZE_PROPERTY, MIN_SEARCH_CHARACTERS } from '../../constants';
+import type { ClientGroup } from '../../interfaces/ClientGroup';
 import styles from './FoundModulesInfo.module.scss';
-import { ClientGroup } from '../../interfaces/ClientGroup';
 
 interface Props {
   foundModules: ClientGroup[];
@@ -50,5 +50,5 @@ export const FoundModulesInfo: FunctionComponent<Props> = ({
 function computeFoundModuleSize(foundModules: ClientGroup[]): string {
   return filesize(
     foundModules.reduce((sum, group) => sum + group[MAIN_SIZE_PROPERTY], 0)
-  );
+  ) as string;
 }

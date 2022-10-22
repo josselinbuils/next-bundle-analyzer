@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'preact';
+import type { FunctionComponent } from 'preact';
 
 export const PinIcon: FunctionComponent = () => (
   <svg

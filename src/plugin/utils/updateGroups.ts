@@ -1,5 +1,5 @@
-import { StatsCompilation } from 'webpack';
-import { ChunkGroup } from '../../interfaces/BuildStats';
+import type { StatsCompilation } from 'webpack';
+import type { ChunkGroup } from '../../interfaces/BuildStats';
 
 export function updateGroups(
   groups: ChunkGroup[],

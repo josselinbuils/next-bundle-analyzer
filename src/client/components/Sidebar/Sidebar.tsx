@@ -1,9 +1,9 @@
 import cn from 'classnames';
-import { FunctionComponent } from 'preact';
+import type { FunctionComponent } from 'preact';
 import { useEffect, useRef, useState } from 'preact/compat';
 import { Button } from '../Button/Button';
-import styles from './Sidebar.module.scss';
 import { PinIcon } from './PinIcon';
+import styles from './Sidebar.module.scss';
 
 const toggleTime = parseInt(styles.toggleTime, 10);
 

@@ -1,4 +1,4 @@
-import { ClientGroup } from './ClientGroup';
+import type { ClientGroup } from './ClientGroup';
 
 export interface ClientData {
   groups: ClientGroup[];

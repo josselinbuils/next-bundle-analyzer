@@ -1,5 +1,5 @@
-import { ClientData } from './ClientState';
-import { ClientGroup } from './ClientGroup';
+import type { ClientGroup } from './ClientGroup';
+import type { ClientData } from './ClientState';
 
 interface Action<Type extends string> {
   type: Type;

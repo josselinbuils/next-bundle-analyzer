@@ -1,6 +1,6 @@
-import childProcess from 'child_process';
-import path from 'path';
-import { Metadata } from '../../interfaces/BuildStats';
+import childProcess from 'node:child_process';
+import path from 'node:path';
+import type { Metadata } from '../../interfaces/BuildStats';
 
 export function getMetadata(): Metadata {
   const date = new Date().toISOString();

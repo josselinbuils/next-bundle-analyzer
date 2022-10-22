@@ -1,5 +1,5 @@
 import FoamTree from '@carrotsearch/foamtree';
-import { Options } from '../../../interfaces/Foamtree';
+import type { Options } from '../../../interfaces/Foamtree';
 
 export function createTreemap(props: Options) {
   return new FoamTree({

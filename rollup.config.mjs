@@ -1,6 +1,5 @@
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
-import path from 'path';
 
 export default {
   input: 'src/index.ts',
@@ -8,18 +7,18 @@ export default {
     dir: 'dist',
     exports: 'auto',
     format: 'cjs',
+    preserveModules: true,
   },
   external: [
-    'child_process',
-    'fs',
     'next/dist/build/output/log',
+    'node:child_process',
+    'node:fs',
+    'node:path',
     'open',
-    'path',
     'webpack-bundle-analyzer/lib/analyzer',
   ],
-  preserveModules: true,
   plugins: [
     commonjs(),
-    typescript({ tsconfig: path.join(__dirname, './tsconfig.plugin.json') }),
+    typescript({ tsconfig: './tsconfig.plugin.json' }),
   ],
 };
