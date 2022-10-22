@@ -17,6 +17,7 @@
     "dev:plugin": "yarn build:plugin -w",
     "dev:client": "NODE_ENV=development webpack serve",
     "lint": "eslint .",
+    "prepublish": "yarn build",
     "pre-commit": "exec-staged",
     "prepare": "husky install",
     "test": "jest"
