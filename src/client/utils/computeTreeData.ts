@@ -55,7 +55,10 @@ export function computeTreeData(buildStats: BuildStats): ClientData {
 
         return {
           ...page,
-          groups: [getSharedGroup(chunks, commonChunks, page.label), pageGroup],
+          groups: [
+            getSharedGroup(chunks, commonChunks, page.label),
+            pageGroup,
+          ].filter((group) => group.groups && group.groups.length > 0),
           gzipSize: page.totalGzipSize,
           parsedSize: page.totalParsedSize,
           statSize: page.totalStatSize,
@@ -124,7 +127,9 @@ function getSharedGroup(
 
   const sharedGroup: ChunkGroup = {
     label: 'shared',
-    groups: [sharedByAllPagesGroup, sharedByMultiplePagesGroup],
+    groups: [sharedByAllPagesGroup, sharedByMultiplePagesGroup].filter(
+      (group) => group.groups && group.groups.length > 0
+    ),
     gzipSize: 0,
     parsedSize: 0,
     statSize: 0,
