@@ -61,15 +61,15 @@ export const DetailsTooltip: FunctionComponent<Props> = ({ group }) => {
       <p className={styles.label}>
         <strong>{label}</strong>
       </p>
-      <p>Stat size: {formatSize(statSize)} ko</p>
+      <p>Stat size: {formatSize(statSize)} kB</p>
       {parsedSize > 0 && !inaccurateSizes && (
         <p>
-          Parsed size: <strong>{formatSize(parsedSize)} ko</strong>
+          Parsed size: <strong>{formatSize(parsedSize)} kB</strong>
         </p>
       )}
       {gzipSize > 0 && !inaccurateSizes && (
         <p>
-          Gzip size: <strong>{formatSize(gzipSize)} ko</strong>
+          Gzip size: <strong>{formatSize(gzipSize)} kB</strong>
         </p>
       )}
       {!!path && (
