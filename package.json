@@ -1,6 +1,6 @@
 {
   "name": "next-bundle-analyzer",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "description": "NextJS version of Webpack Bundle Analyzer.",
   "repository": "https://github.com/josselinbuils/next-bundle-analyzer.git",
   "author": "Josselin BUILS",
@@ -27,7 +27,7 @@
     "webpack-bundle-analyzer": "^4.6.1"
   },
   "peerDependencies": {
-    "next": "10 || 11 || 12 || 13"
+    "next": "10 || 11 || 12 || 13 || 14"
   },
   "devDependencies": {
     "@carrotsearch/foamtree": "3.5.0",
